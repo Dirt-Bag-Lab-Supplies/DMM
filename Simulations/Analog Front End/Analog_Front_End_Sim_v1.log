@@ -1,0 +1,31 @@
+Circuit: * C:\Users\andys\OneDrive\Documents\Work\DBLS\Simulations\Analog_Front_End_Sim_v1.asc
+
+WARNING: Less than two connections to node V+.  This node is used by V1.
+WARNING: Less than two connections to node V-.  This node is used by V2.
+WARNING: Less than two connections to node VREF_N.  This node is used by V6.
+WARNING: Less than two connections to node VREF_P.  This node is used by V7.
+WARNING: Less than two connections to node U2:_U43:NSGNVICM1.  This node is used by E:U2:_U43:Z1.
+Direct Newton iteration for .op point succeeded.
+Ignoring empty pin current: Ix(u7:1)
+Ignoring empty pin current: Ix(u7:2)
+Ignoring empty pin current: Ix(u7:1)
+Ignoring empty pin current: Ix(u7:2)
+
+Date: Sun Mar  8 14:42:20 2020
+Total elapsed time: 1.550 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 82077
+traniter = 82045
+tranpoints = 29376
+accept = 22876
+rejected = 6500
+matrix size = 179
+fillins = 66
+solver = Normal
+Thread vector: 25.9/12.7[4] 4.5/2.4[4] 8.6/3.1[4] 0.5/1.8[1]  2592/500
+Matrix Compiler1: 8.09 KB object code size  3.5/1.8/[1.0]
+Matrix Compiler2: 12.92 KB object code size  2.0/3.6/[1.8]
+

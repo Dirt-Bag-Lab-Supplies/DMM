@@ -1,0 +1,405 @@
+* INA185A2
+*****************************************************************************
+* (C) Copyright 2018 Texas Instruments Incorporated. All rights reserved.                                            
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warranties, either expressed
+** or implied, with respect to this model, including the warranties of 
+** merchantability or fitness for a particular purpose.  The model is
+** provided solely on an "as is" basis.  The entire risk as to its quality
+** and performance is with the customer
+*****************************************************************************
+*
+* This model is subject to change without notice. Texas Instruments
+* Incorporated is not responsible for updating this model.
+*
+*****************************************************************************
+*
+** Released by: Texas Instruments Inc.
+* Part: INA185A2
+* Date: 08MAR2019
+* Model Type: ALL IN ONE
+* Simulator: TINA
+* Simulator Version: 9.3.200.353 SF-TI
+* EVM Order Number: 
+* EVM Users Guide: 
+* Datasheet: SBOS378
+*
+* Model Version: Final 1.0
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Final 1.0
+* Release to Web.
+*
+*****************************************************************************
+*
+* Model Usage Notes:
+* <Please include features that are modeled, not modeled, and specific model usage notes if any>
+* 1. The following features have been modeled for 5V operation
+*      a. VOS, IIBN, IIBP, IQ versus VICM
+*      b. Gain, Noise, CMRR, Zout versus frequency
+*      c. Bandwidth 
+*      d. Slew rate is slightly less than the published value
+*      e. Vout versus Iout
+* 2. Temperature effects are not modeled
+*
+*****************************************************************************
+.SUBCKT INA185A2 INP INN OUT REF VCC GND
+X_U41         INPUTP_GBW INPUTN_GBW INPUT_TF EN VCC GND GNDF gbw_slew_outlimits_INA185A2
+X_U18         INP GNDF VCC GND VICM GNDF IIBP_INA185A2
+C_C1         VEE1 VCC1  1u  TC=0,0 
+X_U37         0 N868314 vnse_INA185A2
+X_U101         VCC GND INPUT_VOUTVSIOUT INPUT_ZOUT VIMON EN GNDF
++  VOUTvsIOUT_TABLE_SHDN_INA185A2 
+E_E2         N840691 0 GND 0 -1
+R_R16         GNDF INP  1e9 TC=0,0 
+E_E12         INN_BUF_OUT GNDF N839661 GNDF 1
+R_R30         N999978 N1000352  1m TC=0,0 
+X_U38         VCC GND INP_PSRR_IN INP_PSRR_OUT GNDF PSRR_INA185A2 
+E_E11         INP_BUF_OUT GNDF INP GNDF 1
+X_U31         INPUT_VIMON OUT VIMON GNDF AMETER_INA185A2 
+E_E15         N858796 0 N868314 N868380 1e8
+R_R28         N868380 N858796  0.60 TC=0,0 
+D_D2         IN_COMP N1000352 Dideal 
+C_U100_C3         GNDF U100_N01480  53.05p  TC=0,0 
+X_U100_U1         U100_N01897 GNDF GNDF U100_N01973 G_wlim_INA185A2 
+R_U100_R15         GNDF INPUT_VIMON  3k TC=0,0 
+R_U100_R13         GNDF U100_N01973  1 TC=0,0 
+R_U100_R1         GNDF U100_N00144  6666.667 TC=0,0 
+G_U100_G6         U100_N00138 GNDF INPUT_ZOUT INPUT_VIMON -80043.9
+R_U100_R2         U100_N00138 U100_N00144  10k TC=0,0 
+R_U100_R3         GNDF U100_N00138  1 TC=0,0 
+C_U100_C2         GNDF U100_N01072  53.05p  TC=0,0 
+G_U100_G4         U100_N01873 GNDF U100_N01400 GNDF -1
+G_U100_G3         U100_N01376 GNDF U100_N00528 GNDF -1
+C_U100_C1         U100_N00138 U100_N00144  15.9155n  TC=0,0 
+R_U100_R10         GNDF U100_N01897  10.01 TC=0,0 
+R_U100_R7         U100_N01480 U100_N01400  10k TC=0,0 
+R_U100_R11         U100_N01873 U100_N01897  10k TC=0,0 
+R_U100_R8         U100_N01376 U100_N01400  466190 TC=0,0 
+R_U100_R12         GNDF U100_N01873  1 TC=0,0 
+R_U100_R9         GNDF U100_N01376  1 TC=0,0 
+G_U100_G2         U100_N00488 GNDF U100_N00144 GNDF -2.5
+C_U100_C4         U100_N01873 U100_N01897  0.159155p  TC=0,0 
+R_U100_R4         U100_N01072 U100_N00528  10k TC=0,0 
+R_U100_R5         U100_N00488 U100_N00528  466190 TC=0,0 
+R_U100_R14         U100_N01973 INPUT_VIMON  3e4 TC=0,0 
+R_U100_R6         GNDF U100_N00488  1 TC=0,0 
+C_C2         VCC1 0  1u  TC=0,0 
+E_E16         INPUTP_GBW INPUT_OUTP N858796 0 0.4
+R_R20         N840573 VCC1  1 TC=0,0 
+X_U44         OUT_COMP IN_COMP COMP_REF 0 COMPARATOR_INA185A2 
+E_E18         N999978 0 OUT_CNTRL 0 10
+R_R18         INPUT_ZOUT INPUTN_GBW  500k TC=0,0 
+C_C5         N868380 N858796  {2.5*31.8n}  TC=0,0 
+C_C6         N859753 N868380  {2.5*1697n}  TC=0,0 
+X_U17         INN GNDF VCC GND VICM GNDF IIBN_INA185A2
+R_R29         0 N859753  0.1875 TC=0,0 
+X_U12         INPUT_TF INPUT_VOUTVSIOUT VCC GND EN GNDF TF_INA185A2
+R_R31         0 OUT_COMP  1k TC=0,0 
+C_C3         VEE1 0  1u  TC=0,0 
+V_V10         COMP_REF 0 5Vdc 
+R_R3         INP_PSRR_OUT INPUT_OUTP  10k TC=0,0 
+E_E3         GNDF 0 VCC1 VEE1 0.5
+V_V8         INN N839661 -53.85uVdc
+C_C7         0 IN_COMP  1p  TC=0,0 
+X_U43         VCC GND VICM EN VIMON GNDF IQ_VICM_INA185A2 
+R_R25         N999978 IN_COMP  1000 TC=0,0 
+R_R4         INN_CMRR INPUTN_GBW  10k TC=0,0 
+R_R21         N840691 VEE1  1 TC=0,0 
+E_E14         INN_BUF_OUT INN_CMRR VICM GNDF 0
+X_U39         OUT_CNTRL VICM VCC GND GNDF CONTROL_INA185A2 
+E_E17         EN GNDF OUT_COMP 0 1
+R_R26         INPUT_OUTP REF  500k TC=0,0 
+X_U102         VICM INP_CMRR INP_PSRR_IN GNDF CMRR_2p_INA185A2 
+R_R27         0 N868380  1 TC=0,0 
+E_E13         INP_BUF_OUT INP_CMRR VICM GNDF 0
+X_U5         VICM INP INN GNDF VICM_INA185A2
+R_R17         INN GNDF  1e9 TC=0,0 
+E_E1         N840573 0 VCC 0 1
+.MODEL Dideal D
+.ENDS
+*
+****************
+**            **
+****************
+.subckt gbw_slew_outlimits_INA185A2  vip  vim  vo shdn vcc vee gndf 
+.param aol = 160  
+.param gbw = 10.3e6  
+.param srp = 2.5e6  
+.param srn = 2.5e6 
+.param it = 0.001
+.param pi = 3.141592
+.param ip = {it*max(1,srp/srn)}
+.param in = {it*min(-1,-srn/srp)}
+.param cc = {it*max(1/srp,1/srn)}
+.param fp = {gbw/pwr(10,aol/20)}
+.param rc = {1/(2*pi*cc*fp)}
+.param gc = {pwr(10,aol/20)/rc}
+g1p gndf outg1p value = {max(min(gc*v(shdn,gndf)*v(vip,vim),ip),in)}
+g1n outg1n gndf value = {max(min(gc*v(shdn,gndf)*v(vip,vim),ip),in)}
+e1out vo gndf value = 
++ {max(min(v(shdn,gndf)*v(outg1p,outg1n),v(vcc,gndf)),v(vee,gndf))}
+rg1p outg1p gndf {0.5*rc}
+cg1dp outg1p gndf {2*cc} ic=0
+rg1n outg1n gndf {0.5*rc}
+cg1dn outg1n gndf {2*cc} ic=0
+s1  outg1p n1 outg1p n1 sw1
+e1 n1 0 value = {v(vcc)-0.1}
+S2  OUTG1p N2 OUTG1p N2 SW2
+e2 n2 0 value = {v(vee) + 0.1}
+S3  OUTG1n N3 OUTG1n N3 SW1
+e3 n3 0 value = {v(vcc)-0.1}
+s4  outg1n n4 outg1n n4 sw2
+e4 n4 0 value = {v(vee) + 0.1}
+.model sw1 vswitch
++ ron=0.1
++ roff=1e+009
++ von=0.1
++ voff=0
+.model sw2 vswitch
++ ron=0.1
++ roff=1e+009
++ von=-0.1
++ voff=0
+.ends
+****************
+**            **
+****************
+.subckt vnse_INA185A2 1 2 
+.param nlf = {55} 
+.param flw = 1f  
+.param nvr = {55}
+.param glf={pwr(flw,0.25)*nlf/1164}
+.param rnv={1.184*pwr(nvr,2)}
+i2 0 8 10e-3
+d1 7 0 dvn
+d2 8 0 dvn
+e1 3 6 7 8 {glf}
+r1 3 0 1e9
+r2 3 0 1e9
+r3 3 6 1e9
+e2 6 4 5 0 10
+r4 5 0 {rnv}
+r5 5 0 {rnv}
+r6 3 4 1e9
+r7 4 0 1e9
+e3 1 2 3 4 1
+c1 1 0 1e-15
+c2 2 0 1e-15
+c3 1 2 1e-15
+.model dvn d
+.ends
+****************
+**            **
+****************
+.SUBCKT IIBP_INA185A2 OUT IN VCC VEE INP GNDF
+.PARAM VCMBRK = 2.5
+.PARAM REQ_VCC_NEZERO = 450k
+.PARAM REQ_VCC_EQZERO = 530k
+EVCCTEST NVCCTEST 0 VALUE = {SGN(V(VCC,VEE)) - 1 + ABS(SGN(V(VCC,VEE)))}
+E1ACT N1SGN 0 VALUE = {SGN(V(INP,GNDF)-VCMBRK) - 1 + ABS(SGN(V(INP,GNDF)-VCMBRK))}
+GOUT2 OUT IN VALUE = {V(INP,GNDF)*(1/REQ_VCC_NEZERO 
++ + 0.5*(1-V(NVCCTEST ))/REQ_VCC_EQZERO)
++ + 0.5*(1-V(NVCCTEST ))*(-5u)}
+GOUT1 OUT IN VALUE = {0.5*(1+V(N1SGN))*0.5*(1+V(NVCCTEST))*60u}
+.ENDS
+****************
+**            **
+****************
+.SUBCKT VOUTvsIOUT_TABLE_SHDN_INA185A2  VCC  VEE  VI  VO VIMON SHDN GNDF
+EOUTP VHRP GNDF TABLE {V(VIMON,GNDF)} =
++ (0,-0.02)
++ (0.002518,-0.142)
++ (0.004932,-0.2639)
++ (0.007557,-0.4401)
++ (0.009972,-0.6027)
++ (0.012597,-0.7789)
++ (0.014915,-1.1042)
++ (0.017656,-1.5378)
++ (0.019581,-2.5)
+EOUTN VHRN GNDF TABLE {V(VIMON,GNDF)} =
++ (-0.051429,2.5)
++ (-0.050046,1.9237)
++ (-0.045009,1.4582)
++ (-0.039876,1.1975)
++ (-0.034956,1.0326)
++ (-0.029931,0.8402)
++ (-0.024907,0.7025)
++ (-0.019988,0.5376)
++ (-0.014859,0.3862)
++ (-0.009837,0.2622)
++ (-0.004918,0.1245)
++ (-0,0.0005)
+E1 UL 0 VALUE = {V(VCC,GNDF) + V(VHRP,GNDF)}
+E2 LL 0 VALUE = {V(VEE,GNDF) + V(VHRN,GNDF)}
+EOUT VO GNDF VALUE = {V(SHDN,GNDF)*LIMIT(V(VI,GNDF),V(LL),V(UL))}
+**
+.ENDS
+****************
+**            **
+****************
+.SUBCKT PSRR_INA185A2  VDD  VSS  VI  VO  GNDF 
+.PARAM PSRR = 100
+.PARAM fpsrr = 1300
+.PARAM PI = 3.141592
+.PARAM RPSRR = 1
+.PARAM GPSRR = {PWR(10,-PSRR/20)/RPSRR}
+.PARAM LPSRR = {RPSRR/(2*PI*fpsrr)}
+G1  GNDF 1 VDD VSS {GPSRR}
+R1  1 2 {RPSRR}
+L1  2 GNDF {LPSRR} 
+E1  VO VI 1 GNDF 1
+.ENDS
+****************
+**            **
+****************
+.SUBCKT AMETER_INA185A2  VI  VO VIMON GNDF
+.PARAM GAIN = 1
+VSENSE VI VO DC = 0
+EMETER VIMON GNDF VALUE = {I(VSENSE)*GAIN}
+.ENDS
+****************
+**            **
+****************
+.SUBCKT G_wlim_INA185A2 VCP VCN IOUTP IOUTN
+.PARAM GAIN = 1e3
+.PARAM IPOS = 1.6e3
+.PARAM INEG = -1.6e3
+G1 IOUTP IOUTN VALUE = {MAX(MIN(GAIN*V(VCP,VCN),IPOS),INEG)}
+.ENDS
+****************
+**            **
+****************
+.SUBCKT COMPARATOR_INA185A2 OUT IN REF GNDF
+.PARAM VOUT_MAX = 1
+.PARAM VOUT_MIN = 0
+.PARAM GAIN = 1e4
+EOUT OUT GNDF VALUE = {MAX(MIN(GAIN*V(IN,REF),VOUT_MAX),VOUT_MIN)}
+.ENDS
+****************
+**            **
+****************
+.SUBCKT IIBN_INA185A2 OUT IN VCC VEE INN GNDF
+.PARAM VCMBRK = 2.5
+.PARAM REQ_VCC_NEZERO = 450k
+.PARAM REQ_VCC_EQZERO = 530k
+EVCCTEST NVCCTEST 0 VALUE = {SGN(V(VCC,VEE)) - 1 + ABS(SGN(V(VCC,VEE)))}
+E1ACT N1SGN 0 VALUE = {SGN(V(INN,GNDF)-VCMBRK) - 1 + ABS(SGN(V(INN,GNDF)-VCMBRK))}
+GOUT2 OUT IN VALUE = {V(INN,GNDF)*(1/REQ_VCC_NEZERO 
++ + 0.5*(1-V(NVCCTEST ))/REQ_VCC_EQZERO)
++ + 0.5*(1-V(NVCCTEST ))*(-5u)}
+GOUT1 OUT IN VALUE = {0.5*(1+V(N1SGN))*0.5*(1+V(NVCCTEST))*60u}
+.ENDS
+****************
+**            **
+****************
+.SUBCKT TF_INA185A2  VI  VO  VCC VEE SHDN GNDF
+.PARAM fz1 = 10G 
+.PARAM fz2 = 10G 
+.PARAM fz3 = 10G 
+.PARAM fz4 = 10G 
+.PARAM fz5 = 10G
+.PARAM fp1 = 10e6 
+.PARAM fp2 = 10G 
+.PARAM fp3 = 10G 
+.PARAM fp4 = 10G
+.PARAM Gm = 1M
+.PARAM Ro = {1/Gm}
+.PARAM PI = 3.141592
+.PARAM gL = 1M
+Gp1  GNDF Vp1 VI GNDF {Gm}
+Rp1  Vp1 GNDF {Ro}
+Cp1  Vp1 GNDF {1/(2*PI*Ro*fp1)} IC = 0
+Gp2  GNDF Vp2 Vp1 GNDF {Gm}
+Rp2  Vp2 GNDF {Ro}
+Cp2  Vp2 GNDF {1/(2*PI*Ro*fp2)} IC = 0
+Gp3  GNDF Vp3 Vp2 GNDF {Gm}
+Rp3  Vp3 GNDF {Ro}
+Cp3  Vp3 GNDF {1/(2*PI*Ro*fp3)} IC = 0
+Gp4  GNDF VO Vp3 GNDF {Gm}
+Rp4  VO GNDF {Ro}
+Cp4  VO GNDF {1/(2*PI*Ro*fp4)} IC = 0
+.ENDS
+****************
+**            **
+****************
+.SUBCKT IQ_VICM_INA185A2 VCC VEE VICM SHDN VIMON GNDF
+.PARAM IQ_3 = 209u
+.PARAM IQ_2 = 325u
+.PARAM IQ_1 = 375u
+.PARAM VICM_1 = -0.2
+.PARAM VICM_2 = 2
+.PARAM VICM_3 = 5.1
+.PARAM m_1 = {-2.25*12.4u}
+.PARAM b_1 = 370u
+.PARAM m_2 = 0
+.PARAM b_2 = 313.3u
+.PARAM m_3 = -1.04u
+.PARAM b_3 = 208.8u
+.PARAM IQ_SHDN = 0.01u
+.PARAM Geq = 18.75u
+EZ1 NSGNVICM1 0 VALUE = {SGN(V(VICM) - VICM_1) + ABS(SGN(V(VICM) - VICM_1)) - 1}
+EZ2 NSGNVICM2 0 VALUE = {SGN(V(VICM) - VICM_2) + ABS(SGN(V(VICM) - VICM_2)) - 1}
+EZ3 NSGNVICM3 0 VALUE = {SGN(V(VICM) - VICM_3) + ABS(SGN(V(VICM) - VICM_3)) - 1}
+EIQ1 NIQ1 0 VALUE = {m_1*V(VICM)+b_1}
+EIQ2 NIQ2 0 VALUE = {m_2*V(VICM)+b_2}
+EIQ3 NIQ3 0 VALUE = {m_3*V(VICM)+b_3}
+EIQ1_ACT NIQ1_ACT 0 VALUE = {0.5*(1 - V(NSGNVICM2))*V(NIQ1)}
+EIQ2_ACT NIQ2_ACT 0 VALUE = {0.5*(1 + V(NSGNVICM2))*0.5*(1 - V(NSGNVICM3))*V(NIQ2)}
+EIQ3_ACT NIQ3_ACT 0 VALUE = {0.5*(1 + V(NSGNVICM3))*V(NIQ3)}
+GIQ VCC VEE VALUE = {(V(NIQ1_ACT) + V(NIQ2_ACT) + V(NIQ3_ACT))*V(SHDN,GNDF)}
+ESGNIOUT NSGNIOUT 0 VALUE = {SGN(V(VIMON,GNDF))}
+GOUTP VCC GNDF VALUE = {0.5*(1 + V(NSGNIOUT))*V(VIMON,GNDF)*V(SHDN,GNDF)}
+GOUTN GNDF VEE VALUE = {0.5*(1 - V(NSGNIOUT))*V(VIMON,GNDF)*V(SHDN,GNDF)}
+.ENDS
+****************
+**            **
+****************
+.SUBCKT CONTROL_INA185A2 OUT_CNTRL IN VCC VEE GNDF
+.PARAM VCCMAX = 5.6
+.PARAM VCCMIN = 2.6
+.PARAM VICMMAX = {26.01 - 2.5}
+.PARAM VICMMIN = {-0.201 - 2.5}
+EN1 N1 0 VALUE = {SGN(VCCMAX - V(VCC,VEE)) - 1 + ABS(SGN(VCCMAX - V(VCC,VEE)))}
+EN2 N2 0 VALUE = {SGN(V(VCC,VEE)-VCCMIN) - 1 + ABS(SGN(V(VCC,VEE)-VCCMIN))}
+EVCCMAX NVCCMAX 0 VALUE = {0.5*(1 + V(N1))}
+EVCCMIN NVCCMIN 0 VALUE = {0.5*(1 + V(N2))}
+EN3 N3 0 VALUE = {SGN(VICMMAX + V(GNDF) - V(IN)) - 1 + ABS(SGN(VICMMAX + V(GNDF)- V(IN)))}
+EN4 N4 0 VALUE = {SGN(V(IN)-V(GNDF)-VICMMIN) - 1 + ABS(SGN(V(IN)-V(GNDF)-VICMMIN))}
+EVICMMAX NVICMMAX 0 VALUE = {0.5*(1 + V(N3))}
+EVICMMIN NVICMMIN 0 VALUE = {0.5*(1 + V(N4))}
+EOUT OUT_CNTRL 0 VALUE = {V(NVCCMAX)*V(NVCCMIN)*V(NVICMMAX)*V(NVICMMIN)}
+.ENDS
+****************
+**            **
+****************
+.SUBCKT CMRR_2p_INA185A2  VICM VI  VO  GNDF 
+.PARAM CMRR = 111.9 
+.PARAM fcmrr1 = 33.6k
+.PARAM fcmrr2 = 1e6
+.PARAM PI = 3.141592
+.PARAM RCMRR = 1
+.PARAM GCMRR = {PWR(10,-CMRR/20)/RCMRR}
+.PARAM LCMRR1 = {RCMRR/(2*PI*fcmrr1)}
+.PARAM LCMRR2 = {RCMRR/(2*PI*fcmrr2)}
+G1  1 GNDF VICM GNDF {GCMRR}
+R1  1 2 {RCMRR}
+L1  2 GNDF {LCMRR1}
+G2  GNDF 3 1 GNDF 1
+R2  3 4 {RCMRR}
+L2 4 GNDF {LCMRR2}
+E2 VI VO 3 GNDF -1
+.ENDS
+****************
+**            **
+****************
+.SUBCKT VICM_INA185A2 OUT INP INN GNDF
+EOUT OUT GNDF VALUE = {0.5*(V(INP,GNDF) + V(INN,GNDF))}
+.ENDS
+****************
+**            **
+****************

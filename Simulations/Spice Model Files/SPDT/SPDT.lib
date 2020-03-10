@@ -1,0 +1,6 @@
+.subckt SPDT COM NO NC POS NEG
+S1 COM NO POS NEG MYSW1
+S2 COM NC NEG POS MYSW2
+.model MYSW1 SW(Ron=.01 Roff=1000Meg Vh=.25 Vt=.5)
+.model MYSW2 SW(Ron=.01 Roff=1000Meg Vh=.25 Vt=-.5)
+.ends

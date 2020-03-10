@@ -1,0 +1,2 @@
+Texas Instruments
+SUBCKT INA186A3 IN+ IN- OUT REF ENABLE VS GND  TEXAS:INA186  [CurrShuntMon]  ;No comment 

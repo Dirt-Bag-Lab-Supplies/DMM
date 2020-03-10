@@ -1,0 +1,112 @@
+Questionable use of curly braces in "a1 n011 n013 0 0 0 0 digital_code 0 schmitt vt = {vt}"
+    Error: undefined symbol in: "[vt]"
+Circuit: * C:\Users\andys\OneDrive\Documents\Work\DBLS\Simulations\SAR_ADC_Model.asc
+
+WARNING: Node B1 is floating.
+WARNING: Node B2 is floating.
+WARNING: Node B3 is floating.
+WARNING: Node B4 is floating.
+WARNING: Node B5 is floating.
+WARNING: Node B6 is floating.
+WARNING: Node B7 is floating.
+WARNING: Node B0 is floating.
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+Gmin = 2.03704e-09
+Gmin = 2.18725e-10
+Gmin = 2.34854e-11
+Gmin = 2.52173e-12
+Gmin = 2.70769e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Ignoring empty pin current: Ix(u1:1)
+Ignoring empty pin current: Ix(u1:2)
+Ignoring empty pin current: Ix(u2:1)
+Ignoring empty pin current: Ix(u2:2)
+Ignoring empty pin current: Ix(u3:1)
+Ignoring empty pin current: Ix(u3:2)
+Ignoring empty pin current: Ix(u4:pos)
+Ignoring empty pin current: Ix(u4:neg)
+Ignoring empty pin current: Ix(u5:pos)
+Ignoring empty pin current: Ix(u5:neg)
+Ignoring empty pin current: Ix(u6:pos)
+Ignoring empty pin current: Ix(u6:neg)
+Ignoring empty pin current: Ix(u7:pos)
+Ignoring empty pin current: Ix(u7:neg)
+Ignoring empty pin current: Ix(u8:pos)
+Ignoring empty pin current: Ix(u8:neg)
+Ignoring empty pin current: Ix(u9:pos)
+Ignoring empty pin current: Ix(u9:neg)
+Ignoring empty pin current: Ix(u10:pos)
+Ignoring empty pin current: Ix(u10:neg)
+Ignoring empty pin current: Ix(u11:pos)
+Ignoring empty pin current: Ix(u11:neg)
+Ignoring empty pin current: Ix(u12:pos)
+Ignoring empty pin current: Ix(u12:neg)
+Ignoring empty pin current: Ix(u13:pos)
+Ignoring empty pin current: Ix(u13:neg)
+Ignoring empty pin current: Ix(u14:pos)
+Ignoring empty pin current: Ix(u14:neg)
+Ignoring empty pin current: Ix(u15:pos)
+Ignoring empty pin current: Ix(u15:neg)
+Ignoring empty pin current: Ix(u1:1)
+Ignoring empty pin current: Ix(u1:2)
+Ignoring empty pin current: Ix(u2:1)
+Ignoring empty pin current: Ix(u2:2)
+Ignoring empty pin current: Ix(u3:1)
+Ignoring empty pin current: Ix(u3:2)
+Ignoring empty pin current: Ix(u4:pos)
+Ignoring empty pin current: Ix(u4:neg)
+Ignoring empty pin current: Ix(u5:pos)
+Ignoring empty pin current: Ix(u5:neg)
+Ignoring empty pin current: Ix(u6:pos)
+Ignoring empty pin current: Ix(u6:neg)
+Ignoring empty pin current: Ix(u7:pos)
+Ignoring empty pin current: Ix(u7:neg)
+Ignoring empty pin current: Ix(u8:pos)
+Ignoring empty pin current: Ix(u8:neg)
+Ignoring empty pin current: Ix(u9:pos)
+Ignoring empty pin current: Ix(u9:neg)
+Ignoring empty pin current: Ix(u10:pos)
+Ignoring empty pin current: Ix(u10:neg)
+Ignoring empty pin current: Ix(u11:pos)
+Ignoring empty pin current: Ix(u11:neg)
+Ignoring empty pin current: Ix(u12:pos)
+Ignoring empty pin current: Ix(u12:neg)
+Ignoring empty pin current: Ix(u13:pos)
+Ignoring empty pin current: Ix(u13:neg)
+Ignoring empty pin current: Ix(u14:pos)
+Ignoring empty pin current: Ix(u14:neg)
+Ignoring empty pin current: Ix(u15:pos)
+Ignoring empty pin current: Ix(u15:neg)
+
+Date: Thu Mar  5 22:16:07 2020
+Total elapsed time: 1.499 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 13809
+traniter = 13324
+tranpoints = 6242
+accept = 4862
+rejected = 1380
+matrix size = 102
+fillins = 81
+solver = Normal
+Thread vector: 26.8/13.7[5] 9.0/4.8[5] 4.4/2.9[5] 0.4/1.2[1]  2592/500
+Matrix Compiler1: 11.36 KB object code size  3.8/2.1/[0.9]
+Matrix Compiler2: 10.48 KB object code size  2.0/2.7/[0.5]
+
