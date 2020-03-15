@@ -1,0 +1,24 @@
+Circuit: * C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\Simulation\FetMux\FetMux_wVoltage.asc
+
+WARNING: Less than two connections to node ADC_IN.  This node is used by V:U1:OSO.
+WARNING: Less than two connections to node VADC.  This node is used by V:U2:OSO.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sun Mar  8 17:50:10 2020
+Total elapsed time: 0.173 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3195
+traniter = 3186
+tranpoints = 1063
+accept = 1061
+rejected = 2
+matrix size = 238
+fillins = 65
+solver = Normal
+Thread vector: 13.5/7.7[6] 9.3/3.7[6] 4.0/2.2[5] 1.1/1.4[1]  2592/500
+Matrix Compiler1: 10.62 KB object code size  7.0/4.4/[0.9]
+Matrix Compiler2: 18.22 KB object code size  3.8/4.6/[1.1]
+
