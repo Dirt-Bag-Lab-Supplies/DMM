@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name DBLS_USB)(type Legacy)(uri ${KIPRJMOD}/DBLS_LIB/SCH_LIB/DBLS_USB.lib)(options "")(descr ""))
+)
