@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name DBLS_USB)(type Legacy)(uri ${KIPRJMOD}/DBLS_LIB/SCH_LIB/DBLS_USB.lib)(options "")(descr ""))
+  (lib (name DBLS_USB)(type Legacy)(uri ${KIPRJMOD}/DBLS_LIB/sch_lib/DBLS_USB.lib)(options "")(descr ""))
+  (lib (name DBLS_Data_Converters)(type Legacy)(uri ${KIPRJMOD}/DBLS_LIB/sch_lib/DBLS_Data_Converters.lib)(options "")(descr ""))
 )
