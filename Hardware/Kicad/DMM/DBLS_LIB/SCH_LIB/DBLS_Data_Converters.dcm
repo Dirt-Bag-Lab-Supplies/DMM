@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ADS7251
+D 12-Bit SAR, 2 Msps, WQFN-16
+$ENDCMP
+#
 #End Doc Library

@@ -1,3 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP FT600Q
+D USB 3.0/USB 2.0 to FIFO Bridge
+$ENDCMP
+#
+$CMP USB_C_Plug-Connector
+D USB Type C Connector
+$ENDCMP
+#
 #End Doc Library
