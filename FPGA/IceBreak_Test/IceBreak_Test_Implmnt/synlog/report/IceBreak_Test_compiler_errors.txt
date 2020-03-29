@@ -1,2 +1,2 @@
-@E: CG666 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":15:1:15:4|Parse error at unexpected input token 'P1A3'
+@E: CG426 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":103:5:103:14|Assignment target ioFifoData must be of type reg or genvar
 

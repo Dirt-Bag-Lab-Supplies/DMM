@@ -80,11 +80,13 @@ Selecting top level module top
 	ERROR=32'b00000000000000000000000000000101
    Generated name = ftdi_output_8s_8s_3s_0s_1s_2s_3s_4s_5s
 
+@W: CG133 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":30:34:30:43|Object oRamRdAddr is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":29:32:29:42|Object oPacketRead is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":56:5:56:16|Removing wire wTxE_posEdge, as there is no assignment to it.
 @W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":57:5:57:16|Removing wire wRxF_negEdge, as there is no assignment to it.
 @W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":58:5:58:16|Removing wire wTxE_negEdge, as there is no assignment to it.
-@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Pruning unused register rRxF_n[2:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Pruning unused register rTxE_n[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Pruning unused register rRxF_n[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Pruning unused register rTxE_n[2:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":5:7:5:15|Synthesizing module ftdi_fifo in library work.
 
 	pDataWidth=32'b00000000000000000000000000001000
@@ -93,18 +95,18 @@ Selecting top level module top
 
 @N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Synthesizing module top in library work.
 
-@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":192:9:192:17|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":193:4:193:7|Referenced variable wRst is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":197:6:197:12|Referenced variable wTxFull is not in sensitivity list.
+@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":190:9:190:17|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":191:4:191:7|Referenced variable wRst is not in sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":196:6:196:12|Referenced variable wTxFull is not in sensitivity list.
 @W: CG1273 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":61:17:61:20|An input port (port iClk) is the target of an assignment - please check if this is intentional
-@W: CS263 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":176:12:176:18|Port-width mismatch for port iTxData. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":174:12:174:18|Port-width mismatch for port iTxData. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CL156 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":174:12:174:18|*Input un1_wTxData[7:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":34:13:34:16|*Output P1A8 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":34:19:34:22|*Output P1A9 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
 @N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":33:14:33:17|Input BTN1 is unused.
 @W: CL156 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":61:11:61:18|*Input iFifoClk to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Register bit oSiwu is always 1.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Register bit oPacketRead is always 1.
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Trying to extract state machine for register rFifoState.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Register bit oSiwu is always 1.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Trying to extract state machine for register rFifoState.
 Extracted state machine for register rFifoState
 State machine has 5 reachable states with original encodings of:
    000
@@ -112,7 +114,11 @@ State machine has 5 reachable states with original encodings of:
    010
    011
    100
-@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Initial value is not supported on state machine rFifoState
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Initial value is not supported on state machine rFifoState
+@A: CL153 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":29:32:29:42|*Unassigned bits of oPacketRead are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":30:34:30:43|*Unassigned bits of oRamRdAddr[2:0] are referenced and tied to 0 -- simulation mismatch possible.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":27:23:27:32|Input iRamRdData is unused.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":26:34:26:45|Input iPacketAvail is unused.
 @N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":24:12:24:18|Input iTxData is unused.
 @N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":30:13:30:23|Input iPacketRead is unused.
 @W: CL138 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":126:0:126:5|Removing register 'rUartError' because it is only assigned 0 or its original value.

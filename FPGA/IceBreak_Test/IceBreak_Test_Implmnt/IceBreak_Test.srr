@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-FDJ29CO
 
-# Sun Mar 29 02:22:38 2020
+# Sun Mar 29 11:31:16 2020
 
 #Implementation: IceBreak_Test_Implmnt
 
@@ -29,7 +29,7 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v" (library work)
 @I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v" (library work)
 Verilog syntax check successful!
-File C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v changed - recompiling
+File C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":752:7:752:18|Synthesizing module SB_PLL40_PAD in library work.
 
@@ -112,11 +112,13 @@ Selecting top level module top
 	ERROR=32'b00000000000000000000000000000101
    Generated name = ftdi_output_8s_8s_3s_0s_1s_2s_3s_4s_5s
 
+@W: CG133 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":30:34:30:43|Object oRamRdAddr is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":29:32:29:42|Object oPacketRead is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":56:5:56:16|Removing wire wTxE_posEdge, as there is no assignment to it.
 @W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":57:5:57:16|Removing wire wRxF_negEdge, as there is no assignment to it.
 @W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":58:5:58:16|Removing wire wTxE_negEdge, as there is no assignment to it.
-@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Pruning unused register rRxF_n[2:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Pruning unused register rTxE_n[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Pruning unused register rRxF_n[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Pruning unused register rTxE_n[2:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":5:7:5:15|Synthesizing module ftdi_fifo in library work.
 
 	pDataWidth=32'b00000000000000000000000000001000
@@ -125,18 +127,18 @@ Selecting top level module top
 
 @N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Synthesizing module top in library work.
 
-@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":192:9:192:17|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":193:4:193:7|Referenced variable wRst is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":197:6:197:12|Referenced variable wTxFull is not in sensitivity list.
+@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":190:9:190:17|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":191:4:191:7|Referenced variable wRst is not in sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":196:6:196:12|Referenced variable wTxFull is not in sensitivity list.
 @W: CG1273 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":61:17:61:20|An input port (port iClk) is the target of an assignment - please check if this is intentional
-@W: CS263 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":176:12:176:18|Port-width mismatch for port iTxData. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":174:12:174:18|Port-width mismatch for port iTxData. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CL156 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":174:12:174:18|*Input un1_wTxData[7:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":34:13:34:16|*Output P1A8 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":34:19:34:22|*Output P1A9 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
 @N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":33:14:33:17|Input BTN1 is unused.
 @W: CL156 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":61:11:61:18|*Input iFifoClk to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Register bit oSiwu is always 1.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Register bit oPacketRead is always 1.
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Trying to extract state machine for register rFifoState.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Register bit oSiwu is always 1.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Trying to extract state machine for register rFifoState.
 Extracted state machine for register rFifoState
 State machine has 5 reachable states with original encodings of:
    000
@@ -144,7 +146,11 @@ State machine has 5 reachable states with original encodings of:
    010
    011
    100
-@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Initial value is not supported on state machine rFifoState
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Initial value is not supported on state machine rFifoState
+@A: CL153 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":29:32:29:42|*Unassigned bits of oPacketRead are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":30:34:30:43|*Unassigned bits of oRamRdAddr[2:0] are referenced and tied to 0 -- simulation mismatch possible.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":27:23:27:32|Input iRamRdData is unused.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":26:34:26:45|Input iPacketAvail is unused.
 @N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":24:12:24:18|Input iTxData is unused.
 @N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":30:13:30:23|Input iPacketRead is unused.
 @W: CL138 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":126:0:126:5|Removing register 'rUartError' because it is only assigned 0 or its original value.
@@ -186,7 +192,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar 29 02:22:38 2020
+# Sun Mar 29 11:31:16 2020
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -199,7 +205,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar 29 02:22:38 2020
+# Sun Mar 29 11:31:17 2020
 
 ###########################################################]
 @END
@@ -209,7 +215,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar 29 02:22:38 2020
+# Sun Mar 29 11:31:17 2020
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -223,12 +229,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar 29 02:22:39 2020
+# Sun Mar 29 11:31:18 2020
 
 ###########################################################]
 Pre-mapping Report
 
-# Sun Mar 29 02:22:40 2020
+# Sun Mar 29 11:31:18 2020
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -255,6 +261,8 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 @N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Removing sequential instance oPacketAvail (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(verilog)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@W: BN114 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":56:12:56:24|Removing instance ram512x8_inst (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(verilog)) of black box view:sb_ice.SB_RAM512x8(PRIM) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -270,12 +278,12 @@ Clock Summary
 Start                                  Requested     Requested     Clock                       Clock                     Clock
 Clock                                  Frequency     Period        Type                        Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------
-System                                 322.5 MHz     3.101         system                      system_clkgroup           10   
-top_pll|PLLOUTGLOBAL_derived_clock     68.9 MHz      14.521        derived (from top|iClk)     Autoconstr_clkgroup_0     141  
+System                                 322.5 MHz     3.101         system                      system_clkgroup           9    
+top_pll|PLLOUTGLOBAL_derived_clock     68.9 MHz      14.521        derived (from top|iClk)     Autoconstr_clkgroup_0     138  
 top|iClk                               17.2 MHz      58.085        inferred                    Autoconstr_clkgroup_0     0    
 ==============================================================================================================================
 
-@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Found signal identified as System clock which controls 10 sequential elements including fifo_inst.ftdi_input_inst.rPacketCount[3:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Found signal identified as System clock which controls 9 sequential elements including fifo_inst.ftdi_input_inst.rPacketCount[3:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
@@ -315,12 +323,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Mar 29 02:22:40 2020
+# Sun Mar 29 11:31:18 2020
 
 ###########################################################]
 Map & Optimize Report
 
-# Sun Mar 29 02:22:40 2020
+# Sun Mar 29 11:31:18 2020
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -353,6 +361,7 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 @N: MT206 |Auto Constrain mode is enabled
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Removing sequential instance rRamWrAddr[2:0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_out is being ignored. 
 @W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.rx_clk_divider[17:0] is being ignored. 
 @W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_clk_divider[13:0] is being ignored. 
@@ -398,182 +407,54 @@ Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Removing sequential instance fifo_inst.ftdi_input_inst.rPacketCount[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Removing sequential instance fifo_inst.ftdi_input_inst.rPacketCount[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Removing sequential instance fifo_inst.ftdi_input_inst.rWrState[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Removing sequential instance fifo_inst.ftdi_input_inst.rRamWrEn (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Removing sequential instance fifo_inst.ftdi_input_inst.rPacketCount[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Removing sequential instance fifo_inst.ftdi_input_inst.rPacketCount[2] (in view: work.top(verilog)) because it does not drive other instances.
 @N: MF794 |RAM rFifoData[7:0] required 72 registers during mapping 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    -4.01ns		 311 /       200
-   2		0h:00m:01s		    -4.01ns		 294 /       200
-   3		0h:00m:01s		    -2.61ns		 294 /       200
-   4		0h:00m:01s		    -2.61ns		 294 /       200
+   1		0h:00m:00s		    -5.35ns		 287 /       197
+   2		0h:00m:00s		    -5.35ns		 266 /       197
+   3		0h:00m:00s		    -2.55ns		 266 /       197
 
-   5		0h:00m:01s		    -1.14ns		 356 /       200
-   6		0h:00m:01s		    -1.14ns		 356 /       200
+   4		0h:00m:01s		    -2.32ns		 285 /       197
+   5		0h:00m:01s		    -1.26ns		 287 /       197
+   6		0h:00m:01s		    -1.26ns		 288 /       197
 
 
-   7		0h:00m:01s		    -1.14ns		 353 /       200
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep4 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep3 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep2 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep1 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep0 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[7] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[6] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[5] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[4] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[3] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[2] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[1] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: FX1017 :|SB_GB inserted on the net wPllLocked_iso_i.
+   7		0h:00m:01s		    -1.26ns		 286 /       197
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[7] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[6] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[5] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[4] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[3] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[2] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[1] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":66:0:66:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: FX1017 :|SB_GB inserted on the net wPllLocked_i.
 @N: FX1017 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\top_pll.v":13:13:13:24|SB_GB inserted on the net wPllLocked.
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 150MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
 
-Warning: Found 13 combinational loops!
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount15
-1) instance fifo_inst.ftdi_input_inst.rPacketCount15 (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount15 (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rPacketCount15
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[3]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount15/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount15 (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount15
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[3]
-2) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[3] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rPacketCount[3]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I1
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[3]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
-3) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[0] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rPacketCount[0]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[0]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[1]
-4) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[1] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[1] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rPacketCount[1]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/I1
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[1]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[2]
-5) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[2] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[2] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rPacketCount[2]
-    input  pin fifo_inst.ftdi_input_inst.SUM[3]/I2
-    instance   fifo_inst.ftdi_input_inst.SUM[3] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.SUM[3]/O
-    net        fifo_inst.ftdi_input_inst.N_6
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I2
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[3]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount15/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount15 (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount15
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[2] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[2]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rWrState[1]
-6) instance fifo_inst.ftdi_input_inst.rWrState_latch[1] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rWrState[1] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rWrState[1]
-    input  pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/I0
-    instance   fifo_inst.ftdi_input_inst.rWrState_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.rWrState[1]
-@W: BN137 :|Found combinational loop during mapping at net wTxEn_1
-7) instance DUT.fifo_tx_inst.wTxEn_1 (in view: work.top(verilog)), output net wTxEn_1 (in view: work.top(verilog))
-    net        wTxEn_1
-    input  pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/I1
-    instance   fifo_inst.ftdi_input_inst.rWrState_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.rWrState[1]
-    input  pin fifo_inst.ftdi_input_inst.rRamWrEn_latch/I0
-    instance   fifo_inst.ftdi_input_inst.rRamWrEn_latch (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrEn_latch/O
-    net        fifo_inst.ftdi_input_inst.rRamWrEn
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount15/I1
-    instance   fifo_inst.ftdi_input_inst.rPacketCount15 (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount15
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[2] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[2]
-    input  pin DUT.fifo_tx_inst.wTxEn_1/I0
-    instance   DUT.fifo_tx_inst.wTxEn_1 (cell SB_LUT4)
-    output pin DUT.fifo_tx_inst.wTxEn_1/O
-    net        wTxEn_1
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrEn
-8) instance fifo_inst.ftdi_input_inst.rRamWrEn_latch (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrEn (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rRamWrEn
-    input  pin fifo_inst.ftdi_input_inst.rRamWrEn_latch/I1
-    instance   fifo_inst.ftdi_input_inst.rRamWrEn_latch (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrEn_latch/O
-    net        fifo_inst.ftdi_input_inst.rRamWrEn
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[0]
-9) instance fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrAddr[0] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[0]
-    input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0]/I0
-    instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0]/O
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[0]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[1]
-10) instance fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrAddr[1] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[1]
-    input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1]/I1
-    instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[1]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[2]
-11) instance fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrAddr[2] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[2]
-    input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/I1
-    instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/O
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[2]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.N_11
-12) instance fifo_inst.ftdi_input_inst.SUM_0[2] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.N_11 (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.N_11
-    input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/I2
-    instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/O
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[2]
-    input  pin fifo_inst.ftdi_input_inst.SUM_0[2]/I2
-    instance   fifo_inst.ftdi_input_inst.SUM_0[2] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.SUM_0[2]/O
-    net        fifo_inst.ftdi_input_inst.N_11
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.wPacketAvail
-13) instance fifo_inst.ftdi_input_inst.oPacketAvail_latch (in view: work.top(verilog)), output net fifo_inst.wPacketAvail (in view: work.top(verilog))
-    net        fifo_inst.wPacketAvail
-    input  pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/I1
-    instance   fifo_inst.ftdi_input_inst.oPacketAvail_latch (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/O
-    net        fifo_inst.wPacketAvail
-End of loops
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 150MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 143MB)
 
 
 
@@ -582,25 +463,25 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 201 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 197 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ================================ Non-Gated/Non-Generated Clocks =================================
 Clock Tree ID     Driving Element               Drive Element Type     Fanout     Sample Instance
 -------------------------------------------------------------------------------------------------
-@K:CKID0001       top_pll_inst.top_pll_inst     SB_PLL40_PAD           201        rTxByte_esr[0] 
+@K:CKID0001       top_pll_inst.top_pll_inst     SB_PLL40_PAD           197        rRxRead_esr    
 =================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 150MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 143MB)
 
 Writing Analyst data base C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\synwork\IceBreak_Test_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 150MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 143MB)
 
 Writing EDIF Netlist and constraint files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
@@ -608,117 +489,22 @@ Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.edf
 L-2016.09L+ice40
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 141MB peak: 150MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 150MB)
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 144MB)
 
-Warning: Found 11 combinational loops!
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount15
-1) instance rPacketCount15 (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount15 (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_108
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
-    net        fifo_inst.ftdi_input_inst.G_109
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount15/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount15 (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
-    net        fifo_inst.ftdi_input_inst.G_108
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[3]
-2) instance rPacketCount_latch[3] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[3] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_109
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I1
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
-    net        fifo_inst.ftdi_input_inst.G_109
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
-3) instance rPacketCount_latch[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_110
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/O
-    net        fifo_inst.ftdi_input_inst.G_110
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[1]
-4) instance rPacketCount_latch[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_111
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/I1
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.G_111
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[2]
-5) instance rPacketCount_latch[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_112
-    input  pin fifo_inst.ftdi_input_inst.SUM[3]/I2
-    instance   fifo_inst.ftdi_input_inst.SUM[3] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.SUM[3]/O
-    net        fifo_inst.ftdi_input_inst.SUM[3]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I2
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
-    net        fifo_inst.ftdi_input_inst.G_109
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount15/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount15 (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
-    net        fifo_inst.ftdi_input_inst.G_108
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[2] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[2]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rWrState[1]
-6) instance rWrState_latch[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rWrState[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_113
-    input  pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/I0
-    instance   fifo_inst.ftdi_input_inst.rWrState_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.G_113
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrEn
-7) instance rRamWrEn_latch (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rRamWrEn (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_115
-    input  pin fifo_inst.ftdi_input_inst.rRamWrEn_latch/I1
-    instance   fifo_inst.ftdi_input_inst.rRamWrEn_latch (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrEn_latch/O
-    net        fifo_inst.ftdi_input_inst.G_115
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[0]
-8) instance rRamWrAddr_latch[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rRamWrAddr[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_116
-    input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0]/I0
-    instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0]/O
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[0]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[1]
-9) instance rRamWrAddr_latch[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rRamWrAddr[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_117
-    input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1]/I1
-    instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[1]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[2]
-10) instance rRamWrAddr_latch[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rRamWrAddr[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_118
-    input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/I1
-    instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/O
-    net        fifo_inst.ftdi_input_inst.rRamWrAddr[2]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.wPacketAvail
-11) instance oPacketAvail_latch (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net wPacketAvail (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_120
-    input  pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/I1
-    instance   fifo_inst.ftdi_input_inst.oPacketAvail_latch (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/O
-    net        fifo_inst.ftdi_input_inst.wPacketAvail
-End of loops
-@W: MT420 |Found inferred clock top|iClk with period 10.97ns. Please declare a user-defined clock on object "p:iClk"
-@N: MT615 |Found clock top_pll|PLLOUTGLOBAL_derived_clock with period 10.97ns 
+@W: MT420 |Found inferred clock top|iClk with period 20.33ns. Please declare a user-defined clock on object "p:iClk"
+@N: MT615 |Found clock top_pll|PLLOUTGLOBAL_derived_clock with period 20.33ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Mar 29 02:22:43 2020
+# Timing Report written on Sun Mar 29 11:31:20 2020
 #
 
 
 Top view:               top
-Requested Frequency:    91.2 MHz
+Requested Frequency:    49.2 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -732,13 +518,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -1.936
+Worst slack in design: -3.588
 
                                        Requested     Estimated     Requested     Estimated                 Clock                       Clock                
 Starting Clock                         Frequency     Frequency     Period        Period        Slack       Type                        Group                
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-top_pll|PLLOUTGLOBAL_derived_clock     91.2 MHz      77.5 MHz      10.969        12.905        -1.936      derived (from top|iClk)     Autoconstr_clkgroup_0
-top|iClk                               91.2 MHz      NA            10.969        NA            DCM/PLL     inferred                    Autoconstr_clkgroup_0
+top_pll|PLLOUTGLOBAL_derived_clock     49.2 MHz      41.8 MHz      20.332        23.920        -3.588      derived (from top|iClk)     Autoconstr_clkgroup_0
+top|iClk                               49.2 MHz      NA            20.332        NA            DCM/PLL     inferred                    Autoconstr_clkgroup_0
 ============================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -753,7 +539,7 @@ Clocks                                                                  |    ris
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                            Ending                              |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-top_pll|PLLOUTGLOBAL_derived_clock  top_pll|PLLOUTGLOBAL_derived_clock  |  10.969      -1.936  |  No paths    -      |  No paths    -      |  No paths    -    
+top_pll|PLLOUTGLOBAL_derived_clock  top_pll|PLLOUTGLOBAL_derived_clock  |  20.332      -3.588  |  No paths    -      |  No paths    -      |  No paths    -    
 ===============================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -776,41 +562,41 @@ Detailed Report for Clock: top_pll|PLLOUTGLOBAL_derived_clock
 Starting Points with Worst Slack
 ********************************
 
-                                     Starting                                                                          Arrival           
-Instance                             Reference                              Type         Pin     Net                   Time        Slack 
-                                     Clock                                                                                               
------------------------------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_countdown[0]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_countdown_3        0.796       -1.936
-DUT.uart_inst0.rx_countdown[1]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_countdown[1]       0.796       -1.736
-DUT.uart_inst0.tx_clk_divider[0]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[0]     0.796       -1.704
-DUT.uart_inst0.tx_countdown[0]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       tx_countdown[0]       0.796       -1.704
-DUT.uart_inst0.tx_clk_divider[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[1]     0.796       -1.632
-DUT.uart_inst0.tx_clk_divider[8]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[8]     0.796       -1.632
-DUT.uart_inst0.tx_countdown[1]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       tx_countdown[1]       0.796       -1.632
-DUT.uart_inst0.tx_clk_divider[6]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSS     Q       tx_clk_divider[6]     0.796       -1.600
-DUT.uart_inst0.tx_countdown[5]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       tx_countdown[5]       0.796       -1.600
-DUT.uart_inst0.tx_clk_divider[9]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[9]     0.796       -1.559
-=========================================================================================================================================
+                                     Starting                                                                         Arrival           
+Instance                             Reference                              Type        Pin     Net                   Time        Slack 
+                                     Clock                                                                                              
+----------------------------------------------------------------------------------------------------------------------------------------
+DUT.uart_inst0.rx_clk_divider[0]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider_1      0.796       -3.588
+DUT.uart_inst0.rx_clk_divider[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider[1]     0.796       -3.388
+DUT.uart_inst0.rx_clk_divider[2]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider[2]     0.796       -3.188
+DUT.uart_inst0.rx_clk_divider[3]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider[3]     0.796       -2.988
+DUT.uart_inst0.rx_clk_divider[4]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider[4]     0.796       -2.788
+DUT.uart_inst0.rx_clk_divider[5]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider[5]     0.796       -2.588
+DUT.uart_inst0.rx_clk_divider[6]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider[6]     0.796       -2.388
+DUT.uart_inst0.rx_clk_divider[7]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider[7]     0.796       -2.188
+DUT.uart_inst0.rx_clk_divider[8]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider[8]     0.796       -1.988
+DUT.uart_inst0.rx_clk_divider[9]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     Q       rx_clk_divider[9]     0.796       -1.788
+========================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                        Starting                                                                                   Required           
-Instance                                Reference                              Type         Pin     Net                            Time         Slack 
-                                        Clock                                                                                                         
-------------------------------------------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_bits_remaining[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       rx_bits_remaining              10.814       -1.936
-DUT.uart_inst0.rx_bits_remaining[2]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       rx_bits_remaining_0            10.814       -1.936
-DUT.uart_inst0.recv_state[2]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       recv_state_nss[2]              10.814       -1.777
-DUT.uart_inst0.tx_bits_remaining[0]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     D       un1_tx_bits_remaining_axb0     10.814       -1.704
-DUT.uart_inst0.tx_countdown[3]          top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      D       tx_countdown_7[3]              10.814       -1.704
-DUT.uart_inst0.tx_out                   top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      D       tx_out_6                       10.814       -1.704
-DUT.uart_inst0.tx_bits_remaining[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     D       tx_bits_remaining_RNO[1]       10.814       -1.673
-DUT.uart_inst0.tx_bits_remaining[2]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     D       tx_bits_remaining_RNO[2]       10.814       -1.580
-DUT.uart_inst0.tx_countdown[4]          top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      D       tx_countdown_7[4]              10.814       -1.580
-DUT.uart_inst0.tx_state[1]              top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     D       tx_state_RNO[1]                10.814       -1.569
-======================================================================================================================================================
+                                        Starting                                                                             Required           
+Instance                                Reference                              Type        Pin     Net                       Time         Slack 
+                                        Clock                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------
+DUT.uart_inst0.recv_state[1]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF      D       recv_state_nss[1]         20.177       -3.588
+DUT.uart_inst0.recv_state[4]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF      D       recv_state_nss[4]         20.177       -3.454
+DUT.uart_inst0.recv_state[2]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF      D       recv_state_nss[2]         20.177       -1.387
+DUT.uart_inst0.recv_state[3]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF      D       recv_state_nss[3]         20.177       -1.387
+DUT.uart_inst0.recv_state[5]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF      D       recv_state_nss[5]         20.177       0.008 
+DUT.uart_inst0.rx_bits_remaining[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF      D       rx_bits_remaining         20.177       0.008 
+DUT.uart_inst0.recv_state[6]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF      D       recv_state_nss[6]         20.177       0.070 
+DUT.uart_inst0.rx_bits_remaining[2]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF      D       rx_bits_remaining_0       20.177       0.070 
+DUT.uart_inst0.recv_state[0]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF      D       recv_state_nss_0_i[0]     20.177       0.101 
+DUT.uart_inst0.rx_countdown[2]          top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE     D       N_25                      20.177       0.177 
+================================================================================================================================================
 
 
 
@@ -819,278 +605,578 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      10.969
+      Requested Period:                      20.332
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.814
+    = Required time:                         20.177
 
-    - Propagation time:                      12.750
+    - Propagation time:                      23.765
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.936
+    = Slack (critical) :                     -3.588
 
-    Number of logic level(s):                10
-    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
-    Ending point:                            DUT.uart_inst0.rx_bits_remaining[1] / D
+    Number of logic level(s):                30
+    Starting point:                          DUT.uart_inst0.rx_clk_divider[0] / Q
+    Ending point:                            DUT.uart_inst0.recv_state[1] / D
     The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
     The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
 
 Instance / Net                                                    Pin      Pin               Arrival     No. of    
 Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
-rx_countdown_3                                       Net          -        -       0.834     -           16        
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
-rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
-rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
-rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
-rx_countdown_3_cry_3_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_4_s1_c             SB_CARRY     CI       In      -         2.623       -         
-DUT.uart_inst0.rx_countdown_3_cry_4_s1_c             SB_CARRY     CO       Out     0.186     2.809       -         
-rx_countdown_3_cry_4_s1                              Net          -        -       0.386     -           1         
-DUT.uart_inst0.rx_countdown_3_cry_4_s1_c_RNISHMM     SB_LUT4      I3       In      -         3.195       -         
-DUT.uart_inst0.rx_countdown_3_cry_4_s1_c_RNISHMM     SB_LUT4      O        Out     0.465     3.660       -         
-rx_countdown_3_s1[5]                                 Net          -        -       1.371     -           11        
-DUT.uart_inst0.rx_bits_remaining_RNO_4[1]            SB_LUT4      I3       In      -         5.032       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_4[1]            SB_LUT4      O        Out     0.465     5.497       -         
-N_21_0                                               Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO_2[1]            SB_LUT4      I2       In      -         6.868       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_2[1]            SB_LUT4      O        Out     0.558     7.426       -         
-N_21_mux_0                                           Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO_0[1]            SB_LUT4      I2       In      -         8.797       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_0[1]            SB_LUT4      O        Out     0.558     9.355       -         
-N_13_0                                               Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO[1]              SB_LUT4      I2       In      -         10.726      -         
-DUT.uart_inst0.rx_bits_remaining_RNO[1]              SB_LUT4      O        Out     0.517     11.243      -         
-rx_bits_remaining                                    Net          -        -       1.507     -           1         
-DUT.uart_inst0.rx_bits_remaining[1]                  SB_DFF       D        In      -         12.750      -         
+DUT.uart_inst0.rx_clk_divider[0]                     SB_DFFE      Q        Out     0.796     0.796       -         
+rx_clk_divider_1                                     Net          -        -       0.834     -           3         
+DUT.uart_inst0.rx_clk_divider_1_cry_0_c              SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_0_c              SB_CARRY     CO       Out     0.380     2.009       -         
+rx_clk_divider_1_cry_0                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     CO       Out     0.186     2.209       -         
+rx_clk_divider_1_cry_1                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CO       Out     0.186     2.409       -         
+rx_clk_divider_1_cry_2                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CO       Out     0.186     2.609       -         
+rx_clk_divider_1_cry_3                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CI       In      -         2.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CO       Out     0.186     2.809       -         
+rx_clk_divider_1_cry_4                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CI       In      -         2.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CO       Out     0.186     3.009       -         
+rx_clk_divider_1_cry_5                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CI       In      -         3.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CO       Out     0.186     3.209       -         
+rx_clk_divider_1_cry_6                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CI       In      -         3.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CO       Out     0.186     3.409       -         
+rx_clk_divider_1_cry_7                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CI       In      -         3.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CO       Out     0.186     3.609       -         
+rx_clk_divider_1_cry_8                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CI       In      -         3.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CO       Out     0.186     3.809       -         
+rx_clk_divider_1_cry_9                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CI       In      -         3.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CO       Out     0.186     4.009       -         
+rx_clk_divider_1_cry_10                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CI       In      -         4.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CO       Out     0.186     4.209       -         
+rx_clk_divider_1_cry_11                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CI       In      -         4.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CO       Out     0.186     4.409       -         
+rx_clk_divider_1_cry_12                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CI       In      -         4.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CO       Out     0.186     4.609       -         
+rx_clk_divider_1_cry_13                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CI       In      -         4.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CO       Out     0.186     4.809       -         
+rx_clk_divider_1_cry_14                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CI       In      -         4.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CO       Out     0.186     5.009       -         
+rx_clk_divider_1_cry_15                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CI       In      -         5.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CO       Out     0.186     5.209       -         
+rx_clk_divider_1_cry_16                              Net          -        -       0.386     -           1         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      I3       In      -         5.595       -         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      O        Out     0.465     6.061       -         
+rx_clk_divider_1[17]                                 Net          -        -       1.371     -           2         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      I2       In      -         7.431       -         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      O        Out     0.558     7.990       -         
+rx_clk_divider_5_i_a2_11[5]                          Net          -        -       1.371     -           3         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      I1       In      -         9.361       -         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      O        Out     0.589     9.950       -         
+N_275                                                Net          -        -       1.371     -           8         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c_RNO          SB_LUT4      I1       In      -         11.321      -         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c_RNO          SB_LUT4      O        Out     0.589     11.910      -         
+rx_countdown_3_cry_0_0_c_RNO                         Net          -        -       0.905     -           1         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c              SB_CARRY     I1       In      -         12.815      -         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c              SB_CARRY     CO       Out     0.337     13.152      -         
+rx_countdown_3_cry_0                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     CI       In      -         13.166      -         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     CO       Out     0.186     13.352      -         
+rx_countdown_3_cry_1                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CI       In      -         13.366      -         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CO       Out     0.186     13.552      -         
+rx_countdown_3_cry_2                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c              SB_CARRY     CI       In      -         13.566      -         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c              SB_CARRY     CO       Out     0.186     13.752      -         
+rx_countdown_3_cry_3                                 Net          -        -       0.386     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c_RNIV9IPB     SB_LUT4      I3       In      -         14.138      -         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c_RNIV9IPB     SB_LUT4      O        Out     0.465     14.603      -         
+rx_countdown_3[4]                                    Net          -        -       1.371     -           11        
+DUT.uart_inst0.recv_state_RNO_2[1]                   SB_LUT4      I2       In      -         15.974      -         
+DUT.uart_inst0.recv_state_RNO_2[1]                   SB_LUT4      O        Out     0.558     16.532      -         
+recv_state_RNO_2[1]                                  Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_1[1]                   SB_LUT4      I1       In      -         17.904      -         
+DUT.uart_inst0.recv_state_RNO_1[1]                   SB_LUT4      O        Out     0.589     18.493      -         
+G_10_i_a4_0_4                                        Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_0[1]                   SB_LUT4      I3       In      -         19.864      -         
+DUT.uart_inst0.recv_state_RNO_0[1]                   SB_LUT4      O        Out     0.465     20.329      -         
+N_4_i_0_1                                            Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO[1]                     SB_LUT4      I1       In      -         21.700      -         
+DUT.uart_inst0.recv_state_RNO[1]                     SB_LUT4      O        Out     0.558     22.258      -         
+recv_state_nss[1]                                    Net          -        -       1.507     -           1         
+DUT.uart_inst0.recv_state[1]                         SB_DFF       D        In      -         23.765      -         
 ===================================================================================================================
-Total path delay (propagation time + setup) of 12.905 is 4.638(35.9%) logic and 8.267(64.1%) route.
+Total path delay (propagation time + setup) of 23.920 is 10.039(42.0%) logic and 13.881(58.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
-      Requested Period:                      10.969
+      Requested Period:                      20.332
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.814
+    = Required time:                         20.177
 
-    - Propagation time:                      12.750
+    - Propagation time:                      23.631
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.936
+    = Slack (non-critical) :                 -3.454
 
-    Number of logic level(s):                10
-    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
-    Ending point:                            DUT.uart_inst0.rx_bits_remaining[2] / D
+    Number of logic level(s):                30
+    Starting point:                          DUT.uart_inst0.rx_clk_divider[0] / Q
+    Ending point:                            DUT.uart_inst0.recv_state[4] / D
     The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
     The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
 
 Instance / Net                                                    Pin      Pin               Arrival     No. of    
 Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
-rx_countdown_3                                       Net          -        -       0.834     -           16        
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
-rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
-rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
-rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
-rx_countdown_3_cry_3_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_4_s1_c             SB_CARRY     CI       In      -         2.623       -         
-DUT.uart_inst0.rx_countdown_3_cry_4_s1_c             SB_CARRY     CO       Out     0.186     2.809       -         
-rx_countdown_3_cry_4_s1                              Net          -        -       0.386     -           1         
-DUT.uart_inst0.rx_countdown_3_cry_4_s1_c_RNISHMM     SB_LUT4      I3       In      -         3.195       -         
-DUT.uart_inst0.rx_countdown_3_cry_4_s1_c_RNISHMM     SB_LUT4      O        Out     0.465     3.660       -         
-rx_countdown_3_s1[5]                                 Net          -        -       1.371     -           11        
-DUT.uart_inst0.rx_bits_remaining_RNO_4[2]            SB_LUT4      I3       In      -         5.032       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_4[2]            SB_LUT4      O        Out     0.465     5.497       -         
-N_21                                                 Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO_2[2]            SB_LUT4      I2       In      -         6.868       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_2[2]            SB_LUT4      O        Out     0.558     7.426       -         
-N_21_mux                                             Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO_0[2]            SB_LUT4      I2       In      -         8.797       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_0[2]            SB_LUT4      O        Out     0.558     9.355       -         
-N_13                                                 Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO[2]              SB_LUT4      I2       In      -         10.726      -         
-DUT.uart_inst0.rx_bits_remaining_RNO[2]              SB_LUT4      O        Out     0.517     11.243      -         
-rx_bits_remaining_0                                  Net          -        -       1.507     -           1         
-DUT.uart_inst0.rx_bits_remaining[2]                  SB_DFF       D        In      -         12.750      -         
+DUT.uart_inst0.rx_clk_divider[0]                     SB_DFFE      Q        Out     0.796     0.796       -         
+rx_clk_divider_1                                     Net          -        -       0.834     -           3         
+DUT.uart_inst0.rx_clk_divider_1_cry_0_c              SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_0_c              SB_CARRY     CO       Out     0.380     2.009       -         
+rx_clk_divider_1_cry_0                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     CO       Out     0.186     2.209       -         
+rx_clk_divider_1_cry_1                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CO       Out     0.186     2.409       -         
+rx_clk_divider_1_cry_2                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CO       Out     0.186     2.609       -         
+rx_clk_divider_1_cry_3                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CI       In      -         2.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CO       Out     0.186     2.809       -         
+rx_clk_divider_1_cry_4                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CI       In      -         2.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CO       Out     0.186     3.009       -         
+rx_clk_divider_1_cry_5                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CI       In      -         3.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CO       Out     0.186     3.209       -         
+rx_clk_divider_1_cry_6                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CI       In      -         3.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CO       Out     0.186     3.409       -         
+rx_clk_divider_1_cry_7                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CI       In      -         3.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CO       Out     0.186     3.609       -         
+rx_clk_divider_1_cry_8                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CI       In      -         3.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CO       Out     0.186     3.809       -         
+rx_clk_divider_1_cry_9                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CI       In      -         3.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CO       Out     0.186     4.009       -         
+rx_clk_divider_1_cry_10                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CI       In      -         4.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CO       Out     0.186     4.209       -         
+rx_clk_divider_1_cry_11                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CI       In      -         4.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CO       Out     0.186     4.409       -         
+rx_clk_divider_1_cry_12                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CI       In      -         4.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CO       Out     0.186     4.609       -         
+rx_clk_divider_1_cry_13                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CI       In      -         4.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CO       Out     0.186     4.809       -         
+rx_clk_divider_1_cry_14                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CI       In      -         4.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CO       Out     0.186     5.009       -         
+rx_clk_divider_1_cry_15                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CI       In      -         5.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CO       Out     0.186     5.209       -         
+rx_clk_divider_1_cry_16                              Net          -        -       0.386     -           1         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      I3       In      -         5.595       -         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      O        Out     0.465     6.061       -         
+rx_clk_divider_1[17]                                 Net          -        -       1.371     -           2         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      I2       In      -         7.431       -         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      O        Out     0.558     7.990       -         
+rx_clk_divider_5_i_a2_11[5]                          Net          -        -       1.371     -           3         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      I1       In      -         9.361       -         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      O        Out     0.589     9.950       -         
+N_275                                                Net          -        -       1.371     -           8         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c_RNO          SB_LUT4      I1       In      -         11.321      -         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c_RNO          SB_LUT4      O        Out     0.589     11.910      -         
+rx_countdown_3_cry_0_0_c_RNO                         Net          -        -       0.905     -           1         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c              SB_CARRY     I1       In      -         12.815      -         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c              SB_CARRY     CO       Out     0.337     13.152      -         
+rx_countdown_3_cry_0                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     CI       In      -         13.166      -         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     CO       Out     0.186     13.352      -         
+rx_countdown_3_cry_1                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CI       In      -         13.366      -         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CO       Out     0.186     13.552      -         
+rx_countdown_3_cry_2                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c              SB_CARRY     CI       In      -         13.566      -         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c              SB_CARRY     CO       Out     0.186     13.752      -         
+rx_countdown_3_cry_3                                 Net          -        -       0.386     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c_RNIV9IPB     SB_LUT4      I3       In      -         14.138      -         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c_RNIV9IPB     SB_LUT4      O        Out     0.465     14.603      -         
+rx_countdown_3[4]                                    Net          -        -       1.371     -           11        
+DUT.uart_inst0.recv_state_RNO_2[4]                   SB_LUT4      I3       In      -         15.974      -         
+DUT.uart_inst0.recv_state_RNO_2[4]                   SB_LUT4      O        Out     0.465     16.439      -         
+recv_state_RNO_2[4]                                  Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_1[4]                   SB_LUT4      I1       In      -         17.811      -         
+DUT.uart_inst0.recv_state_RNO_1[4]                   SB_LUT4      O        Out     0.589     18.400      -         
+G_11_i_a4_0_4                                        Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_0[4]                   SB_LUT4      I3       In      -         19.771      -         
+DUT.uart_inst0.recv_state_RNO_0[4]                   SB_LUT4      O        Out     0.465     20.236      -         
+N_4_i_1                                              Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO[4]                     SB_LUT4      I2       In      -         21.607      -         
+DUT.uart_inst0.recv_state_RNO[4]                     SB_LUT4      O        Out     0.517     22.124      -         
+recv_state_nss[4]                                    Net          -        -       1.507     -           1         
+DUT.uart_inst0.recv_state[4]                         SB_DFF       D        In      -         23.631      -         
 ===================================================================================================================
-Total path delay (propagation time + setup) of 12.905 is 4.638(35.9%) logic and 8.267(64.1%) route.
+Total path delay (propagation time + setup) of 23.786 is 9.905(41.6%) logic and 13.881(58.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
-      Requested Period:                      10.969
+      Requested Period:                      20.332
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.814
+    = Required time:                         20.177
 
-    - Propagation time:                      12.643
+    - Propagation time:                      23.596
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.829
+    = Slack (non-critical) :                 -3.419
 
-    Number of logic level(s):                9
-    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
-    Ending point:                            DUT.uart_inst0.rx_bits_remaining[1] / D
+    Number of logic level(s):                29
+    Starting point:                          DUT.uart_inst0.rx_clk_divider[0] / Q
+    Ending point:                            DUT.uart_inst0.recv_state[1] / D
     The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
     The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
 
 Instance / Net                                                    Pin      Pin               Arrival     No. of    
 Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
-rx_countdown_3                                       Net          -        -       0.834     -           16        
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
-rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
-rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
-rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
-rx_countdown_3_cry_3_s1                              Net          -        -       0.386     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      I3       In      -         2.995       -         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      O        Out     0.465     3.461       -         
-rx_countdown_3_s1[4]                                 Net          -        -       1.371     -           12        
-DUT.uart_inst0.rx_bits_remaining_RNO_4[1]            SB_LUT4      I2       In      -         4.832       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_4[1]            SB_LUT4      O        Out     0.558     5.390       -         
-N_21_0                                               Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO_2[1]            SB_LUT4      I2       In      -         6.761       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_2[1]            SB_LUT4      O        Out     0.558     7.319       -         
-N_21_mux_0                                           Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO_0[1]            SB_LUT4      I2       In      -         8.690       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_0[1]            SB_LUT4      O        Out     0.558     9.248       -         
-N_13_0                                               Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO[1]              SB_LUT4      I2       In      -         10.619      -         
-DUT.uart_inst0.rx_bits_remaining_RNO[1]              SB_LUT4      O        Out     0.517     11.136      -         
-rx_bits_remaining                                    Net          -        -       1.507     -           1         
-DUT.uart_inst0.rx_bits_remaining[1]                  SB_DFF       D        In      -         12.643      -         
+DUT.uart_inst0.rx_clk_divider[0]                     SB_DFFE      Q        Out     0.796     0.796       -         
+rx_clk_divider_1                                     Net          -        -       0.834     -           3         
+DUT.uart_inst0.rx_clk_divider_1_cry_0_c              SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_0_c              SB_CARRY     CO       Out     0.380     2.009       -         
+rx_clk_divider_1_cry_0                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     CO       Out     0.186     2.209       -         
+rx_clk_divider_1_cry_1                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CO       Out     0.186     2.409       -         
+rx_clk_divider_1_cry_2                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CO       Out     0.186     2.609       -         
+rx_clk_divider_1_cry_3                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CI       In      -         2.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CO       Out     0.186     2.809       -         
+rx_clk_divider_1_cry_4                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CI       In      -         2.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CO       Out     0.186     3.009       -         
+rx_clk_divider_1_cry_5                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CI       In      -         3.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CO       Out     0.186     3.209       -         
+rx_clk_divider_1_cry_6                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CI       In      -         3.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CO       Out     0.186     3.409       -         
+rx_clk_divider_1_cry_7                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CI       In      -         3.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CO       Out     0.186     3.609       -         
+rx_clk_divider_1_cry_8                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CI       In      -         3.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CO       Out     0.186     3.809       -         
+rx_clk_divider_1_cry_9                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CI       In      -         3.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CO       Out     0.186     4.009       -         
+rx_clk_divider_1_cry_10                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CI       In      -         4.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CO       Out     0.186     4.209       -         
+rx_clk_divider_1_cry_11                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CI       In      -         4.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CO       Out     0.186     4.409       -         
+rx_clk_divider_1_cry_12                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CI       In      -         4.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CO       Out     0.186     4.609       -         
+rx_clk_divider_1_cry_13                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CI       In      -         4.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CO       Out     0.186     4.809       -         
+rx_clk_divider_1_cry_14                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CI       In      -         4.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CO       Out     0.186     5.009       -         
+rx_clk_divider_1_cry_15                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CI       In      -         5.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CO       Out     0.186     5.209       -         
+rx_clk_divider_1_cry_16                              Net          -        -       0.386     -           1         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      I3       In      -         5.595       -         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      O        Out     0.465     6.061       -         
+rx_clk_divider_1[17]                                 Net          -        -       1.371     -           2         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      I2       In      -         7.431       -         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      O        Out     0.558     7.990       -         
+rx_clk_divider_5_i_a2_11[5]                          Net          -        -       1.371     -           3         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      I1       In      -         9.361       -         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      O        Out     0.589     9.950       -         
+N_275                                                Net          -        -       1.371     -           8         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c_RNO          SB_LUT4      I1       In      -         11.321      -         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c_RNO          SB_LUT4      O        Out     0.589     11.910      -         
+rx_countdown_3_cry_0_0_c_RNO                         Net          -        -       0.905     -           1         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c              SB_CARRY     I1       In      -         12.815      -         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c              SB_CARRY     CO       Out     0.337     13.152      -         
+rx_countdown_3_cry_0                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     CI       In      -         13.166      -         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     CO       Out     0.186     13.352      -         
+rx_countdown_3_cry_1                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CI       In      -         13.366      -         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CO       Out     0.186     13.552      -         
+rx_countdown_3_cry_2                                 Net          -        -       0.386     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c_RNIT4CLB     SB_LUT4      I3       In      -         13.938      -         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c_RNIT4CLB     SB_LUT4      O        Out     0.465     14.403      -         
+rx_countdown_3[3]                                    Net          -        -       1.371     -           12        
+DUT.uart_inst0.recv_state_RNO_2[1]                   SB_LUT4      I1       In      -         15.774      -         
+DUT.uart_inst0.recv_state_RNO_2[1]                   SB_LUT4      O        Out     0.589     16.364      -         
+recv_state_RNO_2[1]                                  Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_1[1]                   SB_LUT4      I1       In      -         17.735      -         
+DUT.uart_inst0.recv_state_RNO_1[1]                   SB_LUT4      O        Out     0.589     18.324      -         
+G_10_i_a4_0_4                                        Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_0[1]                   SB_LUT4      I3       In      -         19.695      -         
+DUT.uart_inst0.recv_state_RNO_0[1]                   SB_LUT4      O        Out     0.465     20.160      -         
+N_4_i_0_1                                            Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO[1]                     SB_LUT4      I1       In      -         21.531      -         
+DUT.uart_inst0.recv_state_RNO[1]                     SB_LUT4      O        Out     0.558     22.089      -         
+recv_state_nss[1]                                    Net          -        -       1.507     -           1         
+DUT.uart_inst0.recv_state[1]                         SB_DFF       D        In      -         23.596      -         
 ===================================================================================================================
-Total path delay (propagation time + setup) of 12.798 is 4.545(35.5%) logic and 8.253(64.5%) route.
+Total path delay (propagation time + setup) of 23.751 is 9.884(41.6%) logic and 13.867(58.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
-      Requested Period:                      10.969
+      Requested Period:                      20.332
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.814
+    = Required time:                         20.177
 
-    - Propagation time:                      12.643
+    - Propagation time:                      23.565
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.829
+    = Slack (non-critical) :                 -3.388
 
-    Number of logic level(s):                9
-    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
-    Ending point:                            DUT.uart_inst0.rx_bits_remaining[2] / D
+    Number of logic level(s):                29
+    Starting point:                          DUT.uart_inst0.rx_clk_divider[1] / Q
+    Ending point:                            DUT.uart_inst0.recv_state[1] / D
     The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
     The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
 
 Instance / Net                                                    Pin      Pin               Arrival     No. of    
 Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
-rx_countdown_3                                       Net          -        -       0.834     -           16        
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
-rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
-rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
-rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
-rx_countdown_3_cry_3_s1                              Net          -        -       0.386     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      I3       In      -         2.995       -         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      O        Out     0.465     3.461       -         
-rx_countdown_3_s1[4]                                 Net          -        -       1.371     -           12        
-DUT.uart_inst0.rx_bits_remaining_RNO_4[2]            SB_LUT4      I2       In      -         4.832       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_4[2]            SB_LUT4      O        Out     0.558     5.390       -         
-N_21                                                 Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO_2[2]            SB_LUT4      I2       In      -         6.761       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_2[2]            SB_LUT4      O        Out     0.558     7.319       -         
-N_21_mux                                             Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO_0[2]            SB_LUT4      I2       In      -         8.690       -         
-DUT.uart_inst0.rx_bits_remaining_RNO_0[2]            SB_LUT4      O        Out     0.558     9.248       -         
-N_13                                                 Net          -        -       1.371     -           1         
-DUT.uart_inst0.rx_bits_remaining_RNO[2]              SB_LUT4      I2       In      -         10.619      -         
-DUT.uart_inst0.rx_bits_remaining_RNO[2]              SB_LUT4      O        Out     0.517     11.136      -         
-rx_bits_remaining_0                                  Net          -        -       1.507     -           1         
-DUT.uart_inst0.rx_bits_remaining[2]                  SB_DFF       D        In      -         12.643      -         
+DUT.uart_inst0.rx_clk_divider[1]                     SB_DFFE      Q        Out     0.796     0.796       -         
+rx_clk_divider[1]                                    Net          -        -       0.834     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     CO       Out     0.380     2.009       -         
+rx_clk_divider_1_cry_1                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CO       Out     0.186     2.209       -         
+rx_clk_divider_1_cry_2                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CO       Out     0.186     2.409       -         
+rx_clk_divider_1_cry_3                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CO       Out     0.186     2.609       -         
+rx_clk_divider_1_cry_4                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CI       In      -         2.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CO       Out     0.186     2.809       -         
+rx_clk_divider_1_cry_5                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CI       In      -         2.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CO       Out     0.186     3.009       -         
+rx_clk_divider_1_cry_6                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CI       In      -         3.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CO       Out     0.186     3.209       -         
+rx_clk_divider_1_cry_7                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CI       In      -         3.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CO       Out     0.186     3.409       -         
+rx_clk_divider_1_cry_8                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CI       In      -         3.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CO       Out     0.186     3.609       -         
+rx_clk_divider_1_cry_9                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CI       In      -         3.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CO       Out     0.186     3.809       -         
+rx_clk_divider_1_cry_10                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CI       In      -         3.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CO       Out     0.186     4.009       -         
+rx_clk_divider_1_cry_11                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CI       In      -         4.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CO       Out     0.186     4.209       -         
+rx_clk_divider_1_cry_12                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CI       In      -         4.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CO       Out     0.186     4.409       -         
+rx_clk_divider_1_cry_13                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CI       In      -         4.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CO       Out     0.186     4.609       -         
+rx_clk_divider_1_cry_14                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CI       In      -         4.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CO       Out     0.186     4.809       -         
+rx_clk_divider_1_cry_15                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CI       In      -         4.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CO       Out     0.186     5.009       -         
+rx_clk_divider_1_cry_16                              Net          -        -       0.386     -           1         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      I3       In      -         5.395       -         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      O        Out     0.465     5.861       -         
+rx_clk_divider_1[17]                                 Net          -        -       1.371     -           2         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      I2       In      -         7.231       -         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      O        Out     0.558     7.790       -         
+rx_clk_divider_5_i_a2_11[5]                          Net          -        -       1.371     -           3         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      I1       In      -         9.161       -         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      O        Out     0.589     9.750       -         
+N_275                                                Net          -        -       1.371     -           8         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c_RNO          SB_LUT4      I1       In      -         11.121      -         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c_RNO          SB_LUT4      O        Out     0.589     11.710      -         
+rx_countdown_3_cry_0_0_c_RNO                         Net          -        -       0.905     -           1         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c              SB_CARRY     I1       In      -         12.615      -         
+DUT.uart_inst0.rx_countdown_3_cry_0_0_c              SB_CARRY     CO       Out     0.337     12.952      -         
+rx_countdown_3_cry_0                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     CI       In      -         12.966      -         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     CO       Out     0.186     13.152      -         
+rx_countdown_3_cry_1                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CI       In      -         13.166      -         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CO       Out     0.186     13.352      -         
+rx_countdown_3_cry_2                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c              SB_CARRY     CI       In      -         13.366      -         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c              SB_CARRY     CO       Out     0.186     13.552      -         
+rx_countdown_3_cry_3                                 Net          -        -       0.386     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c_RNIV9IPB     SB_LUT4      I3       In      -         13.938      -         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c_RNIV9IPB     SB_LUT4      O        Out     0.465     14.403      -         
+rx_countdown_3[4]                                    Net          -        -       1.371     -           11        
+DUT.uart_inst0.recv_state_RNO_2[1]                   SB_LUT4      I2       In      -         15.774      -         
+DUT.uart_inst0.recv_state_RNO_2[1]                   SB_LUT4      O        Out     0.558     16.333      -         
+recv_state_RNO_2[1]                                  Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_1[1]                   SB_LUT4      I1       In      -         17.703      -         
+DUT.uart_inst0.recv_state_RNO_1[1]                   SB_LUT4      O        Out     0.589     18.293      -         
+G_10_i_a4_0_4                                        Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_0[1]                   SB_LUT4      I3       In      -         19.664      -         
+DUT.uart_inst0.recv_state_RNO_0[1]                   SB_LUT4      O        Out     0.465     20.129      -         
+N_4_i_0_1                                            Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO[1]                     SB_LUT4      I1       In      -         21.500      -         
+DUT.uart_inst0.recv_state_RNO[1]                     SB_LUT4      O        Out     0.558     22.058      -         
+recv_state_nss[1]                                    Net          -        -       1.507     -           1         
+DUT.uart_inst0.recv_state[1]                         SB_DFF       D        In      -         23.565      -         
 ===================================================================================================================
-Total path delay (propagation time + setup) of 12.798 is 4.545(35.5%) logic and 8.253(64.5%) route.
+Total path delay (propagation time + setup) of 23.720 is 9.853(41.5%) logic and 13.867(58.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
-      Requested Period:                      10.969
+      Requested Period:                      20.332
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.814
+    = Required time:                         20.177
 
-    - Propagation time:                      12.591
+    - Propagation time:                      23.565
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.777
+    = Slack (non-critical) :                 -3.388
 
-    Number of logic level(s):                9
-    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
-    Ending point:                            DUT.uart_inst0.recv_state[2] / D
+    Number of logic level(s):                29
+    Starting point:                          DUT.uart_inst0.rx_clk_divider[0] / Q
+    Ending point:                            DUT.uart_inst0.recv_state[1] / D
     The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
     The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
 
 Instance / Net                                                    Pin      Pin               Arrival     No. of    
 Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
-rx_countdown_3                                       Net          -        -       0.834     -           16        
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
-DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
-rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
-rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
-DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
-rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
-rx_countdown_3_cry_3_s1                              Net          -        -       0.386     -           2         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      I3       In      -         2.995       -         
-DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      O        Out     0.465     3.461       -         
-rx_countdown_3_s1[4]                                 Net          -        -       1.371     -           12        
-DUT.uart_inst0.recv_state_RNO_6[2]                   SB_LUT4      I1       In      -         4.832       -         
-DUT.uart_inst0.recv_state_RNO_6[2]                   SB_LUT4      O        Out     0.589     5.421       -         
-m7_e_1                                               Net          -        -       1.371     -           1         
-DUT.uart_inst0.recv_state_RNO_3[2]                   SB_LUT4      I3       In      -         6.792       -         
-DUT.uart_inst0.recv_state_RNO_3[2]                   SB_LUT4      O        Out     0.465     7.257       -         
-m7_e_3                                               Net          -        -       1.371     -           1         
-DUT.uart_inst0.recv_state_RNO_0[2]                   SB_LUT4      I3       In      -         8.628       -         
-DUT.uart_inst0.recv_state_RNO_0[2]                   SB_LUT4      O        Out     0.424     9.052       -         
-m9_1                                                 Net          -        -       1.371     -           1         
-DUT.uart_inst0.recv_state_RNO[2]                     SB_LUT4      I0       In      -         10.423      -         
-DUT.uart_inst0.recv_state_RNO[2]                     SB_LUT4      O        Out     0.661     11.084      -         
-recv_state_nss[2]                                    Net          -        -       1.507     -           1         
-DUT.uart_inst0.recv_state[2]                         SB_DFF       D        In      -         12.591      -         
+DUT.uart_inst0.rx_clk_divider[0]                     SB_DFFE      Q        Out     0.796     0.796       -         
+rx_clk_divider_1                                     Net          -        -       0.834     -           3         
+DUT.uart_inst0.rx_clk_divider_1_cry_0_c              SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_0_c              SB_CARRY     CO       Out     0.380     2.009       -         
+rx_clk_divider_1_cry_0                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_1_c              SB_CARRY     CO       Out     0.186     2.209       -         
+rx_clk_divider_1_cry_1                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_2_c              SB_CARRY     CO       Out     0.186     2.409       -         
+rx_clk_divider_1_cry_2                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_3_c              SB_CARRY     CO       Out     0.186     2.609       -         
+rx_clk_divider_1_cry_3                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CI       In      -         2.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_4_c              SB_CARRY     CO       Out     0.186     2.809       -         
+rx_clk_divider_1_cry_4                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CI       In      -         2.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_5_c              SB_CARRY     CO       Out     0.186     3.009       -         
+rx_clk_divider_1_cry_5                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CI       In      -         3.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_6_c              SB_CARRY     CO       Out     0.186     3.209       -         
+rx_clk_divider_1_cry_6                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CI       In      -         3.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_7_c              SB_CARRY     CO       Out     0.186     3.409       -         
+rx_clk_divider_1_cry_7                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CI       In      -         3.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_8_c              SB_CARRY     CO       Out     0.186     3.609       -         
+rx_clk_divider_1_cry_8                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CI       In      -         3.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_9_c              SB_CARRY     CO       Out     0.186     3.809       -         
+rx_clk_divider_1_cry_9                               Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CI       In      -         3.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_10_c             SB_CARRY     CO       Out     0.186     4.009       -         
+rx_clk_divider_1_cry_10                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CI       In      -         4.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_11_c             SB_CARRY     CO       Out     0.186     4.209       -         
+rx_clk_divider_1_cry_11                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CI       In      -         4.223       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_12_c             SB_CARRY     CO       Out     0.186     4.409       -         
+rx_clk_divider_1_cry_12                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CI       In      -         4.423       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_13_c             SB_CARRY     CO       Out     0.186     4.609       -         
+rx_clk_divider_1_cry_13                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CI       In      -         4.623       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_14_c             SB_CARRY     CO       Out     0.186     4.809       -         
+rx_clk_divider_1_cry_14                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CI       In      -         4.823       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_15_c             SB_CARRY     CO       Out     0.186     5.009       -         
+rx_clk_divider_1_cry_15                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CI       In      -         5.023       -         
+DUT.uart_inst0.rx_clk_divider_1_cry_16_c             SB_CARRY     CO       Out     0.186     5.209       -         
+rx_clk_divider_1_cry_16                              Net          -        -       0.386     -           1         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      I3       In      -         5.595       -         
+DUT.uart_inst0.rx_clk_divider_RNIR05E[17]            SB_LUT4      O        Out     0.465     6.061       -         
+rx_clk_divider_1[17]                                 Net          -        -       1.371     -           2         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      I2       In      -         7.431       -         
+DUT.uart_inst0.rx_clk_divider_RNIQEH13[10]           SB_LUT4      O        Out     0.558     7.990       -         
+rx_clk_divider_5_i_a2_11[5]                          Net          -        -       1.371     -           3         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      I1       In      -         9.361       -         
+DUT.uart_inst0.rx_clk_divider_RNI8PF9A[0]            SB_LUT4      O        Out     0.589     9.950       -         
+N_275                                                Net          -        -       1.371     -           8         
+DUT.uart_inst0.rx_clk_divider_RNIP8N2B_0[0]          SB_LUT4      I1       In      -         11.321      -         
+DUT.uart_inst0.rx_clk_divider_RNIP8N2B_0[0]          SB_LUT4      O        Out     0.589     11.910      -         
+rx_clk_divider_RNIP8N2B_0[0]                         Net          -        -       0.905     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     I1       In      -         12.815      -         
+DUT.uart_inst0.rx_countdown_3_cry_1_0_c              SB_CARRY     CO       Out     0.337     13.152      -         
+rx_countdown_3_cry_1                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CI       In      -         13.166      -         
+DUT.uart_inst0.rx_countdown_3_cry_2_0_c              SB_CARRY     CO       Out     0.186     13.352      -         
+rx_countdown_3_cry_2                                 Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c              SB_CARRY     CI       In      -         13.366      -         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c              SB_CARRY     CO       Out     0.186     13.552      -         
+rx_countdown_3_cry_3                                 Net          -        -       0.386     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c_RNIV9IPB     SB_LUT4      I3       In      -         13.938      -         
+DUT.uart_inst0.rx_countdown_3_cry_3_0_c_RNIV9IPB     SB_LUT4      O        Out     0.465     14.403      -         
+rx_countdown_3[4]                                    Net          -        -       1.371     -           11        
+DUT.uart_inst0.recv_state_RNO_2[1]                   SB_LUT4      I2       In      -         15.774      -         
+DUT.uart_inst0.recv_state_RNO_2[1]                   SB_LUT4      O        Out     0.558     16.333      -         
+recv_state_RNO_2[1]                                  Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_1[1]                   SB_LUT4      I1       In      -         17.703      -         
+DUT.uart_inst0.recv_state_RNO_1[1]                   SB_LUT4      O        Out     0.589     18.293      -         
+G_10_i_a4_0_4                                        Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_0[1]                   SB_LUT4      I3       In      -         19.664      -         
+DUT.uart_inst0.recv_state_RNO_0[1]                   SB_LUT4      O        Out     0.465     20.129      -         
+N_4_i_0_1                                            Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO[1]                     SB_LUT4      I1       In      -         21.500      -         
+DUT.uart_inst0.recv_state_RNO[1]                     SB_LUT4      O        Out     0.558     22.058      -         
+recv_state_nss[1]                                    Net          -        -       1.507     -           1         
+DUT.uart_inst0.recv_state[1]                         SB_DFF       D        In      -         23.565      -         
 ===================================================================================================================
-Total path delay (propagation time + setup) of 12.746 is 4.493(35.3%) logic and 8.253(64.7%) route.
+Total path delay (propagation time + setup) of 23.720 is 9.853(41.5%) logic and 13.867(58.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1100,28 +1186,27 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 150MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 144MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 150MB)
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 144MB)
 
 ---------------------------------------
 Resource Usage Report for top 
 
 Mapping to part: ice40up5ksg48
 Cell usage:
-GND             8 uses
+GND             7 uses
 SB_CARRY        39 uses
-SB_DFF          23 uses
+SB_DFF          20 uses
 SB_DFFE         113 uses
-SB_DFFESR       16 uses
-SB_DFFESS       5 uses
+SB_DFFESR       17 uses
+SB_DFFESS       4 uses
 SB_DFFSR        38 uses
 SB_DFFSS        5 uses
 SB_GB           2 uses
-SB_RAM512x8     1 use
-VCC             8 uses
-SB_LUT4         347 uses
+VCC             7 uses
+SB_LUT4         299 uses
 
 I/O ports: 22
 I/O primitives: 21
@@ -1129,26 +1214,22 @@ SB_IO          20 uses
 SB_PLL40_PAD   1 use
 
 I/O Register bits:                  0
-Register bits not including I/Os:   200 (3%)
-
-RAM/ROM usage summary
-Block Rams : 1 of 30 (3%)
-
+Register bits not including I/Os:   197 (3%)
 Total load per clock:
    top|iClk: 1
-   top_pll|PLLOUTGLOBAL_derived_clock: 201
+   top_pll|PLLOUTGLOBAL_derived_clock: 197
 
 @S |Mapping Summary:
-Total  LUTs: 347 (6%)
+Total  LUTs: 299 (5%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 347 = 347 
+Distribution of All Consumed Luts 299 = 299 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 150MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 29MB peak: 144MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Sun Mar 29 02:22:43 2020
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Mar 29 11:31:20 2020
 
 ###########################################################]

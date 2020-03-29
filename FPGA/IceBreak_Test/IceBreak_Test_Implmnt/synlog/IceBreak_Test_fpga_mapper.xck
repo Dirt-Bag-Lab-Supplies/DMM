@@ -1,1 +1,1 @@
-CKID0001:@|S:top_pll_inst.top_pll_inst@|E:rTxByte_esr[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0001:@|S:top_pll_inst.top_pll_inst@|E:rRxRead_esr@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 

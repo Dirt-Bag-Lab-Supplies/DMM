@@ -1,4 +1,4 @@
-# Sun Mar 29 02:22:40 2020
+# Sun Mar 29 11:31:18 2020
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -25,6 +25,8 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 @N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Removing sequential instance oPacketAvail (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(verilog)) of type view:PrimLib.lat(prim) because it does not drive other instances.
+@W: BN114 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":56:12:56:24|Removing instance ram512x8_inst (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(verilog)) of black box view:sb_ice.SB_RAM512x8(PRIM) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -40,12 +42,12 @@ Clock Summary
 Start                                  Requested     Requested     Clock                       Clock                     Clock
 Clock                                  Frequency     Period        Type                        Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------
-System                                 322.5 MHz     3.101         system                      system_clkgroup           10   
-top_pll|PLLOUTGLOBAL_derived_clock     68.9 MHz      14.521        derived (from top|iClk)     Autoconstr_clkgroup_0     141  
+System                                 322.5 MHz     3.101         system                      system_clkgroup           9    
+top_pll|PLLOUTGLOBAL_derived_clock     68.9 MHz      14.521        derived (from top|iClk)     Autoconstr_clkgroup_0     138  
 top|iClk                               17.2 MHz      58.085        inferred                    Autoconstr_clkgroup_0     0    
 ==============================================================================================================================
 
-@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Found signal identified as System clock which controls 10 sequential elements including fifo_inst.ftdi_input_inst.rPacketCount[3:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Found signal identified as System clock which controls 9 sequential elements including fifo_inst.ftdi_input_inst.rPacketCount[3:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
@@ -85,6 +87,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Mar 29 02:22:40 2020
+# Sun Mar 29 11:31:18 2020
 
 ###########################################################]

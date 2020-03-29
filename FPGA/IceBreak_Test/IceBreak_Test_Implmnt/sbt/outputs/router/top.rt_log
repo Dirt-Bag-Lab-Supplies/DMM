@@ -6,7 +6,7 @@
 
 * Build Date:         Sep 11 2017 17:03:42
 
-* File Generated:     Mar 29 2020 02:25:07
+* File Generated:     Mar 29 2020 11:31:41
 
 * Purpose:            Router runtime info
 
@@ -19,42 +19,14 @@ I1203: Reading Design top
 I1202: Reading Architecture of device iCE40UP5K
 Info-1404: Inferred PLL generated clock at top_pll_inst.top_pll_inst/PLLOUTCORE
 Info-1404: Inferred PLL generated clock at top_pll_inst.top_pll_inst/PLLOUTGLOBAL
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rRamWrAddr_latch_1_LC_16_8_7/in1" to pin "fifo_inst.ftdi_input_inst.rRamWrAddr_latch_1_LC_16_8_7/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.SUM_0_2_LC_16_8_3/in2" to pin "fifo_inst.ftdi_input_inst.SUM_0_2_LC_16_8_3/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rRamWrAddr_latch_2_LC_16_8_2/in1" to pin "fifo_inst.ftdi_input_inst.rRamWrAddr_latch_2_LC_16_8_2/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rRamWrAddr_latch_0_LC_16_8_6/in0" to pin "fifo_inst.ftdi_input_inst.rRamWrAddr_latch_0_LC_16_8_6/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rRamWrEn_latch_LC_16_6_7/in1" to pin "fifo_inst.ftdi_input_inst.rRamWrEn_latch_LC_16_6_7/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rRamWrEn_latch_LC_16_6_7/in2" to pin "fifo_inst.ftdi_input_inst.rRamWrEn_latch_LC_16_6_7/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rRamWrEn_latch_LC_16_6_7/in0" to pin "fifo_inst.ftdi_input_inst.rRamWrEn_latch_LC_16_6_7/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.oPacketAvail_latch_LC_12_7_3/in1" to pin "fifo_inst.ftdi_input_inst.oPacketAvail_latch_LC_12_7_3/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.SUM_3_LC_15_4_1/in3" to pin "fifo_inst.ftdi_input_inst.SUM_3_LC_15_4_1/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rPacketCount15_LC_15_3_7/in0" to pin "fifo_inst.ftdi_input_inst.rPacketCount15_LC_15_3_7/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rPacketCount_latch_3_LC_15_3_4/in1" to pin "fifo_inst.ftdi_input_inst.rPacketCount_latch_3_LC_15_3_4/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rPacketCount_latch_0_LC_15_3_5/in0" to pin "fifo_inst.ftdi_input_inst.rPacketCount_latch_0_LC_15_3_5/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rPacketCount_latch_2_LC_15_3_3/in1" to pin "fifo_inst.ftdi_input_inst.rPacketCount_latch_2_LC_15_3_3/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.SUM_2_LC_15_3_2/in2" to pin "fifo_inst.ftdi_input_inst.SUM_2_LC_15_3_2/ltout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.ftdi_input_inst.rPacketCount_latch_1_LC_15_3_1/in1" to pin "fifo_inst.ftdi_input_inst.rPacketCount_latch_1_LC_15_3_1/lcout" to break the combinatorial loop
 I1209: Started routing
-I1223: Total Nets : 537 
-I1212: Iteration  1 :    73 unrouted : 1 seconds
-I1212: Iteration  2 :    27 unrouted : 0 seconds
-I1212: Iteration  3 :    10 unrouted : 0 seconds
+I1223: Total Nets : 466 
+I1212: Iteration  1 :    62 unrouted : 1 seconds
+I1212: Iteration  2 :    11 unrouted : 0 seconds
+I1212: Iteration  3 :     6 unrouted : 0 seconds
 I1212: Iteration  4 :     4 unrouted : 0 seconds
-I1212: Iteration  5 :     4 unrouted : 1 seconds
-I1212: Iteration  6 :     2 unrouted : 0 seconds
-I1212: Iteration  7 :     2 unrouted : 0 seconds
-I1212: Iteration  8 :     2 unrouted : 0 seconds
-I1212: Iteration  9 :     2 unrouted : 0 seconds
-I1212: Iteration 10 :     2 unrouted : 0 seconds
-I1212: Iteration 11 :     2 unrouted : 0 seconds
-I1212: Iteration 12 :     2 unrouted : 0 seconds
-I1212: Iteration 13 :     2 unrouted : 0 seconds
-I1212: Iteration 14 :     2 unrouted : 0 seconds
-I1212: Iteration 15 :     2 unrouted : 0 seconds
-I1212: Iteration 16 :     2 unrouted : 0 seconds
-I1212: Iteration 17 :     2 unrouted : 0 seconds
-I1212: Iteration 18 :     2 unrouted : 0 seconds
-I1212: Iteration 19 :     0 unrouted : 0 seconds
+I1212: Iteration  5 :     2 unrouted : 0 seconds
+I1212: Iteration  6 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
 I1204: Writing Design top

@@ -16,13 +16,13 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>top_pll|PLLOUTGLOBAL_derived_clock</data>
-<data>91.2 MHz</data>
-<data>77.5 MHz</data>
-<data>-1.936</data>
+<data>49.2 MHz</data>
+<data>41.8 MHz</data>
+<data>-3.588</data>
 </row>
 <row>
 <data>top|iClk</data>
-<data>91.2 MHz</data>
+<data>49.2 MHz</data>
 <data>NA</data>
 <data>NA</data>
 </row>

@@ -130,24 +130,22 @@ always @(posedge clk_48mhz) begin
 		rTxWrite <= 1'b0;
 		
 	end else begin
-		if(oRxFlag) begin //Received byte from the fifo
-			rTxByte <= wRxFifoData; //Put fifo data on the uart bus
-			rTxWrite <= 1'b1;
-		end else 
-			if(!wUartTxBusy) begin
-
-				if(!wRxBufferEmpty) begin	
-					rTxByte <= wRxByteOut;
-					rRxRead <= 1'b1;
-					rTxWrite <= 1'b1;
-				end else begin
-					rRxRead <= 1'b0;
-					rTxWrite <= 1'b0;
-				end
-			end else begin 
+		if(!wUartTxBusy) begin
+			if(oRxFlag) begin
+				rTxByte <= wRxFifoData; //Put fifo data on the uart bus
+				rTxWrite <= 1'b1;
+			end else if (!wRxBufferEmpty) begin	
+				rTxByte <= wRxByteOut;
+				rRxRead <= 1'b1;
+				rTxWrite <= 1'b1;
+			end else begin
 				rRxRead <= 1'b0;
 				rTxWrite <= 1'b0;
-			end 
+			end
+		end else begin
+			rRxRead <= 1'b0;
+			rTxWrite <= 1'b0;
+		end
 	end
 end
 /////////////////////////////////////////////////////////////
@@ -156,14 +154,14 @@ end
 //First test. 
 // Continuosly write counter to the fifo while TxFull is low. 
 //Module inputs
-wire wTxData;
+reg rTxData;
 reg wTxEn;
 wire wTxFull;
 
 //Test variables
 reg [7:0] counter;
 
-assign wTxData = 8'hAA;
+//assign wTxData = 8'hAA;
 
 ////////////////////////////FTDI FIFO///////////////////////
 ftdi_fifo #(
@@ -193,6 +191,7 @@ always @(clk_48mhz) begin
 	if(wRst) begin
 		counter <= 0;
 		wTxEn <= 0;
+		rTxData <= 8'h41;
 	end else begin
 		if(!wTxFull) begin //buffer is not full, increment counter and send
 			//counter <= counter == 8'hFF ? 8'h00 : counter + 1; 

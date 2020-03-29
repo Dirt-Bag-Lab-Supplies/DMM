@@ -6,7 +6,7 @@
 
 * Build Date:         Sep 11 2017 16:52:36
 
-* File Generated:     Mar 29 2020 02:25:07
+* File Generated:     Mar 29 2020 11:31:41
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 1 seconds
+    Runtime: 0 seconds
 
 Device Info:
 ------------
@@ -27,9 +27,9 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  200
-    LUTs:                 448
-    RAMs:                 1
+    FFs:                  197
+    LUTs:                 389
+    RAMs:                 0
     IOBs:                 20
     GBs:                  2
     PLLs:                 1
@@ -46,14 +46,14 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 452/5280
-        Combinational Logic Cells: 252      out of   5280      4.77273%
-        Sequential Logic Cells:    200      out of   5280      3.78788%
-        Logic Tiles:               77       out of   660       11.6667%
+    Total Logic Cells: 394/5280
+        Combinational Logic Cells: 197      out of   5280      3.73106%
+        Sequential Logic Cells:    197      out of   5280      3.73106%
+        Logic Tiles:               92       out of   660       13.9394%
     Registers: 
-        Logic Registers:           200      out of   5280      3.78788%
+        Logic Registers:           197      out of   5280      3.73106%
         IO Registers:              0        out of   480       0
-    Block RAMs:                    1        out of   30        3.33333%
+    Block RAMs:                    0        out of   30        0%
     Warm Boots:                    0        out of   1         0%
     SPIs:                          0        out of   2         0%
     I2Cs:                          0        out of   2         0%
@@ -114,7 +114,7 @@ Detailed I/O Info:
 
 Detailed Global Buffer Info:
 ----------------------------
-    Buffer Number  IO Bank  Driven By  Fanout  Signal Name         
-    -------------  -------  ---------  ------  -----------         
-    4              0                   57      wPllLocked_iso_i_g  
-    5              2                   54      wPllLocked_g        
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name     
+    -------------  -------  ---------  ------  -----------     
+    4              0                   51      wPllLocked_i_g  
+    5              2                   44      wPllLocked_g    
