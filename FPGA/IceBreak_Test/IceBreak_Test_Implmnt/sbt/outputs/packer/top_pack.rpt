@@ -1,0 +1,115 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2017.08.27940
+
+* Build Date:         Sep 11 2017 16:52:36
+
+* File Generated:     Mar 28 2020 19:39:06
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 1 seconds
+
+Device Info:
+------------
+    Device Family: iCE40UP
+    Device:        iCE40UP5K
+    Package:       SG48
+
+Design statistics:
+------------------
+    FFs:                  189
+    LUTs:                 379
+    RAMs:                 1
+    IOBs:                 19
+    GBs:                  2
+    PLLs:                 1
+    Warm Boots:           0
+    SPIs:                 0
+    I2Cs:                 0
+    HFOSCs:               0
+    LFOSCs:               0
+    RGBA_DRVs:            0
+    LEDDA_IPs:            0
+    DSPs:                 0
+    SPRAMs:               0
+    FILTER_50NSs:         0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 383/5280
+        Combinational Logic Cells: 194      out of   5280      3.67424%
+        Sequential Logic Cells:    189      out of   5280      3.57955%
+        Logic Tiles:               80       out of   660       12.1212%
+    Registers: 
+        Logic Registers:           189      out of   5280      3.57955%
+        IO Registers:              0        out of   480       0
+    Block RAMs:                    1        out of   30        3.33333%
+    Warm Boots:                    0        out of   1         0%
+    SPIs:                          0        out of   2         0%
+    I2Cs:                          0        out of   2         0%
+    HFOSCs:                        0        out of   1         0%
+    LFOSCs:                        0        out of   1         0%
+    RGBA_DRVs:                     0        out of   1         0%
+    LEDDA_IPs:                     0        out of   1         0%
+    DSPs:                          0        out of   8         0%
+    SPRAMs:                        0        out of   4         0%
+    FILTER_50NSs:                  0        out of   2         0%
+    Pins:
+        Input Pins:                4        out of   39        10.2564%
+        Output Pins:               15       out of   39        38.4615%
+        InOut Pins:                0        out of   39        0%
+    Global Buffers:                2        out of   8         25%
+    PLLs:                          1        out of   1         100%
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 0        out of   0         0%
+    Bank 1: 0        out of   0         0%
+    Bank 0: 5        out of   17        29.4118%
+    Bank 2: 14       out of   22        63.6364%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                   Signal Name    
+    ----------  ---------  -----------  -------  -------  -----------                   -----------    
+    4           Input      SB_LVCMOS    No       2        Simple Input                  P1A1           
+    10          Input      SB_LVCMOS    No       2        Simple Input                  BTN_N          
+    26          Input      SB_LVCMOS    No       0        Simple Input                  iRxF_n         
+    27          Input      SB_LVCMOS    No       0        Simple Input                  iTxE_n         
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                   Signal Name    
+    ----------  ---------  -----------  -------  -------  -----------                   -----------    
+    2           Output     SB_LVCMOS    No       2        Simple Output                 P1A2           
+    3           Output     SB_LVCMOS    No       2        Simple Output                 P1A7           
+    6           Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[0]  
+    9           Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[1]  
+    11          Output     SB_LVCMOS    No       2        Simple Output                 oRx_n          
+    18          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[2]  
+    19          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[3]  
+    20          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[4]  
+    21          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[5]  
+    23          Output     SB_LVCMOS    No       0        Output Tristatable by Enable  ioFifoData[6]  
+    25          Output     SB_LVCMOS    No       0        Output Tristatable by Enable  ioFifoData[7]  
+    37          Output     SB_LVCMOS    No       0        Simple Output                 oTx_n          
+    46          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  P1A9           
+    47          Output     SB_LVCMOS    No       2        Simple Output                 P1A3           
+    48          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  P1A8           
+
+Detailed Global Buffer Info:
+----------------------------
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name         
+    -------------  -------  ---------  ------  -----------         
+    4              0                   29      wPllLocked_iso_i_g  
+    5              2                   53      wPllLocked_g        

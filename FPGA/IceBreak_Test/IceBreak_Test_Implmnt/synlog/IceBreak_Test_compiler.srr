@@ -1,0 +1,203 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.08\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.08\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.08\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.08\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v" (library work)
+@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v" (library work)
+@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v" (library work)
+@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v" (library work)
+@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v" (library work)
+@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v" (library work)
+@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v" (library work)
+@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v" (library work)
+Verilog syntax check successful!
+Selecting top level module top
+@N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":752:7:752:18|Synthesizing module SB_PLL40_PAD in library work.
+
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":1:7:1:13|Synthesizing module top_pll in library work.
+
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":16:38:16:38|Input EXTFEEDBACK on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":17:39:17:39|Input DYNAMICDELAY on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":20:42:20:42|Input LATCHINPUTVALUE on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":22:30:22:30|Input SDI on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":24:31:24:31|Input SCLK on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":24:7:24:10|Synthesizing module uart in library work.
+
+	pClkFreq=32'b00000010110111000110110000000000
+	pBaudRate=32'b00000000000000011100001000000000
+	pOverSampling=32'b00000000000000000000000000000001
+	pClkDivideWidth=32'b00000000000000000000000000010001
+	CLOCK_DIVIDE=32'b00000000000000000000000001101000
+	RX_IDLE=32'b00000000000000000000000000000000
+	RX_CHECK_START=32'b00000000000000000000000000000001
+	RX_READ_BITS=32'b00000000000000000000000000000010
+	RX_CHECK_STOP=32'b00000000000000000000000000000011
+	RX_DELAY_RESTART=32'b00000000000000000000000000000100
+	RX_ERROR=32'b00000000000000000000000000000101
+	RX_RECEIVED=32'b00000000000000000000000000000110
+	TX_IDLE=32'b00000000000000000000000000000000
+	TX_SENDING=32'b00000000000000000000000000000001
+	TX_DELAY_RESTART=32'b00000000000000000000000000000010
+   Generated name = uart_Z1
+
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":17:7:17:10|Synthesizing module fifo in library work.
+
+	pFifoDepth=32'b00000000000000000000000000000100
+	pFifoDataWidth=32'b00000000000000000000000000001000
+   Generated name = fifo_4s_8s
+
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":6:7:6:15|Synthesizing module uart_fifo in library work.
+
+	pClkFreq=32'b00000010110111000110110000000000
+	pBaudRate=32'b00000000000000011100001000000000
+	pRxFifoByteLength=32'b00000000000000000000000000000100
+	pTxFifoByteLength=32'b00000000000000000000000000000100
+   Generated name = uart_fifo_48000000s_115200s_4s_4s
+
+@W: CG133 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":58:4:58:16|Object rRxFifoReadEn is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":1124:7:1124:17|Synthesizing module SB_RAM512x8 in library work.
+
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":1:7:1:23|Synthesizing module ftdi_input_simple in library work.
+
+	pDataWidth=32'b00000000000000000000000000001000
+	pMaxData=32'b00000000000000000000000000001000
+	WR_IDLE=32'b00000000000000000000000000000000
+	WR_START=32'b00000000000000000000000000000001
+	WR_WRITE=32'b00000000000000000000000000000010
+	WR_ERROR=32'b00000000000000000000000000000011
+   Generated name = ftdi_input_simple_8s_8s_0s_1s_2s_3s
+
+@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":88:9:88:22|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":101:7:101:11|Referenced variable iTxEn is not in sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":124:35:124:45|Referenced variable iPacketRead is not in sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":127:5:127:20|Referenced variable wPacketRdPosEdge is not in sensitivity list.
+@W: CL113 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Feedback mux created for signal rPacketCount[3:3]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rPacketCount[3:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rRamWrAddr[2:0]; possible missing assignment in an if or case statement.
+@W: CL113 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Feedback mux created for signal rWrState[1:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|All reachable assignments to bit 0 of rWrState[1:0] assign 0, register removed by optimization.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rWrState[1:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rRamWrEn; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal oPacketAvail; possible missing assignment in an if or case statement.
+@W: CL207 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|All reachable assignments to rRamWrData[7:0] assign 0, register removed by optimization.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":1:7:1:17|Synthesizing module ftdi_output in library work.
+
+	pDataWidth=32'b00000000000000000000000000001000
+	pMaxData=32'b00000000000000000000000000001000
+	SIZE=32'b00000000000000000000000000000011
+	IDLE=32'b00000000000000000000000000000000
+	RD_START=32'b00000000000000000000000000000001
+	RD_DATA=32'b00000000000000000000000000000010
+	WR_START=32'b00000000000000000000000000000011
+	WR_DATA=32'b00000000000000000000000000000100
+	ERROR=32'b00000000000000000000000000000101
+   Generated name = ftdi_output_8s_8s_3s_0s_1s_2s_3s_4s_5s
+
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":5:7:5:15|Synthesizing module ftdi_fifo in library work.
+
+	pDataWidth=32'b00000000000000000000000000001000
+	pMaxData=32'b00000000000000000000000000001000
+   Generated name = ftdi_fifo_8s_8s
+
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Synthesizing module top in library work.
+
+@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":189:9:189:17|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":190:4:190:7|Referenced variable wRst is not in sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":194:6:194:12|Referenced variable wTxFull is not in sensitivity list.
+@W: CG1273 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":58:17:58:20|An input port (port iClk) is the target of an assignment - please check if this is intentional
+@W: CS263 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":173:12:173:18|Port-width mismatch for port iTxData. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":190:1:190:2|Latch generated from always block for signal counter[7:0]; possible missing assignment in an if or case statement.
+@W: CL177 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":123:0:123:5|Sharing sequential element rTxWrite. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL279 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":190:1:190:2|Pruning register bits 7 to 1 of counter[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":33:13:33:16|*Output P1A8 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":33:19:33:22|*Output P1A9 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":32:14:32:17|Input BTN1 is unused.
+@W: CL156 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":61:11:61:18|*Input iFifoClk to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Register bit oSiwu is always 1.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Register bit oPacketRead is always 1.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Register bit oRx_n is always 1.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Trying to extract state machine for register rFifoState.
+Extracted state machine for register rFifoState
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Initial value is not supported on state machine rFifoState
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":24:12:24:18|Input iTxData is unused.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":30:13:30:23|Input iPacketRead is unused.
+@W: CL138 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":126:0:126:5|Removing register 'rUartError' because it is only assigned 0 or its original value.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":135:0:135:5|Register bit oUartTxBusy is always 0.
+@N: CL134 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Found RAM rFifoData, depth=4, width=8
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rWritePtr[2] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rReadPtr[2] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Pruning register bit 2 of rReadPtr[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Pruning register bit 2 of rWritePtr[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[17] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 17 of tx_clk_divider[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[16] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 16 of tx_clk_divider[16:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[15] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 15 of tx_clk_divider[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register recv_state.
+Extracted state machine for register recv_state
+State machine has 7 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Initial value is not supported on state machine recv_state
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register tx_state.
+Extracted state machine for register tx_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Initial value is not supported on state machine tx_state
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[14] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 14 of tx_clk_divider[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Mar 28 19:37:17 2020
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Mar 28 19:37:17 2020
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Mar 28 19:37:17 2020
+
+###########################################################]
