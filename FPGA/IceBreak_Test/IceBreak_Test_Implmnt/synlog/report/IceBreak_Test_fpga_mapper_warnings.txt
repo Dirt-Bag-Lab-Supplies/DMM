@@ -1,23 +1,23 @@
-@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_out is being ignored. 
-@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.rx_clk_divider[17:0] is being ignored. 
-@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_clk_divider[13:0] is being ignored. 
-@W: FX703 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\fifo.v":46:0:46:5|Unable to map RAM instance rFifoData[7:0] to RAM for technology specified. 
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
+@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_out is being ignored. 
+@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.rx_clk_divider[17:0] is being ignored. 
+@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_clk_divider[13:0] is being ignored. 
+@W: FX703 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\fifo.v":46:0:46:5|Unable to map RAM instance rFifoData[7:0] to RAM for technology specified. 
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount15
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[3]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[1]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[2]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rWrState[1]
 @W: BN137 :|Found combinational loop during mapping at net wTxEn_1
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrEn
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.wPacketAvail
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[0]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[1]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[2]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.N_11
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.wPacketAvail
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount15
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[3]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[1]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[2]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rWrState[1]
@@ -26,4 +26,4 @@
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[1]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[2]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.wPacketAvail
-@W: MT420 |Found inferred clock top|iClk with period 12.09ns. Please declare a user-defined clock on object "p:iClk"
+@W: MT420 |Found inferred clock top|iClk with period 10.97ns. Please declare a user-defined clock on object "p:iClk"

@@ -1,4 +1,4 @@
-# Sat Mar 28 19:37:18 2020
+# Sun Mar 29 02:22:40 2020
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -7,8 +7,8 @@ Product Version L-2016.09L+ice40
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
 @A: MF827 |No constraint file specified.
-@L: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt 
-Printing clock  summary report in "C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt" file 
+@L: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt 
+Printing clock  summary report in "C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
@@ -23,9 +23,8 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
 
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:13:33:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:19:33:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Removing sequential instance rRxData[7:0] (in view: work.ftdi_output_8s_8s_3s_0s_1s_2s_3s_4s_5s(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -41,17 +40,17 @@ Clock Summary
 Start                                  Requested     Requested     Clock                       Clock                     Clock
 Clock                                  Frequency     Period        Type                        Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------
-System                                 317.6 MHz     3.149         system                      system_clkgroup           11   
-top_pll|PLLOUTGLOBAL_derived_clock     68.9 MHz      14.521        derived (from top|iClk)     Autoconstr_clkgroup_0     135  
+System                                 322.5 MHz     3.101         system                      system_clkgroup           10   
+top_pll|PLLOUTGLOBAL_derived_clock     68.9 MHz      14.521        derived (from top|iClk)     Autoconstr_clkgroup_0     141  
 top|iClk                               17.2 MHz      58.085        inferred                    Autoconstr_clkgroup_0     0    
 ==============================================================================================================================
 
-@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Found signal identified as System clock which controls 11 sequential elements including fifo_inst.ftdi_input_inst.rPacketCount[3:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Found signal identified as System clock which controls 10 sequential elements including fifo_inst.ftdi_input_inst.rPacketCount[3:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
 
 Finished Pre Mapping Phase.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:19:33:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:13:33:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN225 |Writing default property annotation file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.sap.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
@@ -86,6 +85,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Mar 28 19:37:19 2020
+# Sun Mar 29 02:22:40 2020
 
 ###########################################################]

@@ -49,12 +49,15 @@ reg [SIZE-1:0] rFifoState = IDLE;
 //reg [7:0] rTxData;	//Reg to store Tx data
 reg [7:0] rRxData;	//Reg to store Rx data
 
-reg [1:0] rRxF_n;
-reg [1:0] rTxE_n;
+reg [2:0] rRxF_n;
+reg [2:0] rTxE_n;
 reg rWrDelay; //Delay the entire chain by 1 clk to meet setup times for write flag. 
-wire wRxF_n; //wire to remove metastability from input
-wire wTxE_n; //wire to remove metastability
-assign wRxF_n = rRxF_n[0] & rRxF_n[1]; 
+wire wRxF_posEdge; //wire to remove metastability from input
+wire wTxE_posEdge; //wire to remove metastability
+wire wRxF_negEdge; //wire to remove metastability from input
+wire wTxE_negEdge; //wire to remove metastability
+
+assign wRxF_posEdge = rRxF_n[0] & rRxF_n[1]; 
 assign wTxE_n = rTxE_n[0] & rTxE_n[1];
 //Data bus is hi-z unless writing. Tx_n = 0: bus = ram data
 assign ioFifoData = oTx_n ? 8'hZZ : iRamRdData;
@@ -69,10 +72,13 @@ always@ (posedge iClk) begin
 		rWrDelay <= 1'b0; 
 		oRxFlag <= 1'b0; //Clear rx flag
 	end else begin
-		rRxF_n[0] <= iRxF_n;
-		rRxF_n[1] <= rRxF_n[0]; //Sync the input
-		rTxE_n[0] <= iTxE_n;
-		rTxE_n[1] <= rTxE_n[0];
+		rRxF_n[2:0] <= {rRxF_n[2:1], iRxF_n};
+		rTxE_n[2:0] <= {rTxE_n[2:1], iTxE_n};
+
+		// rRxF_n[0] <= iRxF_n;
+		// rRxF_n[1] <= rRxF_n[0]; //Sync the input
+		// rTxE_n[0] <= iTxE_n;
+		// rTxE_n[1] <= rTxE_n[0];
 		//FSM
 		//rTxData <= iRamRdData; //Always register the incoming data. 
 
@@ -87,12 +93,12 @@ always@ (posedge iClk) begin
 				//Wait for falling edge of the Rx Full flag. 
 				//Put bus in high-z
 				//Set the read flag to signal the fifo to put data on the bus. 
-				if(wRxF_n == 1'b0) begin 	
+				if(iRxF_n == 1'b0) begin 	
 					//ioFifoData <= 8'hZZ; //Set data bus to hi-z
 					rFifoState <= RD_START;	//Go here wait for next clk edge
-					oRx_n <= 1'b1; //Set read flag immediately
+					oRx_n <= 1'b0; //Set read flag immediately
 
-				end else if(wTxE_n == 1'b0 && iPacketAvail) begin 
+				end else if(iTxE_n == 1'b0 && iPacketAvail) begin 
 				//Start transmitting if tx isn't full and data is available
 					//ioFifoData <= iRamRdData; //Put data on bus. REquires 5ns setup time before write flag
 					rFifoState <= WR_START;
@@ -128,7 +134,7 @@ always@ (posedge iClk) begin
 					rWrDelay <= 1'b0; // reset delay
 					rFifoState <= IDLE;
 					oPacketRead <= 1'b1; //Flag the ram that a packet was read -- reset to 0 in idle
-					oRx_n <= 1'b1; //Clear the write flag/ 
+					oTx_n <= 1'b1; //Clear the write flag/ 
 					oRamRdAddr <= (oRamRdAddr == pMaxData) ? 8'h00 : oRamRdAddr + 1;
 				end
 			end

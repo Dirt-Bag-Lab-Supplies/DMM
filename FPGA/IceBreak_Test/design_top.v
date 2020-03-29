@@ -5,14 +5,15 @@
 
 module top (
 	iClk,
-	BTN_N,	//Input from BTN, connected to oSiwu on FTDI. 
+	BTN_N,	//Input from BTN, system reset for now
+	BTN1,
 	P1A1,	// Debug Rx
+	P1A2,	//Fifo Rx Data Flag
+	P1A3,	//Fifo oRx_n
+	P1A4,	//Fifo oTx_n
 	P1A7, 	// Debug TX
 	P1A8,  
 	P1A9,
-	BTN1,
-	P1A2,
-	P1A3,
 		//UART
 	//oTx,
 	//iRx,	
@@ -30,9 +31,11 @@ module top (
 //inputs general
 input iClk; //12mhz generates 48mhz pll
 input BTN_N,  BTN1, P1A1;
-output P1A7, P1A8, P1A9, P1A2, P1A3;
+output P1A7, P1A8, P1A9, P1A2, P1A3, P1A4;
 assign P1A2 = oRxFlag;
-assign P1A3 = wUartTxBusy; 
+assign P1A3 = oRx_n; 
+assign P1A4 = oTx_n;
+
 //UART -- Inputs 
 //input iRx;
 wire iRx;
@@ -127,24 +130,24 @@ always @(posedge clk_48mhz) begin
 		rTxWrite <= 1'b0;
 		
 	end else begin
-		// if(oRxFlag) begin //Received byte from the fifo
-		// 	rTxByte <= wRxFifoData; //Put fifo data on the uart bus
-		// 	rTxWrite <= 1'b1;
-		// end else 
-		if(!wUartTxBusy) begin
+		if(oRxFlag) begin //Received byte from the fifo
+			rTxByte <= wRxFifoData; //Put fifo data on the uart bus
+			rTxWrite <= 1'b1;
+		end else 
+			if(!wUartTxBusy) begin
 
-			if(!wRxBufferEmpty) begin	
-				rTxByte <= wRxByteOut;
-				rRxRead <= 1'b1;
-				rTxWrite <= 1'b1;
-			end else begin
+				if(!wRxBufferEmpty) begin	
+					rTxByte <= wRxByteOut;
+					rRxRead <= 1'b1;
+					rTxWrite <= 1'b1;
+				end else begin
+					rRxRead <= 1'b0;
+					rTxWrite <= 1'b0;
+				end
+			end else begin 
 				rRxRead <= 1'b0;
 				rTxWrite <= 1'b0;
-			end
-		end else begin 
-			rRxRead <= 1'b0;
-			rTxWrite <= 1'b0;
-		end 
+			end 
 	end
 end
 /////////////////////////////////////////////////////////////
@@ -160,7 +163,7 @@ wire wTxFull;
 //Test variables
 reg [7:0] counter;
 
-assign wTxData = counter;
+assign wTxData = 8'hAA;
 
 ////////////////////////////FTDI FIFO///////////////////////
 ftdi_fifo #(
@@ -192,7 +195,7 @@ always @(clk_48mhz) begin
 		wTxEn <= 0;
 	end else begin
 		if(!wTxFull) begin //buffer is not full, increment counter and send
-			counter <= counter == 8'hFF ? 8'h00 : counter + 1; 
+			//counter <= counter == 8'hFF ? 8'h00 : counter + 1; 
 			wTxEn <= 1; 
 		end else begin
 			wTxEn <= 0;

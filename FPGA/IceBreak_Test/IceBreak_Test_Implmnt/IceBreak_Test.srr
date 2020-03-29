@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-FDJ29CO
 
-# Sat Mar 28 19:37:16 2020
+# Sun Mar 29 02:22:38 2020
 
 #Implementation: IceBreak_Test_Implmnt
 
@@ -20,26 +20,27 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\lscc\iCEcube2.2017.08\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2017.08\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2017.08\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v" (library work)
-@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v" (library work)
-@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v" (library work)
-@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v" (library work)
-@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v" (library work)
-@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v" (library work)
-@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v" (library work)
-@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v" (library work)
+@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v" (library work)
+@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v" (library work)
+@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v" (library work)
+@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v" (library work)
+@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v" (library work)
+@I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v" (library work)
+@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v" (library work)
+@I:"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v" (library work)
 Verilog syntax check successful!
+File C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":752:7:752:18|Synthesizing module SB_PLL40_PAD in library work.
 
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":1:7:1:13|Synthesizing module top_pll in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":1:7:1:13|Synthesizing module top_pll in library work.
 
-@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":16:38:16:38|Input EXTFEEDBACK on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
-@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":17:39:17:39|Input DYNAMICDELAY on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
-@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":20:42:20:42|Input LATCHINPUTVALUE on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
-@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":22:30:22:30|Input SDI on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
-@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":24:31:24:31|Input SCLK on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":24:7:24:10|Synthesizing module uart in library work.
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":16:38:16:38|Input EXTFEEDBACK on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":17:39:17:39|Input DYNAMICDELAY on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":20:42:20:42|Input LATCHINPUTVALUE on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":22:30:22:30|Input SDI on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":24:31:24:31|Input SCLK on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":24:7:24:10|Synthesizing module uart in library work.
 
 	pClkFreq=32'b00000010110111000110110000000000
 	pBaudRate=32'b00000000000000011100001000000000
@@ -58,13 +59,13 @@ Selecting top level module top
 	TX_DELAY_RESTART=32'b00000000000000000000000000000010
    Generated name = uart_Z1
 
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":17:7:17:10|Synthesizing module fifo in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":17:7:17:10|Synthesizing module fifo in library work.
 
 	pFifoDepth=32'b00000000000000000000000000000100
 	pFifoDataWidth=32'b00000000000000000000000000001000
    Generated name = fifo_4s_8s
 
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":6:7:6:15|Synthesizing module uart_fifo in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":6:7:6:15|Synthesizing module uart_fifo in library work.
 
 	pClkFreq=32'b00000010110111000110110000000000
 	pBaudRate=32'b00000000000000011100001000000000
@@ -72,10 +73,10 @@ Selecting top level module top
 	pTxFifoByteLength=32'b00000000000000000000000000000100
    Generated name = uart_fifo_48000000s_115200s_4s_4s
 
-@W: CG133 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":58:4:58:16|Object rRxFifoReadEn is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":58:4:58:16|Object rRxFifoReadEn is declared but not assigned. Either assign a value or remove the declaration.
 @N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":1124:7:1124:17|Synthesizing module SB_RAM512x8 in library work.
 
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":1:7:1:23|Synthesizing module ftdi_input_simple in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":1:7:1:23|Synthesizing module ftdi_input_simple in library work.
 
 	pDataWidth=32'b00000000000000000000000000001000
 	pMaxData=32'b00000000000000000000000000001000
@@ -85,20 +86,20 @@ Selecting top level module top
 	WR_ERROR=32'b00000000000000000000000000000011
    Generated name = ftdi_input_simple_8s_8s_0s_1s_2s_3s
 
-@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":88:9:88:22|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":101:7:101:11|Referenced variable iTxEn is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":124:35:124:45|Referenced variable iPacketRead is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":127:5:127:20|Referenced variable wPacketRdPosEdge is not in sensitivity list.
-@W: CL113 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Feedback mux created for signal rPacketCount[3:3]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rPacketCount[3:0]; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rRamWrAddr[2:0]; possible missing assignment in an if or case statement.
-@W: CL113 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Feedback mux created for signal rWrState[1:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
-@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|All reachable assignments to bit 0 of rWrState[1:0] assign 0, register removed by optimization.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rWrState[1:0]; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rRamWrEn; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal oPacketAvail; possible missing assignment in an if or case statement.
-@W: CL207 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|All reachable assignments to rRamWrData[7:0] assign 0, register removed by optimization.
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":1:7:1:17|Synthesizing module ftdi_output in library work.
+@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":88:9:88:22|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":127:5:127:20|Referenced variable wPacketRdPosEdge is not in sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":101:7:101:11|Referenced variable iTxEn is not in sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":124:35:124:45|Referenced variable iPacketRead is not in sensitivity list.
+@W: CL113 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Feedback mux created for signal rPacketCount[3:3]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rPacketCount[3:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rRamWrAddr[2:0]; possible missing assignment in an if or case statement.
+@W: CL113 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Feedback mux created for signal rWrState[1:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|All reachable assignments to bit 0 of rWrState[1:0] assign 0, register removed by optimization.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rWrState[1:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal rRamWrEn; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Latch generated from always block for signal oPacketAvail; possible missing assignment in an if or case statement.
+@W: CL207 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|All reachable assignments to rRamWrData[7:0] assign 0, register removed by optimization.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":1:7:1:17|Synthesizing module ftdi_output in library work.
 
 	pDataWidth=32'b00000000000000000000000000001000
 	pMaxData=32'b00000000000000000000000000001000
@@ -111,30 +112,31 @@ Selecting top level module top
 	ERROR=32'b00000000000000000000000000000101
    Generated name = ftdi_output_8s_8s_3s_0s_1s_2s_3s_4s_5s
 
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":5:7:5:15|Synthesizing module ftdi_fifo in library work.
+@W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":56:5:56:16|Removing wire wTxE_posEdge, as there is no assignment to it.
+@W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":57:5:57:16|Removing wire wRxF_negEdge, as there is no assignment to it.
+@W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":58:5:58:16|Removing wire wTxE_negEdge, as there is no assignment to it.
+@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Pruning unused register rRxF_n[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Pruning unused register rTxE_n[2:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":5:7:5:15|Synthesizing module ftdi_fifo in library work.
 
 	pDataWidth=32'b00000000000000000000000000001000
 	pMaxData=32'b00000000000000000000000000001000
    Generated name = ftdi_fifo_8s_8s
 
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Synthesizing module top in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Synthesizing module top in library work.
 
-@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":189:9:189:17|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":190:4:190:7|Referenced variable wRst is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":194:6:194:12|Referenced variable wTxFull is not in sensitivity list.
-@W: CG1273 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":58:17:58:20|An input port (port iClk) is the target of an assignment - please check if this is intentional
-@W: CS263 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":173:12:173:18|Port-width mismatch for port iTxData. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":190:1:190:2|Latch generated from always block for signal counter[7:0]; possible missing assignment in an if or case statement.
-@W: CL177 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":123:0:123:5|Sharing sequential element rTxWrite. Add a syn_preserve attribute to the element to prevent sharing.
-@W: CL279 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":190:1:190:2|Pruning register bits 7 to 1 of counter[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":33:13:33:16|*Output P1A8 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":33:19:33:22|*Output P1A9 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":32:14:32:17|Input BTN1 is unused.
-@W: CL156 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":61:11:61:18|*Input iFifoClk to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Register bit oSiwu is always 1.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Register bit oPacketRead is always 1.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Register bit oRx_n is always 1.
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Trying to extract state machine for register rFifoState.
+@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":192:9:192:17|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":193:4:193:7|Referenced variable wRst is not in sensitivity list.
+@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":197:6:197:12|Referenced variable wTxFull is not in sensitivity list.
+@W: CG1273 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":61:17:61:20|An input port (port iClk) is the target of an assignment - please check if this is intentional
+@W: CS263 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":176:12:176:18|Port-width mismatch for port iTxData. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":34:13:34:16|*Output P1A8 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":34:19:34:22|*Output P1A9 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":33:14:33:17|Input BTN1 is unused.
+@W: CL156 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":61:11:61:18|*Input iFifoClk to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Register bit oSiwu is always 1.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Register bit oPacketRead is always 1.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Trying to extract state machine for register rFifoState.
 Extracted state machine for register rFifoState
 State machine has 5 reachable states with original encodings of:
    000
@@ -142,23 +144,23 @@ State machine has 5 reachable states with original encodings of:
    010
    011
    100
-@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Initial value is not supported on state machine rFifoState
-@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":24:12:24:18|Input iTxData is unused.
-@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":30:13:30:23|Input iPacketRead is unused.
-@W: CL138 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":126:0:126:5|Removing register 'rUartError' because it is only assigned 0 or its original value.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":135:0:135:5|Register bit oUartTxBusy is always 0.
-@N: CL134 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Found RAM rFifoData, depth=4, width=8
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rWritePtr[2] is always 0.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rReadPtr[2] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Pruning register bit 2 of rReadPtr[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Pruning register bit 2 of rWritePtr[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[17] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 17 of tx_clk_divider[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[16] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 16 of tx_clk_divider[16:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[15] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 15 of tx_clk_divider[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register recv_state.
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Initial value is not supported on state machine rFifoState
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":24:12:24:18|Input iTxData is unused.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":30:13:30:23|Input iPacketRead is unused.
+@W: CL138 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":126:0:126:5|Removing register 'rUartError' because it is only assigned 0 or its original value.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":135:0:135:5|Register bit oUartTxBusy is always 0.
+@N: CL134 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Found RAM rFifoData, depth=4, width=8
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rWritePtr[2] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rReadPtr[2] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Pruning register bit 2 of rReadPtr[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Pruning register bit 2 of rWritePtr[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[17] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 17 of tx_clk_divider[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[16] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 16 of tx_clk_divider[16:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[15] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 15 of tx_clk_divider[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register recv_state.
 Extracted state machine for register recv_state
 State machine has 7 reachable states with original encodings of:
    000
@@ -168,36 +170,36 @@ State machine has 7 reachable states with original encodings of:
    100
    101
    110
-@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Initial value is not supported on state machine recv_state
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register tx_state.
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Initial value is not supported on state machine recv_state
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register tx_state.
 Extracted state machine for register tx_state
 State machine has 3 reachable states with original encodings of:
    00
    01
    10
-@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Initial value is not supported on state machine tx_state
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[14] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 14 of tx_clk_divider[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Initial value is not supported on state machine tx_state
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[14] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 14 of tx_clk_divider[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 73MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Mar 28 19:37:17 2020
+# Sun Mar 29 02:22:38 2020
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
-@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
-@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Mar 28 19:37:17 2020
+# Sun Mar 29 02:22:38 2020
 
 ###########################################################]
 @END
@@ -207,26 +209,26 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Mar 28 19:37:17 2020
+# Sun Mar 29 02:22:38 2020
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
-File C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\synwork\IceBreak_Test_comp.srs changed - recompiling
-@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
-@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
+File C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\synwork\IceBreak_Test_comp.srs changed - recompiling
+@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Mar 28 19:37:18 2020
+# Sun Mar 29 02:22:39 2020
 
 ###########################################################]
 Pre-mapping Report
 
-# Sat Mar 28 19:37:18 2020
+# Sun Mar 29 02:22:40 2020
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -235,8 +237,8 @@ Product Version L-2016.09L+ice40
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
 @A: MF827 |No constraint file specified.
-@L: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt 
-Printing clock  summary report in "C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt" file 
+@L: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt 
+Printing clock  summary report in "C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
@@ -251,9 +253,8 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
 
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:13:33:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:19:33:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Removing sequential instance rRxData[7:0] (in view: work.ftdi_output_8s_8s_3s_0s_1s_2s_3s_4s_5s(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
@@ -269,17 +270,17 @@ Clock Summary
 Start                                  Requested     Requested     Clock                       Clock                     Clock
 Clock                                  Frequency     Period        Type                        Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------
-System                                 317.6 MHz     3.149         system                      system_clkgroup           11   
-top_pll|PLLOUTGLOBAL_derived_clock     68.9 MHz      14.521        derived (from top|iClk)     Autoconstr_clkgroup_0     135  
+System                                 322.5 MHz     3.101         system                      system_clkgroup           10   
+top_pll|PLLOUTGLOBAL_derived_clock     68.9 MHz      14.521        derived (from top|iClk)     Autoconstr_clkgroup_0     141  
 top|iClk                               17.2 MHz      58.085        inferred                    Autoconstr_clkgroup_0     0    
 ==============================================================================================================================
 
-@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Found signal identified as System clock which controls 11 sequential elements including fifo_inst.ftdi_input_inst.rPacketCount[3:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_input_simple.v":89:1:89:2|Found signal identified as System clock which controls 10 sequential elements including fifo_inst.ftdi_input_inst.rPacketCount[3:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
 
 Finished Pre Mapping Phase.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:19:33:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:13:33:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN225 |Writing default property annotation file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.sap.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
@@ -314,12 +315,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Mar 28 19:37:19 2020
+# Sun Mar 29 02:22:40 2020
 
 ###########################################################]
 Map & Optimize Report
 
-# Sat Mar 28 19:37:19 2020
+# Sun Mar 29 02:22:40 2020
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -336,26 +337,25 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
 
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
 
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:19:33:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:13:33:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":190:1:190:2|Removing sequential instance counter[0] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 @N: MT206 |Auto Constrain mode is enabled
-@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_out is being ignored. 
-@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.rx_clk_divider[17:0] is being ignored. 
-@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_clk_divider[13:0] is being ignored. 
+@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_out is being ignored. 
+@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.rx_clk_divider[17:0] is being ignored. 
+@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_clk_divider[13:0] is being ignored. 
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
@@ -373,10 +373,10 @@ original code -> new code
    100 -> 0010000
    101 -> 0100000
    110 -> 1000000
-@N: MO231 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\uart.v":91:0:91:5|Found counter in view:work.uart_Z1(verilog) instance tx_clk_divider[13:0] 
-@N: MF135 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\fifo.v":46:0:46:5|RAM rFifoData[7:0] (in view: work.fifo_4s_8s(verilog)) is 4 words by 8 bits.
-@W: FX703 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\fifo.v":46:0:46:5|Unable to map RAM instance rFifoData[7:0] to RAM for technology specified. 
-@N: MF135 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\fifo.v":46:0:46:5|RAM rFifoData[7:0] (in view: work.fifo_4s_8s(verilog)) is 4 words by 8 bits.
+@N: MO231 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|Found counter in view:work.uart_Z1(verilog) instance tx_clk_divider[13:0] 
+@N: MF135 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\fifo.v":46:0:46:5|RAM rFifoData[7:0] (in view: work.fifo_4s_8s(verilog)) is 4 words by 8 bits.
+@W: FX703 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\fifo.v":46:0:46:5|Unable to map RAM instance rFifoData[7:0] to RAM for technology specified. 
+@N: MF135 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\fifo.v":46:0:46:5|RAM rFifoData[7:0] (in view: work.fifo_4s_8s(verilog)) is 4 words by 8 bits.
 Encoding state machine rFifoState[4:0] (in view: work.ftdi_output_8s_8s_3s_0s_1s_2s_3s_4s_5s(verilog))
 original code -> new code
    000 -> 00001
@@ -389,57 +389,63 @@ original code -> new code
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 137MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 139MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 138MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 139MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
 @N: MF794 |RAM rFifoData[7:0] required 72 registers during mapping 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 139MB)
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 146MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    -3.52ns		 310 /       189
-   2		0h:00m:01s		    -3.52ns		 290 /       189
-   3		0h:00m:01s		    -2.12ns		 290 /       189
-   4		0h:00m:01s		    -2.12ns		 290 /       189
+   1		0h:00m:01s		    -4.01ns		 311 /       200
+   2		0h:00m:01s		    -4.01ns		 294 /       200
+   3		0h:00m:01s		    -2.61ns		 294 /       200
+   4		0h:00m:01s		    -2.61ns		 294 /       200
 
-   5		0h:00m:01s		    -2.12ns		 300 /       189
+   5		0h:00m:01s		    -1.14ns		 356 /       200
+   6		0h:00m:01s		    -1.14ns		 356 /       200
 
 
-   6		0h:00m:01s		    -2.12ns		 295 /       189
-   7		0h:00m:01s		    -2.12ns		 295 /       189
-@N: FX1017 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\top_pll.v":13:13:13:24|SB_GB inserted on the net wPllLocked.
+   7		0h:00m:01s		    -1.14ns		 353 /       200
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep4 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep3 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep2 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep1 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.oTx_n_rep0 (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[7] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[6] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[5] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[4] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[3] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[2] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[1] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Boundary register fifo_inst.ftdi_output_inst.rRxData[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: FX1017 :|SB_GB inserted on the net wPllLocked_iso_i.
+@N: FX1017 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\top_pll.v":13:13:13:24|SB_GB inserted on the net wPllLocked.
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 146MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 150MB)
 
 Warning: Found 13 combinational loops!
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
-1) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[0] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rPacketCount[0]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[0]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount15
-2) instance fifo_inst.ftdi_input_inst.rPacketCount15 (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount15 (in view: work.top(verilog))
+1) instance fifo_inst.ftdi_input_inst.rPacketCount15 (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount15 (in view: work.top(verilog))
     net        fifo_inst.ftdi_input_inst.rPacketCount15
     input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I0
     instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
@@ -450,16 +456,30 @@ Warning: Found 13 combinational loops!
     output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
     net        fifo_inst.ftdi_input_inst.rPacketCount15
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[3]
-3) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[3] (in view: work.top(verilog))
+2) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[3] (in view: work.top(verilog))
     net        fifo_inst.ftdi_input_inst.rPacketCount[3]
     input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I1
     instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
     net        fifo_inst.ftdi_input_inst.rPacketCount[3]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
+3) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[0] (in view: work.top(verilog))
+    net        fifo_inst.ftdi_input_inst.rPacketCount[0]
+    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/I0
+    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (cell SB_LUT4)
+    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/O
+    net        fifo_inst.ftdi_input_inst.rPacketCount[0]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[1]
 4) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[1] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[1] (in view: work.top(verilog))
     net        fifo_inst.ftdi_input_inst.rPacketCount[1]
-    input  pin fifo_inst.ftdi_input_inst.SUM[3]/I1
+    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/I1
+    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[1] (cell SB_LUT4)
+    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/O
+    net        fifo_inst.ftdi_input_inst.rPacketCount[1]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[2]
+5) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[2] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[2] (in view: work.top(verilog))
+    net        fifo_inst.ftdi_input_inst.rPacketCount[2]
+    input  pin fifo_inst.ftdi_input_inst.SUM[3]/I2
     instance   fifo_inst.ftdi_input_inst.SUM[3] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.SUM[3]/O
     net        fifo_inst.ftdi_input_inst.N_6
@@ -471,18 +491,7 @@ Warning: Found 13 combinational loops!
     instance   fifo_inst.ftdi_input_inst.rPacketCount15 (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
     net        fifo_inst.ftdi_input_inst.rPacketCount15
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/I1
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[0]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[1]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[2]
-5) instance fifo_inst.ftdi_input_inst.rPacketCount_latch[2] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rPacketCount[2] (in view: work.top(verilog))
-    net        fifo_inst.ftdi_input_inst.rPacketCount[2]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/I1
+    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/I0
     instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[2] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/O
     net        fifo_inst.ftdi_input_inst.rPacketCount[2]
@@ -494,7 +503,7 @@ Warning: Found 13 combinational loops!
     output pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/O
     net        fifo_inst.ftdi_input_inst.rWrState[1]
 @W: BN137 :|Found combinational loop during mapping at net wTxEn_1
-7) instance DUT.uart_inst0.wTxEn_1 (in view: work.top(verilog)), output net wTxEn_1 (in view: work.top(verilog))
+7) instance DUT.fifo_tx_inst.wTxEn_1 (in view: work.top(verilog)), output net wTxEn_1 (in view: work.top(verilog))
     net        wTxEn_1
     input  pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/I1
     instance   fifo_inst.ftdi_input_inst.rWrState_latch[1] (cell SB_LUT4)
@@ -508,17 +517,13 @@ Warning: Found 13 combinational loops!
     instance   fifo_inst.ftdi_input_inst.rPacketCount15 (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
     net        fifo_inst.ftdi_input_inst.rPacketCount15
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/I1
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[0]
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[1]
-    input  pin DUT.uart_inst0.wTxEn_1/I0
-    instance   DUT.uart_inst0.wTxEn_1 (cell SB_LUT4)
-    output pin DUT.uart_inst0.wTxEn_1/O
+    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/I0
+    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[2] (cell SB_LUT4)
+    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/O
+    net        fifo_inst.ftdi_input_inst.rPacketCount[2]
+    input  pin DUT.fifo_tx_inst.wTxEn_1/I0
+    instance   DUT.fifo_tx_inst.wTxEn_1 (cell SB_LUT4)
+    output pin DUT.fifo_tx_inst.wTxEn_1/O
     net        wTxEn_1
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrEn
 8) instance fifo_inst.ftdi_input_inst.rRamWrEn_latch (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrEn (in view: work.top(verilog))
@@ -527,36 +532,29 @@ Warning: Found 13 combinational loops!
     instance   fifo_inst.ftdi_input_inst.rRamWrEn_latch (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rRamWrEn_latch/O
     net        fifo_inst.ftdi_input_inst.rRamWrEn
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.wPacketAvail
-9) instance fifo_inst.ftdi_input_inst.oPacketAvail_latch (in view: work.top(verilog)), output net fifo_inst.wPacketAvail (in view: work.top(verilog))
-    net        fifo_inst.wPacketAvail
-    input  pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/I1
-    instance   fifo_inst.ftdi_input_inst.oPacketAvail_latch (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/O
-    net        fifo_inst.wPacketAvail
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[0]
-10) instance fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrAddr[0] (in view: work.top(verilog))
+9) instance fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrAddr[0] (in view: work.top(verilog))
     net        fifo_inst.ftdi_input_inst.rRamWrAddr[0]
     input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0]/I0
     instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0]/O
     net        fifo_inst.ftdi_input_inst.rRamWrAddr[0]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[1]
-11) instance fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrAddr[1] (in view: work.top(verilog))
+10) instance fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrAddr[1] (in view: work.top(verilog))
     net        fifo_inst.ftdi_input_inst.rRamWrAddr[1]
     input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1]/I1
     instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1]/O
     net        fifo_inst.ftdi_input_inst.rRamWrAddr[1]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[2]
-12) instance fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrAddr[2] (in view: work.top(verilog))
+11) instance fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.rRamWrAddr[2] (in view: work.top(verilog))
     net        fifo_inst.ftdi_input_inst.rRamWrAddr[2]
     input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/I1
     instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/O
     net        fifo_inst.ftdi_input_inst.rRamWrAddr[2]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.N_11
-13) instance fifo_inst.ftdi_input_inst.SUM_0[2] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.N_11 (in view: work.top(verilog))
+12) instance fifo_inst.ftdi_input_inst.SUM_0[2] (in view: work.top(verilog)), output net fifo_inst.ftdi_input_inst.N_11 (in view: work.top(verilog))
     net        fifo_inst.ftdi_input_inst.N_11
     input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/I2
     instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2] (cell SB_LUT4)
@@ -566,9 +564,16 @@ Warning: Found 13 combinational loops!
     instance   fifo_inst.ftdi_input_inst.SUM_0[2] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.SUM_0[2]/O
     net        fifo_inst.ftdi_input_inst.N_11
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.wPacketAvail
+13) instance fifo_inst.ftdi_input_inst.oPacketAvail_latch (in view: work.top(verilog)), output net fifo_inst.wPacketAvail (in view: work.top(verilog))
+    net        fifo_inst.wPacketAvail
+    input  pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/I1
+    instance   fifo_inst.ftdi_input_inst.oPacketAvail_latch (cell SB_LUT4)
+    output pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/O
+    net        fifo_inst.wPacketAvail
 End of loops
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 146MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 150MB)
 
 
 
@@ -577,147 +582,143 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 190 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 201 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ================================ Non-Gated/Non-Generated Clocks =================================
 Clock Tree ID     Driving Element               Drive Element Type     Fanout     Sample Instance
 -------------------------------------------------------------------------------------------------
-@K:CKID0001       top_pll_inst.top_pll_inst     SB_PLL40_PAD           190        rTxByte_esr[0] 
+@K:CKID0001       top_pll_inst.top_pll_inst     SB_PLL40_PAD           201        rTxByte_esr[0] 
 =================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 146MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 150MB)
 
-Writing Analyst data base C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\synwork\IceBreak_Test_m.srm
+Writing Analyst data base C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\synwork\IceBreak_Test_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 146MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 150MB)
 
 Writing EDIF Netlist and constraint files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
-@N: FX1056 |Writing EDF file: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.edf
+@N: FX1056 |Writing EDF file: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.edf
 L-2016.09L+ice40
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 145MB peak: 147MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 141MB peak: 150MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 147MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 150MB)
 
 Warning: Found 11 combinational loops!
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
-1) instance rPacketCount_latch[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_140
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/O
-    net        fifo_inst.ftdi_input_inst.G_140
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount15
-2) instance rPacketCount15 (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount15 (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_141
+1) instance rPacketCount15 (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount15 (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
+    net        fifo_inst.ftdi_input_inst.G_108
     input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I0
     instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
-    net        fifo_inst.ftdi_input_inst.G_142
+    net        fifo_inst.ftdi_input_inst.G_109
     input  pin fifo_inst.ftdi_input_inst.rPacketCount15/I0
     instance   fifo_inst.ftdi_input_inst.rPacketCount15 (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
-    net        fifo_inst.ftdi_input_inst.G_141
+    net        fifo_inst.ftdi_input_inst.G_108
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[3]
-3) instance rPacketCount_latch[3] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[3] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_142
+2) instance rPacketCount_latch[3] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[3] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
+    net        fifo_inst.ftdi_input_inst.G_109
     input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I1
     instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
-    net        fifo_inst.ftdi_input_inst.G_142
+    net        fifo_inst.ftdi_input_inst.G_109
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[0]
+3) instance rPacketCount_latch[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
+    net        fifo_inst.ftdi_input_inst.G_110
+    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/I0
+    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (cell SB_LUT4)
+    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/O
+    net        fifo_inst.ftdi_input_inst.G_110
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[1]
 4) instance rPacketCount_latch[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_143
-    input  pin fifo_inst.ftdi_input_inst.SUM[3]/I1
+    net        fifo_inst.ftdi_input_inst.G_111
+    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/I1
+    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[1] (cell SB_LUT4)
+    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/O
+    net        fifo_inst.ftdi_input_inst.G_111
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[2]
+5) instance rPacketCount_latch[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
+    net        fifo_inst.ftdi_input_inst.G_112
+    input  pin fifo_inst.ftdi_input_inst.SUM[3]/I2
     instance   fifo_inst.ftdi_input_inst.SUM[3] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.SUM[3]/O
     net        fifo_inst.ftdi_input_inst.SUM[3]
     input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/I2
     instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[3] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[3]/O
-    net        fifo_inst.ftdi_input_inst.G_142
+    net        fifo_inst.ftdi_input_inst.G_109
     input  pin fifo_inst.ftdi_input_inst.rPacketCount15/I0
     instance   fifo_inst.ftdi_input_inst.rPacketCount15 (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount15/O
-    net        fifo_inst.ftdi_input_inst.G_141
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/I1
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[0] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[0]/O
-    net        fifo_inst.ftdi_input_inst.G_140
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/I0
-    instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[1] (cell SB_LUT4)
-    output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.rPacketCount[1]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rPacketCount[2]
-5) instance rPacketCount_latch[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rPacketCount[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_144
-    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/I1
+    net        fifo_inst.ftdi_input_inst.G_108
+    input  pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/I0
     instance   fifo_inst.ftdi_input_inst.rPacketCount_latch[2] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rPacketCount_latch[2]/O
-    net        fifo_inst.ftdi_input_inst.G_144
+    net        fifo_inst.ftdi_input_inst.rPacketCount[2]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rWrState[1]
 6) instance rWrState_latch[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rWrState[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_145
+    net        fifo_inst.ftdi_input_inst.G_113
     input  pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/I0
     instance   fifo_inst.ftdi_input_inst.rWrState_latch[1] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rWrState_latch[1]/O
-    net        fifo_inst.ftdi_input_inst.G_145
+    net        fifo_inst.ftdi_input_inst.G_113
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrEn
 7) instance rRamWrEn_latch (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rRamWrEn (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_147
+    net        fifo_inst.ftdi_input_inst.G_115
     input  pin fifo_inst.ftdi_input_inst.rRamWrEn_latch/I1
     instance   fifo_inst.ftdi_input_inst.rRamWrEn_latch (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rRamWrEn_latch/O
-    net        fifo_inst.ftdi_input_inst.G_147
+    net        fifo_inst.ftdi_input_inst.G_115
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[0]
 8) instance rRamWrAddr_latch[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rRamWrAddr[0] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_149
+    net        fifo_inst.ftdi_input_inst.G_116
     input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0]/I0
     instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[0]/O
     net        fifo_inst.ftdi_input_inst.rRamWrAddr[0]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[1]
 9) instance rRamWrAddr_latch[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rRamWrAddr[1] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_150
+    net        fifo_inst.ftdi_input_inst.G_117
     input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1]/I1
     instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[1]/O
     net        fifo_inst.ftdi_input_inst.rRamWrAddr[1]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.rRamWrAddr[2]
 10) instance rRamWrAddr_latch[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net rRamWrAddr[2] (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_151
+    net        fifo_inst.ftdi_input_inst.G_118
     input  pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/I1
     instance   fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2] (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.rRamWrAddr_latch[2]/O
     net        fifo_inst.ftdi_input_inst.rRamWrAddr[2]
 @W: BN137 :|Found combinational loop during mapping at net fifo_inst.ftdi_input_inst.wPacketAvail
 11) instance oPacketAvail_latch (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist)), output net wPacketAvail (in view: work.ftdi_input_simple_8s_8s_0s_1s_2s_3s(netlist))
-    net        fifo_inst.ftdi_input_inst.G_148
+    net        fifo_inst.ftdi_input_inst.G_120
     input  pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/I1
     instance   fifo_inst.ftdi_input_inst.oPacketAvail_latch (cell SB_LUT4)
     output pin fifo_inst.ftdi_input_inst.oPacketAvail_latch/O
     net        fifo_inst.ftdi_input_inst.wPacketAvail
 End of loops
-@W: MT420 |Found inferred clock top|iClk with period 12.09ns. Please declare a user-defined clock on object "p:iClk"
-@N: MT615 |Found clock top_pll|PLLOUTGLOBAL_derived_clock with period 12.09ns 
+@W: MT420 |Found inferred clock top|iClk with period 10.97ns. Please declare a user-defined clock on object "p:iClk"
+@N: MT615 |Found clock top_pll|PLLOUTGLOBAL_derived_clock with period 10.97ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Mar 28 19:37:21 2020
+# Timing Report written on Sun Mar 29 02:22:43 2020
 #
 
 
 Top view:               top
-Requested Frequency:    82.7 MHz
+Requested Frequency:    91.2 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -731,13 +732,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -2.133
+Worst slack in design: -1.936
 
                                        Requested     Estimated     Requested     Estimated                 Clock                       Clock                
 Starting Clock                         Frequency     Frequency     Period        Period        Slack       Type                        Group                
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-top_pll|PLLOUTGLOBAL_derived_clock     82.7 MHz      70.3 MHz      12.086        14.219        -2.133      derived (from top|iClk)     Autoconstr_clkgroup_0
-top|iClk                               82.7 MHz      NA            12.086        NA            DCM/PLL     inferred                    Autoconstr_clkgroup_0
+top_pll|PLLOUTGLOBAL_derived_clock     91.2 MHz      77.5 MHz      10.969        12.905        -1.936      derived (from top|iClk)     Autoconstr_clkgroup_0
+top|iClk                               91.2 MHz      NA            10.969        NA            DCM/PLL     inferred                    Autoconstr_clkgroup_0
 ============================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -752,7 +753,7 @@ Clocks                                                                  |    ris
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                            Ending                              |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-top_pll|PLLOUTGLOBAL_derived_clock  top_pll|PLLOUTGLOBAL_derived_clock  |  12.086      -2.133  |  No paths    -      |  No paths    -      |  No paths    -    
+top_pll|PLLOUTGLOBAL_derived_clock  top_pll|PLLOUTGLOBAL_derived_clock  |  10.969      -1.936  |  No paths    -      |  No paths    -      |  No paths    -    
 ===============================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -779,37 +780,37 @@ Starting Points with Worst Slack
 Instance                             Reference                              Type         Pin     Net                   Time        Slack 
                                      Clock                                                                                               
 -----------------------------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_clk_divider[2]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_clk_divider[2]     0.796       -2.133
-DUT.uart_inst0.rx_clk_divider[3]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_clk_divider[3]     0.796       -2.061
-DUT.uart_inst0.rx_clk_divider[4]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_clk_divider[4]     0.796       -2.030
-DUT.uart_inst0.rx_countdown[0]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_countdown_3        0.796       -0.922
-DUT.uart_inst0.rx_countdown[1]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_countdown[1]       0.796       -0.722
-DUT.uart_inst0.tx_clk_divider[0]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[0]     0.796       -0.617
-DUT.uart_inst0.rx_clk_divider[5]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_clk_divider[5]     0.796       -0.566
-DUT.uart_inst0.tx_clk_divider[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[1]     0.796       -0.545
-DUT.uart_inst0.tx_clk_divider[8]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[8]     0.796       -0.545
-DUT.uart_inst0.rx_countdown[2]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_countdown[2]       0.796       -0.522
+DUT.uart_inst0.rx_countdown[0]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_countdown_3        0.796       -1.936
+DUT.uart_inst0.rx_countdown[1]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       rx_countdown[1]       0.796       -1.736
+DUT.uart_inst0.tx_clk_divider[0]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[0]     0.796       -1.704
+DUT.uart_inst0.tx_countdown[0]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       tx_countdown[0]       0.796       -1.704
+DUT.uart_inst0.tx_clk_divider[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[1]     0.796       -1.632
+DUT.uart_inst0.tx_clk_divider[8]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[8]     0.796       -1.632
+DUT.uart_inst0.tx_countdown[1]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       tx_countdown[1]       0.796       -1.632
+DUT.uart_inst0.tx_clk_divider[6]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSS     Q       tx_clk_divider[6]     0.796       -1.600
+DUT.uart_inst0.tx_countdown[5]       top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       tx_countdown[5]       0.796       -1.600
+DUT.uart_inst0.tx_clk_divider[9]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     Q       tx_clk_divider[9]     0.796       -1.559
 =========================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                        Starting                                                                               Required           
-Instance                                Reference                              Type          Pin     Net                       Time         Slack 
-                                        Clock                                                                                                     
---------------------------------------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.recv_state[2]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF        D       recv_state_nss[2]         11.931       -2.133
-DUT.uart_inst0.recv_state[3]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF        D       recv_state_nss[3]         11.931       -2.133
-DUT.uart_inst0.rx_bits_remaining[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF        D       rx_bits_remaining         11.931       -2.133
-DUT.uart_inst0.rx_bits_remaining[2]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF        D       rx_bits_remaining_0       11.931       -2.133
-DUT.uart_inst0.recv_state[4]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF        D       recv_state_nss[4]         11.931       -2.061
-DUT.uart_inst0.recv_state[1]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF        D       recv_state_nss[1]         11.931       -2.030
-DUT.uart_inst0.tx_state[0]              top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR      D       N_48_i                    11.931       -0.617
-DUT.uart_inst0.rx_countdown[2]          top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE       D       N_55                      11.931       -0.493
-DUT.uart_inst0.tx_state_esr[1]          top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFESR     E       N_345_0_0                 12.086       -0.431
-DUT.uart_inst0.recv_state[0]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF        D       recv_state_nss_0_i[0]     11.931       -0.421
-==================================================================================================================================================
+                                        Starting                                                                                   Required           
+Instance                                Reference                              Type         Pin     Net                            Time         Slack 
+                                        Clock                                                                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------------
+DUT.uart_inst0.rx_bits_remaining[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       rx_bits_remaining              10.814       -1.936
+DUT.uart_inst0.rx_bits_remaining[2]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       rx_bits_remaining_0            10.814       -1.936
+DUT.uart_inst0.recv_state[2]            top_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       recv_state_nss[2]              10.814       -1.777
+DUT.uart_inst0.tx_bits_remaining[0]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     D       un1_tx_bits_remaining_axb0     10.814       -1.704
+DUT.uart_inst0.tx_countdown[3]          top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      D       tx_countdown_7[3]              10.814       -1.704
+DUT.uart_inst0.tx_out                   top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      D       tx_out_6                       10.814       -1.704
+DUT.uart_inst0.tx_bits_remaining[1]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     D       tx_bits_remaining_RNO[1]       10.814       -1.673
+DUT.uart_inst0.tx_bits_remaining[2]     top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     D       tx_bits_remaining_RNO[2]       10.814       -1.580
+DUT.uart_inst0.tx_countdown[4]          top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      D       tx_countdown_7[4]              10.814       -1.580
+DUT.uart_inst0.tx_state[1]              top_pll|PLLOUTGLOBAL_derived_clock     SB_DFFSR     D       tx_state_RNO[1]                10.814       -1.569
+======================================================================================================================================================
 
 
 
@@ -818,227 +819,278 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      12.086
+      Requested Period:                      10.969
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         11.931
+    = Required time:                         10.814
 
-    - Propagation time:                      14.064
+    - Propagation time:                      12.750
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -2.133
+    = Slack (critical) :                     -1.936
 
-    Number of logic level(s):                6
-    Starting point:                          DUT.uart_inst0.rx_clk_divider[2] / Q
+    Number of logic level(s):                10
+    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
     Ending point:                            DUT.uart_inst0.rx_bits_remaining[1] / D
     The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
     The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
 
-Instance / Net                                             Pin      Pin               Arrival     No. of    
-Name                                           Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_clk_divider[2]               SB_DFFE     Q        Out     0.796     0.796       -         
-rx_clk_divider[2]                              Net         -        -       1.599     -           3         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]       SB_LUT4     I0       In      -         2.395       -         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]       SB_LUT4     O        Out     0.661     3.056       -         
-un2_rx_clk_divider_a_9                         Net         -        -       1.371     -           1         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]     SB_LUT4     I3       In      -         4.427       -         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]     SB_LUT4     O        Out     0.465     4.893       -         
-un2_rx_clk_divider_a_13                        Net         -        -       1.371     -           2         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]     SB_LUT4     I3       In      -         6.263       -         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]     SB_LUT4     O        Out     0.465     6.729       -         
-un2_rx_clk_divider_0                           Net         -        -       1.371     -           10        
-DUT.uart_inst0.rx_countdown_RNI8UI86[3]        SB_LUT4     I3       In      -         8.100       -         
-DUT.uart_inst0.rx_countdown_RNI8UI86[3]        SB_LUT4     O        Out     0.465     8.565       -         
-rx_countdown_8_i_o2_1[2]                       Net         -        -       1.371     -           9         
-DUT.uart_inst0.recv_state_RNITN8GJ[2]          SB_LUT4     I1       In      -         9.936       -         
-DUT.uart_inst0.recv_state_RNITN8GJ[2]          SB_LUT4     O        Out     0.589     10.525      -         
-recv_state_RNITN8GJ[2]                         Net         -        -       1.371     -           4         
-DUT.uart_inst0.rx_bits_remaining_RNO[1]        SB_LUT4     I0       In      -         11.896      -         
-DUT.uart_inst0.rx_bits_remaining_RNO[1]        SB_LUT4     O        Out     0.661     12.557      -         
-rx_bits_remaining                              Net         -        -       1.507     -           1         
-DUT.uart_inst0.rx_bits_remaining[1]            SB_DFF      D        In      -         14.064      -         
-============================================================================================================
-Total path delay (propagation time + setup) of 14.219 is 4.258(29.9%) logic and 9.961(70.1%) route.
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
+rx_countdown_3                                       Net          -        -       0.834     -           16        
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
+rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
+rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
+rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
+rx_countdown_3_cry_3_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_4_s1_c             SB_CARRY     CI       In      -         2.623       -         
+DUT.uart_inst0.rx_countdown_3_cry_4_s1_c             SB_CARRY     CO       Out     0.186     2.809       -         
+rx_countdown_3_cry_4_s1                              Net          -        -       0.386     -           1         
+DUT.uart_inst0.rx_countdown_3_cry_4_s1_c_RNISHMM     SB_LUT4      I3       In      -         3.195       -         
+DUT.uart_inst0.rx_countdown_3_cry_4_s1_c_RNISHMM     SB_LUT4      O        Out     0.465     3.660       -         
+rx_countdown_3_s1[5]                                 Net          -        -       1.371     -           11        
+DUT.uart_inst0.rx_bits_remaining_RNO_4[1]            SB_LUT4      I3       In      -         5.032       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_4[1]            SB_LUT4      O        Out     0.465     5.497       -         
+N_21_0                                               Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO_2[1]            SB_LUT4      I2       In      -         6.868       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_2[1]            SB_LUT4      O        Out     0.558     7.426       -         
+N_21_mux_0                                           Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO_0[1]            SB_LUT4      I2       In      -         8.797       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_0[1]            SB_LUT4      O        Out     0.558     9.355       -         
+N_13_0                                               Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO[1]              SB_LUT4      I2       In      -         10.726      -         
+DUT.uart_inst0.rx_bits_remaining_RNO[1]              SB_LUT4      O        Out     0.517     11.243      -         
+rx_bits_remaining                                    Net          -        -       1.507     -           1         
+DUT.uart_inst0.rx_bits_remaining[1]                  SB_DFF       D        In      -         12.750      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 12.905 is 4.638(35.9%) logic and 8.267(64.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
-      Requested Period:                      12.086
+      Requested Period:                      10.969
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         11.931
+    = Required time:                         10.814
 
-    - Propagation time:                      14.064
+    - Propagation time:                      12.750
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -2.133
+    = Slack (critical) :                     -1.936
 
-    Number of logic level(s):                6
-    Starting point:                          DUT.uart_inst0.rx_clk_divider[2] / Q
+    Number of logic level(s):                10
+    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
+    Ending point:                            DUT.uart_inst0.rx_bits_remaining[2] / D
+    The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
+    The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
+rx_countdown_3                                       Net          -        -       0.834     -           16        
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
+rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
+rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
+rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
+rx_countdown_3_cry_3_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_4_s1_c             SB_CARRY     CI       In      -         2.623       -         
+DUT.uart_inst0.rx_countdown_3_cry_4_s1_c             SB_CARRY     CO       Out     0.186     2.809       -         
+rx_countdown_3_cry_4_s1                              Net          -        -       0.386     -           1         
+DUT.uart_inst0.rx_countdown_3_cry_4_s1_c_RNISHMM     SB_LUT4      I3       In      -         3.195       -         
+DUT.uart_inst0.rx_countdown_3_cry_4_s1_c_RNISHMM     SB_LUT4      O        Out     0.465     3.660       -         
+rx_countdown_3_s1[5]                                 Net          -        -       1.371     -           11        
+DUT.uart_inst0.rx_bits_remaining_RNO_4[2]            SB_LUT4      I3       In      -         5.032       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_4[2]            SB_LUT4      O        Out     0.465     5.497       -         
+N_21                                                 Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO_2[2]            SB_LUT4      I2       In      -         6.868       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_2[2]            SB_LUT4      O        Out     0.558     7.426       -         
+N_21_mux                                             Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO_0[2]            SB_LUT4      I2       In      -         8.797       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_0[2]            SB_LUT4      O        Out     0.558     9.355       -         
+N_13                                                 Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO[2]              SB_LUT4      I2       In      -         10.726      -         
+DUT.uart_inst0.rx_bits_remaining_RNO[2]              SB_LUT4      O        Out     0.517     11.243      -         
+rx_bits_remaining_0                                  Net          -        -       1.507     -           1         
+DUT.uart_inst0.rx_bits_remaining[2]                  SB_DFF       D        In      -         12.750      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 12.905 is 4.638(35.9%) logic and 8.267(64.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.969
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.814
+
+    - Propagation time:                      12.643
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.829
+
+    Number of logic level(s):                9
+    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
+    Ending point:                            DUT.uart_inst0.rx_bits_remaining[1] / D
+    The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
+    The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
+rx_countdown_3                                       Net          -        -       0.834     -           16        
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
+rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
+rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
+rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
+rx_countdown_3_cry_3_s1                              Net          -        -       0.386     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      I3       In      -         2.995       -         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      O        Out     0.465     3.461       -         
+rx_countdown_3_s1[4]                                 Net          -        -       1.371     -           12        
+DUT.uart_inst0.rx_bits_remaining_RNO_4[1]            SB_LUT4      I2       In      -         4.832       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_4[1]            SB_LUT4      O        Out     0.558     5.390       -         
+N_21_0                                               Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO_2[1]            SB_LUT4      I2       In      -         6.761       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_2[1]            SB_LUT4      O        Out     0.558     7.319       -         
+N_21_mux_0                                           Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO_0[1]            SB_LUT4      I2       In      -         8.690       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_0[1]            SB_LUT4      O        Out     0.558     9.248       -         
+N_13_0                                               Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO[1]              SB_LUT4      I2       In      -         10.619      -         
+DUT.uart_inst0.rx_bits_remaining_RNO[1]              SB_LUT4      O        Out     0.517     11.136      -         
+rx_bits_remaining                                    Net          -        -       1.507     -           1         
+DUT.uart_inst0.rx_bits_remaining[1]                  SB_DFF       D        In      -         12.643      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 12.798 is 4.545(35.5%) logic and 8.253(64.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.969
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.814
+
+    - Propagation time:                      12.643
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.829
+
+    Number of logic level(s):                9
+    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
+    Ending point:                            DUT.uart_inst0.rx_bits_remaining[2] / D
+    The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
+    The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
+rx_countdown_3                                       Net          -        -       0.834     -           16        
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
+rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
+rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
+rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
+rx_countdown_3_cry_3_s1                              Net          -        -       0.386     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      I3       In      -         2.995       -         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      O        Out     0.465     3.461       -         
+rx_countdown_3_s1[4]                                 Net          -        -       1.371     -           12        
+DUT.uart_inst0.rx_bits_remaining_RNO_4[2]            SB_LUT4      I2       In      -         4.832       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_4[2]            SB_LUT4      O        Out     0.558     5.390       -         
+N_21                                                 Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO_2[2]            SB_LUT4      I2       In      -         6.761       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_2[2]            SB_LUT4      O        Out     0.558     7.319       -         
+N_21_mux                                             Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO_0[2]            SB_LUT4      I2       In      -         8.690       -         
+DUT.uart_inst0.rx_bits_remaining_RNO_0[2]            SB_LUT4      O        Out     0.558     9.248       -         
+N_13                                                 Net          -        -       1.371     -           1         
+DUT.uart_inst0.rx_bits_remaining_RNO[2]              SB_LUT4      I2       In      -         10.619      -         
+DUT.uart_inst0.rx_bits_remaining_RNO[2]              SB_LUT4      O        Out     0.517     11.136      -         
+rx_bits_remaining_0                                  Net          -        -       1.507     -           1         
+DUT.uart_inst0.rx_bits_remaining[2]                  SB_DFF       D        In      -         12.643      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 12.798 is 4.545(35.5%) logic and 8.253(64.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.969
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.814
+
+    - Propagation time:                      12.591
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.777
+
+    Number of logic level(s):                9
+    Starting point:                          DUT.uart_inst0.rx_countdown[0] / Q
     Ending point:                            DUT.uart_inst0.recv_state[2] / D
     The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
     The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
 
 Instance / Net                                                    Pin      Pin               Arrival     No. of    
-Name                                                  Type        Name     Dir     Delay     Time        Fan Out(s)
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
 -------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_clk_divider[2]                      SB_DFFE     Q        Out     0.796     0.796       -         
-rx_clk_divider[2]                                     Net         -        -       1.599     -           3         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]              SB_LUT4     I0       In      -         2.395       -         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]              SB_LUT4     O        Out     0.661     3.056       -         
-un2_rx_clk_divider_a_9                                Net         -        -       1.371     -           1         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]            SB_LUT4     I3       In      -         4.427       -         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]            SB_LUT4     O        Out     0.465     4.893       -         
-un2_rx_clk_divider_a_13                               Net         -        -       1.371     -           2         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]            SB_LUT4     I3       In      -         6.263       -         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]            SB_LUT4     O        Out     0.465     6.729       -         
-un2_rx_clk_divider_0                                  Net         -        -       1.371     -           10        
-DUT.uart_inst0.rx_countdown_RNI8UI86[3]               SB_LUT4     I3       In      -         8.100       -         
-DUT.uart_inst0.rx_countdown_RNI8UI86[3]               SB_LUT4     O        Out     0.465     8.565       -         
-rx_countdown_8_i_o2_1[2]                              Net         -        -       1.371     -           9         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c_RNIIQN8I     SB_LUT4     I1       In      -         9.936       -         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c_RNIIQN8I     SB_LUT4     O        Out     0.589     10.525      -         
-recv_N_5_mux                                          Net         -        -       1.371     -           2         
-DUT.uart_inst0.recv_state_RNO[2]                      SB_LUT4     I0       In      -         11.896      -         
-DUT.uart_inst0.recv_state_RNO[2]                      SB_LUT4     O        Out     0.661     12.557      -         
-recv_state_nss[2]                                     Net         -        -       1.507     -           1         
-DUT.uart_inst0.recv_state[2]                          SB_DFF      D        In      -         14.064      -         
+DUT.uart_inst0.rx_countdown[0]                       SB_DFFE      Q        Out     0.796     0.796       -         
+rx_countdown_3                                       Net          -        -       0.834     -           16        
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     I0       In      -         1.630       -         
+DUT.uart_inst0.rx_countdown_3_cry_0_s1_c             SB_CARRY     CO       Out     0.380     2.009       -         
+rx_countdown_3_cry_0_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CI       In      -         2.023       -         
+DUT.uart_inst0.rx_countdown_3_cry_1_s1_c             SB_CARRY     CO       Out     0.186     2.209       -         
+rx_countdown_3_cry_1_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CI       In      -         2.223       -         
+DUT.uart_inst0.rx_countdown_3_cry_2_s1_c             SB_CARRY     CO       Out     0.186     2.409       -         
+rx_countdown_3_cry_2_s1                              Net          -        -       0.014     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CI       In      -         2.423       -         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c             SB_CARRY     CO       Out     0.186     2.609       -         
+rx_countdown_3_cry_3_s1                              Net          -        -       0.386     -           2         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      I3       In      -         2.995       -         
+DUT.uart_inst0.rx_countdown_3_cry_3_s1_c_RNIQBCS     SB_LUT4      O        Out     0.465     3.461       -         
+rx_countdown_3_s1[4]                                 Net          -        -       1.371     -           12        
+DUT.uart_inst0.recv_state_RNO_6[2]                   SB_LUT4      I1       In      -         4.832       -         
+DUT.uart_inst0.recv_state_RNO_6[2]                   SB_LUT4      O        Out     0.589     5.421       -         
+m7_e_1                                               Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_3[2]                   SB_LUT4      I3       In      -         6.792       -         
+DUT.uart_inst0.recv_state_RNO_3[2]                   SB_LUT4      O        Out     0.465     7.257       -         
+m7_e_3                                               Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO_0[2]                   SB_LUT4      I3       In      -         8.628       -         
+DUT.uart_inst0.recv_state_RNO_0[2]                   SB_LUT4      O        Out     0.424     9.052       -         
+m9_1                                                 Net          -        -       1.371     -           1         
+DUT.uart_inst0.recv_state_RNO[2]                     SB_LUT4      I0       In      -         10.423      -         
+DUT.uart_inst0.recv_state_RNO[2]                     SB_LUT4      O        Out     0.661     11.084      -         
+recv_state_nss[2]                                    Net          -        -       1.507     -           1         
+DUT.uart_inst0.recv_state[2]                         SB_DFF       D        In      -         12.591      -         
 ===================================================================================================================
-Total path delay (propagation time + setup) of 14.219 is 4.258(29.9%) logic and 9.961(70.1%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 3: 
-      Requested Period:                      12.086
-    - Setup time:                            0.155
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         11.931
-
-    - Propagation time:                      14.064
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -2.133
-
-    Number of logic level(s):                6
-    Starting point:                          DUT.uart_inst0.rx_clk_divider[2] / Q
-    Ending point:                            DUT.uart_inst0.rx_bits_remaining[2] / D
-    The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
-    The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
-
-Instance / Net                                             Pin      Pin               Arrival     No. of    
-Name                                           Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_clk_divider[2]               SB_DFFE     Q        Out     0.796     0.796       -         
-rx_clk_divider[2]                              Net         -        -       1.599     -           3         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]       SB_LUT4     I0       In      -         2.395       -         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]       SB_LUT4     O        Out     0.661     3.056       -         
-un2_rx_clk_divider_a_9                         Net         -        -       1.371     -           1         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]     SB_LUT4     I3       In      -         4.427       -         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]     SB_LUT4     O        Out     0.465     4.893       -         
-un2_rx_clk_divider_a_13                        Net         -        -       1.371     -           2         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]     SB_LUT4     I3       In      -         6.263       -         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]     SB_LUT4     O        Out     0.465     6.729       -         
-un2_rx_clk_divider_0                           Net         -        -       1.371     -           10        
-DUT.uart_inst0.rx_countdown_RNI8UI86[3]        SB_LUT4     I3       In      -         8.100       -         
-DUT.uart_inst0.rx_countdown_RNI8UI86[3]        SB_LUT4     O        Out     0.465     8.565       -         
-rx_countdown_8_i_o2_1[2]                       Net         -        -       1.371     -           9         
-DUT.uart_inst0.recv_state_RNITN8GJ[2]          SB_LUT4     I1       In      -         9.936       -         
-DUT.uart_inst0.recv_state_RNITN8GJ[2]          SB_LUT4     O        Out     0.589     10.525      -         
-recv_state_RNITN8GJ[2]                         Net         -        -       1.371     -           4         
-DUT.uart_inst0.rx_bits_remaining_RNO[2]        SB_LUT4     I0       In      -         11.896      -         
-DUT.uart_inst0.rx_bits_remaining_RNO[2]        SB_LUT4     O        Out     0.661     12.557      -         
-rx_bits_remaining_0                            Net         -        -       1.507     -           1         
-DUT.uart_inst0.rx_bits_remaining[2]            SB_DFF      D        In      -         14.064      -         
-============================================================================================================
-Total path delay (propagation time + setup) of 14.219 is 4.258(29.9%) logic and 9.961(70.1%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 4: 
-      Requested Period:                      12.086
-    - Setup time:                            0.155
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         11.931
-
-    - Propagation time:                      14.064
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -2.133
-
-    Number of logic level(s):                6
-    Starting point:                          DUT.uart_inst0.rx_clk_divider[2] / Q
-    Ending point:                            DUT.uart_inst0.recv_state[3] / D
-    The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
-    The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
-
-Instance / Net                                                    Pin      Pin               Arrival     No. of    
-Name                                                  Type        Name     Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_clk_divider[2]                      SB_DFFE     Q        Out     0.796     0.796       -         
-rx_clk_divider[2]                                     Net         -        -       1.599     -           3         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]              SB_LUT4     I0       In      -         2.395       -         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]              SB_LUT4     O        Out     0.661     3.056       -         
-un2_rx_clk_divider_a_9                                Net         -        -       1.371     -           1         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]            SB_LUT4     I3       In      -         4.427       -         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]            SB_LUT4     O        Out     0.465     4.893       -         
-un2_rx_clk_divider_a_13                               Net         -        -       1.371     -           2         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]            SB_LUT4     I3       In      -         6.263       -         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]            SB_LUT4     O        Out     0.465     6.729       -         
-un2_rx_clk_divider_0                                  Net         -        -       1.371     -           10        
-DUT.uart_inst0.rx_countdown_RNI8UI86[3]               SB_LUT4     I3       In      -         8.100       -         
-DUT.uart_inst0.rx_countdown_RNI8UI86[3]               SB_LUT4     O        Out     0.465     8.565       -         
-rx_countdown_8_i_o2_1[2]                              Net         -        -       1.371     -           9         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c_RNIIQN8I     SB_LUT4     I1       In      -         9.936       -         
-DUT.uart_inst0.rx_countdown_3_cry_1_s1_c_RNIIQN8I     SB_LUT4     O        Out     0.589     10.525      -         
-recv_N_5_mux                                          Net         -        -       1.371     -           2         
-DUT.uart_inst0.recv_state_RNO[3]                      SB_LUT4     I0       In      -         11.896      -         
-DUT.uart_inst0.recv_state_RNO[3]                      SB_LUT4     O        Out     0.661     12.557      -         
-recv_state_nss[3]                                     Net         -        -       1.507     -           1         
-DUT.uart_inst0.recv_state[3]                          SB_DFF      D        In      -         14.064      -         
-===================================================================================================================
-Total path delay (propagation time + setup) of 14.219 is 4.258(29.9%) logic and 9.961(70.1%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 5: 
-      Requested Period:                      12.086
-    - Setup time:                            0.155
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         11.931
-
-    - Propagation time:                      14.033
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -2.102
-
-    Number of logic level(s):                6
-    Starting point:                          DUT.uart_inst0.rx_clk_divider[2] / Q
-    Ending point:                            DUT.uart_inst0.rx_bits_remaining[1] / D
-    The start point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
-    The end   point is clocked by            top_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
-
-Instance / Net                                             Pin      Pin               Arrival     No. of    
-Name                                           Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------
-DUT.uart_inst0.rx_clk_divider[2]               SB_DFFE     Q        Out     0.796     0.796       -         
-rx_clk_divider[2]                              Net         -        -       1.599     -           3         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]       SB_LUT4     I0       In      -         2.395       -         
-DUT.uart_inst0.rx_clk_divider_RNIIDCT[2]       SB_LUT4     O        Out     0.661     3.056       -         
-un2_rx_clk_divider_a_9                         Net         -        -       1.371     -           1         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]     SB_LUT4     I3       In      -         4.427       -         
-DUT.uart_inst0.rx_clk_divider_RNIJI4K1[16]     SB_LUT4     O        Out     0.465     4.893       -         
-un2_rx_clk_divider_a_13                        Net         -        -       1.371     -           2         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]     SB_LUT4     I3       In      -         6.263       -         
-DUT.uart_inst0.rx_clk_divider_RNI7H9R3[10]     SB_LUT4     O        Out     0.465     6.729       -         
-un2_rx_clk_divider_0                           Net         -        -       1.371     -           10        
-DUT.uart_inst0.rx_countdown_RNIDB3D7[0]        SB_LUT4     I3       In      -         8.100       -         
-DUT.uart_inst0.rx_countdown_RNIDB3D7[0]        SB_LUT4     O        Out     0.465     8.565       -         
-rx_countdown_8_i_o2_2[2]                       Net         -        -       1.371     -           9         
-DUT.uart_inst0.recv_state_RNITN8GJ[2]          SB_LUT4     I2       In      -         9.936       -         
-DUT.uart_inst0.recv_state_RNITN8GJ[2]          SB_LUT4     O        Out     0.558     10.494      -         
-recv_state_RNITN8GJ[2]                         Net         -        -       1.371     -           4         
-DUT.uart_inst0.rx_bits_remaining_RNO[1]        SB_LUT4     I0       In      -         11.865      -         
-DUT.uart_inst0.rx_bits_remaining_RNO[1]        SB_LUT4     O        Out     0.661     12.526      -         
-rx_bits_remaining                              Net         -        -       1.507     -           1         
-DUT.uart_inst0.rx_bits_remaining[1]            SB_DFF      D        In      -         14.033      -         
-============================================================================================================
-Total path delay (propagation time + setup) of 14.188 is 4.227(29.8%) logic and 9.961(70.2%) route.
+Total path delay (propagation time + setup) of 12.746 is 4.493(35.3%) logic and 8.253(64.7%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1048,10 +1100,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 147MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 150MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 147MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 150MB)
 
 ---------------------------------------
 Resource Usage Report for top 
@@ -1060,42 +1112,43 @@ Mapping to part: ice40up5ksg48
 Cell usage:
 GND             8 uses
 SB_CARRY        39 uses
-SB_DFF          32 uses
-SB_DFFE         110 uses
-SB_DFFESR       9 uses
-SB_DFFSR        33 uses
+SB_DFF          23 uses
+SB_DFFE         113 uses
+SB_DFFESR       16 uses
+SB_DFFESS       5 uses
+SB_DFFSR        38 uses
 SB_DFFSS        5 uses
 SB_GB           2 uses
 SB_RAM512x8     1 use
 VCC             8 uses
-SB_LUT4         282 uses
+SB_LUT4         347 uses
 
-I/O ports: 21
-I/O primitives: 20
-SB_IO          19 uses
+I/O ports: 22
+I/O primitives: 21
+SB_IO          20 uses
 SB_PLL40_PAD   1 use
 
 I/O Register bits:                  0
-Register bits not including I/Os:   189 (3%)
+Register bits not including I/Os:   200 (3%)
 
 RAM/ROM usage summary
 Block Rams : 1 of 30 (3%)
 
 Total load per clock:
    top|iClk: 1
-   top_pll|PLLOUTGLOBAL_derived_clock: 190
+   top_pll|PLLOUTGLOBAL_derived_clock: 201
 
 @S |Mapping Summary:
-Total  LUTs: 282 (5%)
+Total  LUTs: 347 (6%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 282 = 282 
+Distribution of All Consumed Luts 347 = 347 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 31MB peak: 147MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 150MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Sat Mar 28 19:37:21 2020
+# Sun Mar 29 02:22:43 2020
 
 ###########################################################]

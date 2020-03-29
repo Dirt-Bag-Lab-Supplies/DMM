@@ -1,1 +1,1 @@
-create_clock -period 12.09 -name {top|iClk} -waveform [list 0.00 6.04] [get_ports iClk]
+create_clock -period 10.97 -name {top|iClk} -waveform [list 0.00 5.48] [get_ports iClk]

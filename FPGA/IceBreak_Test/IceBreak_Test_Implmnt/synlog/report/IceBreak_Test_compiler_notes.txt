@@ -1,33 +1,32 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
 @N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":752:7:752:18|Synthesizing module SB_PLL40_PAD in library work.
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\top_pll.v":1:7:1:13|Synthesizing module top_pll in library work.
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":24:7:24:10|Synthesizing module uart in library work.
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":17:7:17:10|Synthesizing module fifo in library work.
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":6:7:6:15|Synthesizing module uart_fifo in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":1:7:1:13|Synthesizing module top_pll in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":24:7:24:10|Synthesizing module uart in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":17:7:17:10|Synthesizing module fifo in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":6:7:6:15|Synthesizing module uart_fifo in library work.
 @N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":1124:7:1124:17|Synthesizing module SB_RAM512x8 in library work.
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":1:7:1:23|Synthesizing module ftdi_input_simple in library work.
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":1:7:1:17|Synthesizing module ftdi_output in library work.
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":5:7:5:15|Synthesizing module ftdi_fifo in library work.
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Synthesizing module top in library work.
-@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":32:14:32:17|Input BTN1 is unused.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Register bit oSiwu is always 1.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Register bit oPacketRead is always 1.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Register bit oRx_n is always 1.
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":62:0:62:5|Trying to extract state machine for register rFifoState.
-@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":24:12:24:18|Input iTxData is unused.
-@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":30:13:30:23|Input iPacketRead is unused.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart_fifo.v":135:0:135:5|Register bit oUartTxBusy is always 0.
-@N: CL134 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Found RAM rFifoData, depth=4, width=8
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rWritePtr[2] is always 0.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rReadPtr[2] is always 0.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[17] is always 0.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[16] is always 0.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[15] is always 0.
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register recv_state.
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register tx_state.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[14] is always 0.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":1:7:1:23|Synthesizing module ftdi_input_simple in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":1:7:1:17|Synthesizing module ftdi_output in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":5:7:5:15|Synthesizing module ftdi_fifo in library work.
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Synthesizing module top in library work.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":33:14:33:17|Input BTN1 is unused.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Register bit oSiwu is always 1.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Register bit oPacketRead is always 1.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":65:0:65:5|Trying to extract state machine for register rFifoState.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":24:12:24:18|Input iTxData is unused.
+@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_input_simple.v":30:13:30:23|Input iPacketRead is unused.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":135:0:135:5|Register bit oUartTxBusy is always 0.
+@N: CL134 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Found RAM rFifoData, depth=4, width=8
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rWritePtr[2] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rReadPtr[2] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[17] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[16] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[15] is always 0.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register recv_state.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register tx_state.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[14] is always 0.
 @N|Running in 64-bit mode
-@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
-@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Selected library: work cell: top view verilog as top level
 

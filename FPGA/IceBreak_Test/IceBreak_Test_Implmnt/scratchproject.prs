@@ -1,24 +1,24 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
-#--  Project file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\scratchproject.prs
+#--  Project file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\scratchproject.prs
 
 #project files
-add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/FPGA/IceBreaker_Test/IceBreak_Test/design_top.v"
-add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/FPGA/IceBreaker_Test/IceBreak_Test/top_pll.v"
-add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/FPGA/IceBreaker_Test/IceBreak_Test/UART/uart_fifo.v"
-add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/FPGA/IceBreaker_Test/IceBreak_Test/ftdi_fifo/ftdi_fifo.v"
+add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/design_top.v"
+add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/top_pll.v"
+add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/UART/uart_fifo.v"
+add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/ftdi_fifo/ftdi_fifo.v"
 
 
 
 #implementation: "IceBreak_Test_Implmnt"
-impl -add C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt -type fpga
+impl -add C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt -type fpga
 
 #
 #implementation attributes
 
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/FPGA/IceBreaker_Test/IceBreak_Test/}
+set_option -include_path {C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/}
 
 #device options
 set_option -technology SBTiCE40UP
@@ -67,5 +67,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/FPGA/IceBreaker_Test/IceBreak_Test/IceBreak_Test_Implmnt/IceBreak_Test.edf"
+project -result_file "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/IceBreak_Test_Implmnt/IceBreak_Test.edf"
 impl -active "IceBreak_Test_Implmnt"

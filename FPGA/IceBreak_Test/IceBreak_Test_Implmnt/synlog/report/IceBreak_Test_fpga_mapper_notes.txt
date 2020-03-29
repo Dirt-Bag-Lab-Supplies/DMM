@@ -1,20 +1,19 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:19:33:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":33:13:33:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\design_top.v":190:1:190:2|Removing sequential instance counter[0] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
 @N: MT206 |Auto Constrain mode is enabled
-@N: MO231 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\uart.v":91:0:91:5|Found counter in view:work.uart_Z1(verilog) instance tx_clk_divider[13:0] 
-@N: MF135 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\fifo.v":46:0:46:5|RAM rFifoData[7:0] (in view: work.fifo_4s_8s(verilog)) is 4 words by 8 bits.
-@N: MF135 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\uart\fifo.v":46:0:46:5|RAM rFifoData[7:0] (in view: work.fifo_4s_8s(verilog)) is 4 words by 8 bits.
+@N: MO231 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|Found counter in view:work.uart_Z1(verilog) instance tx_clk_divider[13:0] 
+@N: MF135 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\fifo.v":46:0:46:5|RAM rFifoData[7:0] (in view: work.fifo_4s_8s(verilog)) is 4 words by 8 bits.
+@N: MF135 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\fifo.v":46:0:46:5|RAM rFifoData[7:0] (in view: work.fifo_4s_8s(verilog)) is 4 words by 8 bits.
 @N: MF794 |RAM rFifoData[7:0] required 36 registers during mapping 
 @N: MF794 |RAM rFifoData[7:0] required 72 registers during mapping 
-@N: FX1017 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\fpga\icebreaker_test\icebreak_test\top_pll.v":13:13:13:24|SB_GB inserted on the net wPllLocked.
 @N: FX1017 :|SB_GB inserted on the net wPllLocked_iso_i.
+@N: FX1017 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\top_pll.v":13:13:13:24|SB_GB inserted on the net wPllLocked.
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
-@N: FX1056 |Writing EDF file: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.edf
-@N: MT615 |Found clock top_pll|PLLOUTGLOBAL_derived_clock with period 12.09ns 
+@N: FX1056 |Writing EDF file: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.edf
+@N: MT615 |Found clock top_pll|PLLOUTGLOBAL_derived_clock with period 10.97ns 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 @N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack

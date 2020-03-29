@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\synlog\IceBreak_Test_fpga_mapper.srr</data>
+<data>C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\synlog\IceBreak_Test_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -16,13 +16,13 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>top_pll|PLLOUTGLOBAL_derived_clock</data>
-<data>82.7 MHz</data>
-<data>70.3 MHz</data>
-<data>-2.133</data>
+<data>91.2 MHz</data>
+<data>77.5 MHz</data>
+<data>-1.936</data>
 </row>
 <row>
 <data>top|iClk</data>
-<data>82.7 MHz</data>
+<data>91.2 MHz</data>
 <data>NA</data>
 <data>NA</data>
 </row>

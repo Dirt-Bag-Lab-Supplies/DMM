@@ -6,7 +6,7 @@
 
 * Build Date:         Sep 11 2017 16:52:36
 
-* File Generated:     Mar 28 2020 19:39:06
+* File Generated:     Mar 29 2020 02:25:07
 
 * Purpose:            General info of design implementation
 
@@ -27,10 +27,10 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  189
-    LUTs:                 379
+    FFs:                  200
+    LUTs:                 448
     RAMs:                 1
-    IOBs:                 19
+    IOBs:                 20
     GBs:                  2
     PLLs:                 1
     Warm Boots:           0
@@ -46,12 +46,12 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 383/5280
-        Combinational Logic Cells: 194      out of   5280      3.67424%
-        Sequential Logic Cells:    189      out of   5280      3.57955%
-        Logic Tiles:               80       out of   660       12.1212%
+    Total Logic Cells: 452/5280
+        Combinational Logic Cells: 252      out of   5280      4.77273%
+        Sequential Logic Cells:    200      out of   5280      3.78788%
+        Logic Tiles:               77       out of   660       11.6667%
     Registers: 
-        Logic Registers:           189      out of   5280      3.57955%
+        Logic Registers:           200      out of   5280      3.78788%
         IO Registers:              0        out of   480       0
     Block RAMs:                    1        out of   30        3.33333%
     Warm Boots:                    0        out of   1         0%
@@ -66,8 +66,8 @@ Logic Resource Utilization:
     FILTER_50NSs:                  0        out of   2         0%
     Pins:
         Input Pins:                4        out of   39        10.2564%
-        Output Pins:               15       out of   39        38.4615%
-        InOut Pins:                0        out of   39        0%
+        Output Pins:               8        out of   39        20.5128%
+        InOut Pins:                8        out of   39        20.5128%
     Global Buffers:                2        out of   8         25%
     PLLs:                          1        out of   1         100%
 
@@ -76,40 +76,45 @@ IO Bank Utilization:
     Bank 3: 0        out of   0         0%
     Bank 1: 0        out of   0         0%
     Bank 0: 5        out of   17        29.4118%
-    Bank 2: 14       out of   22        63.6364%
+    Bank 2: 15       out of   22        68.1818%
 
 Detailed I/O Info:
 ------------------
     Input Pins: 
-    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                   Signal Name    
-    ----------  ---------  -----------  -------  -------  -----------                   -----------    
-    4           Input      SB_LVCMOS    No       2        Simple Input                  P1A1           
-    10          Input      SB_LVCMOS    No       2        Simple Input                  BTN_N          
-    26          Input      SB_LVCMOS    No       0        Simple Input                  iRxF_n         
-    27          Input      SB_LVCMOS    No       0        Simple Input                  iTxE_n         
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                Signal Name    
+    ----------  ---------  -----------  -------  -------  -----------                                -----------    
+    4           Input      SB_LVCMOS    No       2        Simple Input                               P1A1           
+    10          Input      SB_LVCMOS    No       2        Simple Input                               BTN_N          
+    26          Input      SB_LVCMOS    No       0        Simple Input                               iRxF_n         
+    27          Input      SB_LVCMOS    No       0        Simple Input                               iTxE_n         
 
     Output Pins: 
-    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                   Signal Name    
-    ----------  ---------  -----------  -------  -------  -----------                   -----------    
-    2           Output     SB_LVCMOS    No       2        Simple Output                 P1A2           
-    3           Output     SB_LVCMOS    No       2        Simple Output                 P1A7           
-    6           Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[0]  
-    9           Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[1]  
-    11          Output     SB_LVCMOS    No       2        Simple Output                 oRx_n          
-    18          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[2]  
-    19          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[3]  
-    20          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[4]  
-    21          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  ioFifoData[5]  
-    23          Output     SB_LVCMOS    No       0        Output Tristatable by Enable  ioFifoData[6]  
-    25          Output     SB_LVCMOS    No       0        Output Tristatable by Enable  ioFifoData[7]  
-    37          Output     SB_LVCMOS    No       0        Simple Output                 oTx_n          
-    46          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  P1A9           
-    47          Output     SB_LVCMOS    No       2        Simple Output                 P1A3           
-    48          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  P1A8           
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                Signal Name    
+    ----------  ---------  -----------  -------  -------  -----------                                -----------    
+    2           Output     SB_LVCMOS    No       2        Simple Output                              P1A2           
+    3           Output     SB_LVCMOS    No       2        Simple Output                              P1A7           
+    11          Output     SB_LVCMOS    No       2        Simple Output                              oRx_n          
+    37          Output     SB_LVCMOS    No       0        Simple Output                              oTx_n          
+    45          Output     SB_LVCMOS    No       2        Simple Output                              P1A4           
+    46          Output     SB_LVCMOS    No       2        Output Tristatable by Enable               P1A9           
+    47          Output     SB_LVCMOS    No       2        Simple Output                              P1A3           
+    48          Output     SB_LVCMOS    No       2        Output Tristatable by Enable               P1A8           
+
+    Inoutput Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                Signal Name    
+    ----------  ---------  -----------  -------  -------  -----------                                -----------    
+    6           InOut      SB_LVCMOS    No       2        Simple Input Output Tristatable by Enable  ioFifoData[0]  
+    9           InOut      SB_LVCMOS    No       2        Simple Input Output Tristatable by Enable  ioFifoData[1]  
+    18          InOut      SB_LVCMOS    No       2        Simple Input Output Tristatable by Enable  ioFifoData[2]  
+    19          InOut      SB_LVCMOS    No       2        Simple Input Output Tristatable by Enable  ioFifoData[3]  
+    20          InOut      SB_LVCMOS    No       2        Simple Input Output Tristatable by Enable  ioFifoData[4]  
+    21          InOut      SB_LVCMOS    No       2        Simple Input Output Tristatable by Enable  ioFifoData[5]  
+    23          InOut      SB_LVCMOS    No       0        Simple Input Output Tristatable by Enable  ioFifoData[6]  
+    25          InOut      SB_LVCMOS    No       0        Simple Input Output Tristatable by Enable  ioFifoData[7]  
 
 Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name         
     -------------  -------  ---------  ------  -----------         
-    4              0                   29      wPllLocked_iso_i_g  
-    5              2                   53      wPllLocked_g        
+    4              0                   57      wPllLocked_iso_i_g  
+    5              2                   54      wPllLocked_g        

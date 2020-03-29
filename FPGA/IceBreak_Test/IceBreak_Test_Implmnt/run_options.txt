@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
-#--  Project file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_Implmnt\run_options.txt
-#--  Written on Sat Mar 28 19:37:16 2020
+#--  Project file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\run_options.txt
+#--  Written on Sun Mar 29 02:22:38 2020
 
 
 #project files
