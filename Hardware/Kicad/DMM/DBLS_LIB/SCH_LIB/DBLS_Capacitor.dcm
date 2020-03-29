@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SMD-CAP-100NF-0402
+D Ceramic Cap, 0.1µF, 10V, X7R, 0402
+F N/A
+$ENDCMP
+#
+$CMP SMD-CAP-100NF-0603
+D Ceramic Cap, 0.1µF, 10V, X7R, 0603
+F N/A
+$ENDCMP
+#
+$CMP SMD-CAP-1UF-0402
+D Ceramic Cap, 1µF, 25V, X5R, 0402
+$ENDCMP
+#
+$CMP SMD-CAP-4.7UF-0402
+D Ceramic Cap, 4.7µF, 10V, X5R, 0402
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESD122
+D 2-Channel ESD Protection Diode, +/-17 kV, X2SON-3 0402 Package
+$ENDCMP
+#
+$CMP TPD4E05U06
+D 4-Channel ESD Protection Diode, +/-12kV, USON-10
+$ENDCMP
+#
+#End Doc Library

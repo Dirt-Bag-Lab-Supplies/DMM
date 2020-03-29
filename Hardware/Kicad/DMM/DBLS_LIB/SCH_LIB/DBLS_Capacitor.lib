@@ -1,0 +1,120 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SMD-CAP-100NF-0402
+#
+DEF SMD-CAP-100NF-0402 C 0 10 N N 1 F N
+F0 "C" 50 75 40 H V L CNN
+F1 "SMD-CAP-100NF-0402" -400 825 50 H I L CNN
+F2 "DBLS_Capacitor:C_0402_1005Metric" 0 325 50 H I C CNN
+F3 "" 0 225 20 H I C CNN
+F4 "0.1uF" 100 -50 30 H V C CNN "capacitance"
+F5 "Yageo" 0 725 50 H I C CNN "mfg"
+F6 "CC0402KRX7R6BB104" 0 625 50 H I C CNN "mfg_pn"
+F7 "Digikey" 0 525 50 H I C CNN "vendor"
+F8 "311-1345-1-ND" 0 425 50 H I C CNN "vendor_pn"
+F9 "YES" -75 75 20 H I C CNN "place"
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+ *0603*
+$ENDFPLIST
+DRAW
+P 2 0 1 12 -50 0 50 0 N
+P 2 0 1 12 -50 45 50 45 N
+X ~ 1 0 100 50 D 40 40 1 1 P
+X ~ 2 0 -50 50 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SMD-CAP-100NF-0603
+#
+DEF SMD-CAP-100NF-0603 C 0 10 N N 1 F N
+F0 "C" 50 75 40 H V L CNN
+F1 "SMD-CAP-100NF-0603" -400 825 50 H I L CNN
+F2 "DBLS_Capacitor:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" 0 325 50 H I C CNN
+F3 "" 0 225 20 H I C CNN
+F4 "0.1uF" 100 -50 30 H V C CNN "capacitance"
+F5 "Kemet" 0 725 50 H I C CNN "mfg"
+F6 "C0603C104K8RACTU" 0 625 50 H I C CNN "mfg_pn"
+F7 "Digikey" 0 525 50 H I C CNN "vendor"
+F8 "399-1095-1-ND" 0 425 50 H I C CNN "vendor_pn"
+F9 "YES" -75 75 20 H I C CNN "place"
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+ *0603*
+$ENDFPLIST
+DRAW
+P 2 0 1 12 -50 0 50 0 N
+P 2 0 1 12 -50 45 50 45 N
+X ~ 1 0 100 50 D 40 40 1 1 P
+X ~ 2 0 -50 50 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SMD-CAP-1UF-0402
+#
+DEF SMD-CAP-1UF-0402 C 0 10 N N 1 F N
+F0 "C" 50 75 40 H V L CNN
+F1 "SMD-CAP-1UF-0402" -450 850 50 H I L CNN
+F2 "DBLS_Capacitor:C_0402_1005Metric" 0 350 50 H I C CNN
+F3 "" 0 225 20 H I C CNN
+F4 "1uF" 100 -50 30 H V C CNN "capacitance"
+F5 "Murata Electronics" 0 750 50 H I C CNN "mfg"
+F6 "GRM155R61E105KA12D" 0 650 50 H I C CNN "mfg_pn"
+F7 "Digikey" 0 550 50 H I C CNN "vendor"
+F8 "490-10017-1-ND" 0 450 50 H I C CNN "vendor_pn"
+F9 "YES" -75 75 20 H I C CNN "place"
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+ *0603*
+$ENDFPLIST
+DRAW
+P 2 0 1 12 -50 0 50 0 N
+P 2 0 1 12 -50 45 50 45 N
+X ~ 1 0 100 50 D 40 40 1 1 P
+X ~ 2 0 -50 50 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SMD-CAP-4.7UF-0402
+#
+DEF SMD-CAP-4.7UF-0402 C 0 10 N N 1 F N
+F0 "C" 50 75 40 H V L CNN
+F1 "SMD-CAP-4.7UF-0402" -450 850 50 H I L CNN
+F2 "DBLS_Capacitor:C_0402_1005Metric" 0 350 50 H I C CNN
+F3 "" 0 225 20 H I C CNN
+F4 "4.7uF" 100 -50 30 H V C CNN "capacitance"
+F5 "Murata Electronics" 0 750 50 H I C CNN "mfg"
+F6 "GRM155R61A475MEAAD" 0 650 50 H I C CNN "mfg_pn"
+F7 "Digikey" 0 550 50 H I C CNN "vendor"
+F8 "490-14306-1-ND" 0 450 50 H I C CNN "vendor_pn"
+F9 "YES" -75 75 20 H I C CNN "place"
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+ *0603*
+$ENDFPLIST
+DRAW
+P 2 0 1 12 -50 0 50 0 N
+P 2 0 1 12 -50 45 50 45 N
+X ~ 1 0 100 50 D 40 40 1 1 P
+X ~ 2 0 -50 50 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

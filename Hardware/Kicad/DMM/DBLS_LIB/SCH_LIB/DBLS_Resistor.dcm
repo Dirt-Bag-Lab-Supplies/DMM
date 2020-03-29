@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SMD-RES-0-0603
+D Resistor, 0Ω, Jumper, 1/4W, 0603
+K RES, R, 0, 1/4W, 0603
+F N/A
+$ENDCMP
+#
+$CMP SMD-RES-10K-0603
+D Resistor, 10kΩ, 5%, 1/4W, 0603
+K RES, R, 10K, 1/4W, 0603
+F N/A
+$ENDCMP
+#
+#End Doc Library
