@@ -5,4 +5,5 @@
   (lib (name DBLS_Resistor)(type Legacy)(uri ${KIPRJMOD}/DBLS_LIB/sch_lib/DBLS_Resistor.lib)(options "")(descr "DBLS Resistors"))
   (lib (name DBLS_Capacitor)(type Legacy)(uri ${KIPRJMOD}/DBLS_LIB/sch_lib/DBLS_Capacitor.lib)(options "")(descr "DBLS Capacitors"))
   (lib (name DBLS_LDO)(type Legacy)(uri ${KIPRJMOD}/DBLS_LIB/sch_lib/DBLS_LDO.lib)(options "")(descr "DBLS Linear Regulators"))
+  (lib (name DBLS_Amplifier)(type Legacy)(uri ${KIPRJMOD}/DBLS_LIB/sch_lib/DBLS_Amplifier.lib)(options "")(descr "DBLS Amplifiers"))
 )
