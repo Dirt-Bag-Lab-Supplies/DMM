@@ -9,18 +9,26 @@ Part:			ICE40UP5KSG48 (Lattice)
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     183                100 %                
+FLOPS     193                100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top:	183 (32.74 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top:	193 (32.11 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       297                100 %                
-CARRYS     39                 100 %                
+LUTS       304                100 %                
+CARRYS     61                 100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block top:	336 (60.11 % Utilization)
+Total COMBINATIONAL LOGIC in the block top:	365 (60.73 % Utilization)
+
+
+MEMORY ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+RAMS     1                  100 %                
+=================================================
+Total MEMORY ELEMENTS in the block top:	1 (0.17 % Utilization)
 
 
 IO PADS
@@ -28,7 +36,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 PADS     22                 100 %                
 =================================================
-Total IO PADS in the block top:	22 (3.94 % Utilization)
+Total IO PADS in the block top:	22 (3.66 % Utilization)
 
 ---------------------------------------------------------------------------
 ########   Utilization report for  cell:   ftdi_fifo_async_8s_8s   ########
@@ -38,17 +46,55 @@ Instance path:   top.ftdi_fifo_async_8s_8s
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     9                  4.92 %               
+FLOPS     19                 9.84 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top.ftdi_fifo_async_8s_8s:	9 (1.61 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top.ftdi_fifo_async_8s_8s:	19 (3.16 % Utilization)
 
 
 COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       63                 20.7 %               
+CARRYS     14                 23 %                 
+===================================================
+Total COMBINATIONAL LOGIC in the block top.ftdi_fifo_async_8s_8s:	77 (12.81 % Utilization)
+
+
+MEMORY ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-LUTS     9                  3.03 %               
+RAMS     1                  100 %                
 =================================================
-Total COMBINATIONAL LOGIC in the block top.ftdi_fifo_async_8s_8s:	9 (1.61 % Utilization)
+Total MEMORY ELEMENTS in the block top.ftdi_fifo_async_8s_8s:	1 (0.17 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_sync_8bit_8s_1   ########
+Instance path:   ftdi_fifo_async_8s_8s.fifo_sync_8bit_8s_1               
+=========================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     9                  4.66 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block ftdi_fifo_async_8s_8s.fifo_sync_8bit_8s_1:	9 (1.50 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       53                 17.4 %               
+CARRYS     14                 23 %                 
+===================================================
+Total COMBINATIONAL LOGIC in the block ftdi_fifo_async_8s_8s.fifo_sync_8bit_8s_1:	67 (11.15 % Utilization)
+
+
+MEMORY ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+RAMS     1                  100 %                
+=================================================
+Total MEMORY ELEMENTS in the block ftdi_fifo_async_8s_8s.fifo_sync_8bit_8s_1:	1 (0.17 % Utilization)
 
 -------------------------------------------------------------------
 ########   Utilization report for  cell:   ft2232h_async   ########
@@ -58,17 +104,17 @@ Instance path:   ftdi_fifo_async_8s_8s.ft2232h_async
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     9                  4.92 %               
+FLOPS     10                 5.18 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block ftdi_fifo_async_8s_8s.ft2232h_async:	9 (1.61 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block ftdi_fifo_async_8s_8s.ft2232h_async:	10 (1.66 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-LUTS     9                  3.03 %               
+LUTS     10                 3.29 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block ftdi_fifo_async_8s_8s.ft2232h_async:	9 (1.61 % Utilization)
+Total COMBINATIONAL LOGIC in the block ftdi_fifo_async_8s_8s.ft2232h_async:	10 (1.66 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   top_pll   ########
@@ -80,7 +126,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 PADS     1                  4.55 %               
 =================================================
-Total IO PADS in the block top.top_pll:	1 (0.18 % Utilization)
+Total IO PADS in the block top.top_pll:	1 (0.17 % Utilization)
 
 ---------------------------------------------------------------------------------------
 ########   Utilization report for  cell:   uart_fifo_48000000s_115200s_4s_4s   ########
@@ -90,18 +136,18 @@ Instance path:   top.uart_fifo_48000000s_115200s_4s_4s
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     165                90.2 %               
+FLOPS     165                85.5 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top.uart_fifo_48000000s_115200s_4s_4s:	165 (29.52 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top.uart_fifo_48000000s_115200s_4s_4s:	165 (27.45 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       288                97 %                 
-CARRYS     39                 100 %                
+LUTS       241                79.3 %               
+CARRYS     47                 77 %                 
 ===================================================
-Total COMBINATIONAL LOGIC in the block top.uart_fifo_48000000s_115200s_4s_4s:	327 (58.50 % Utilization)
+Total COMBINATIONAL LOGIC in the block top.uart_fifo_48000000s_115200s_4s_4s:	288 (47.92 % Utilization)
 
 ----------------------------------------------------------------
 ########   Utilization report for  cell:   fifo_4s_8s   ########
@@ -111,18 +157,18 @@ Instance path:   uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     43                 23.5 %               
+FLOPS     43                 22.3 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s:	43 (7.69 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s:	43 (7.15 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       45                 15.2 %               
-CARRYS     2                  5.13 %               
+LUTS       44                 14.5 %               
+CARRYS     2                  3.28 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s:	47 (8.41 % Utilization)
+Total COMBINATIONAL LOGIC in the block uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s:	46 (7.65 % Utilization)
 
 ------------------------------------------------------------------
 ########   Utilization report for  cell:   fifo_4s_8s_0   ########
@@ -132,18 +178,18 @@ Instance path:   uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s_0
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     43                 23.5 %               
+FLOPS     43                 22.3 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s_0:	43 (7.69 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s_0:	43 (7.15 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       41                 13.8 %               
-CARRYS     2                  5.13 %               
+LUTS       42                 13.8 %               
+CARRYS     2                  3.28 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s_0:	43 (7.69 % Utilization)
+Total COMBINATIONAL LOGIC in the block uart_fifo_48000000s_115200s_4s_4s.fifo_4s_8s_0:	44 (7.32 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   uart_Z1   ########
@@ -153,18 +199,28 @@ Instance path:   uart_fifo_48000000s_115200s_4s_4s.uart_Z1
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     78                 42.6 %               
+FLOPS     78                 40.4 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block uart_fifo_48000000s_115200s_4s_4s.uart_Z1:	78 (13.95 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block uart_fifo_48000000s_115200s_4s_4s.uart_Z1:	78 (12.98 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       200                67.3 %               
-CARRYS     35                 89.7 %               
+LUTS       154                50.7 %               
+CARRYS     43                 70.5 %               
 ===================================================
-Total COMBINATIONAL LOGIC in the block uart_fifo_48000000s_115200s_4s_4s.uart_Z1:	235 (42.04 % Utilization)
+Total COMBINATIONAL LOGIC in the block uart_fifo_48000000s_115200s_4s_4s.uart_Z1:	197 (32.78 % Utilization)
+
+#### START OF Block RAM DETAILED REPORT ####
+
+Total Block RAMs: 1
+
+fifo_inst.tx_fifo_inst.ram512x8_inst
+----------------------------
+----------------------------
+
+#### END OF  Block RAM DETAILED REPORT ####
 
 
 ##### END OF AREA REPORT #####]

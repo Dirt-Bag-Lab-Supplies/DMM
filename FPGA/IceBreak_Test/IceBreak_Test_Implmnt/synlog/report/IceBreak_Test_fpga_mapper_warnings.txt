@@ -2,7 +2,46 @@
 @W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.rx_clk_divider[17:0] is being ignored. 
 @W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_clk_divider[13:0] is being ignored. 
 @W: FX703 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\fifo.v":46:0:46:5|Unable to map RAM instance rFifoData[7:0] to RAM for technology specified. 
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":90:1:90:2|Sequential instance fifo_inst.rx_fifo_inst.rDataCount[0] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":90:1:90:2|Sequential instance fifo_inst.rx_fifo_inst.rDataCount[1] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":90:1:90:2|Sequential instance fifo_inst.rx_fifo_inst.rDataCount[2] is reduced to a combinational gate by constant propagation.
-@W: MT420 |Found inferred clock top|iClk with period 11.17ns. Please declare a user-defined clock on object "p:iClk"
+@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[8] is reduced to a combinational gate by constant propagation.
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":72:17:72:65|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un24_rRamWrAddr[0]
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":72:17:72:65|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un18_rRamWrAddr_i_4
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[1]
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[2]
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[3]
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[4]
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[5]
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[6]
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[7]
+@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[8]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[8]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[7]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[6]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[5]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[4]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[3]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un15_rRamRdAddr
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[0]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr_RNI[1]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[2]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[8]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_7
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_6
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[5]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_4
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_5_c_RNIIO37
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_6_c_RNIJQ47
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_3
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_2
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_1
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un18_rRamWrAddr
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[0]
+@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_3_c_RNIK6N4
+@W: MT420 |Found inferred clock top|iClk with period 18.28ns. Please declare a user-defined clock on object "p:iClk"

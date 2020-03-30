@@ -6,7 +6,7 @@
 
 * Build Date:         Sep 11 2017 16:52:36
 
-* File Generated:     Mar 29 2020 23:00:59
+* File Generated:     Mar 30 2020 12:32:12
 
 * Purpose:            General info of design implementation
 
@@ -27,9 +27,9 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  183
-    LUTs:                 390
-    RAMs:                 0
+    FFs:                  193
+    LUTs:                 399
+    RAMs:                 1
     IOBs:                 20
     GBs:                  2
     PLLs:                 1
@@ -46,14 +46,14 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 394/5280
-        Combinational Logic Cells: 211      out of   5280      3.99621%
-        Sequential Logic Cells:    183      out of   5280      3.46591%
-        Logic Tiles:               66       out of   660       10%
+    Total Logic Cells: 408/5280
+        Combinational Logic Cells: 215      out of   5280      4.07197%
+        Sequential Logic Cells:    193      out of   5280      3.6553%
+        Logic Tiles:               89       out of   660       13.4848%
     Registers: 
-        Logic Registers:           183      out of   5280      3.46591%
+        Logic Registers:           193      out of   5280      3.6553%
         IO Registers:              0        out of   480       0
-    Block RAMs:                    0        out of   30        0%
+    Block RAMs:                    1        out of   30        3.33333%
     Warm Boots:                    0        out of   1         0%
     SPIs:                          0        out of   2         0%
     I2Cs:                          0        out of   2         0%
@@ -112,20 +112,20 @@ Detailed Global Buffer Info:
 ----------------------------
     Buffer Number  IO Bank  Driven By  Fanout  Signal Name     
     -------------  -------  ---------  ------  -----------     
-    4              0                   26      wPllLocked_i_g  
-    5              2                   44      wPllLocked_g    
+    4              0                   35      wPllLocked_i_g  
+    5              2                   62      wPllLocked_g    
 
 
 Router Summary:
 ---------------
     Status:  Successful
-    Runtime: 7 seconds
+    Runtime: 8 seconds
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile     2705 out of 110555      2.44675%
-                          Span 4      436 out of  23008      1.89499%
+              Local line of tile     2894 out of 110555      2.6177%
+                          Span 4      431 out of  23008      1.87326%
                          Span 12       64 out of   4464      1.43369%
                   Global network        3 out of      8      37.5%
-      Vertical Inter-LUT Connect       68 out of   4620      1.47186%
+      Vertical Inter-LUT Connect       67 out of   4620      1.45022%
 

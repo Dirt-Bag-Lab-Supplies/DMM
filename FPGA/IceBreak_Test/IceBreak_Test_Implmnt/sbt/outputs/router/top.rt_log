@@ -6,7 +6,7 @@
 
 * Build Date:         Sep 11 2017 17:03:42
 
-* File Generated:     Mar 29 2020 23:00:59
+* File Generated:     Mar 30 2020 12:32:12
 
 * Purpose:            Router runtime info
 
@@ -17,25 +17,64 @@
 Executing : C:\lscc\iCEcube2.2017.08\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2017.08\sbt_backend\devices\ICE40T05.dev C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\sbt\netlist\oadb-top C:\lscc\iCEcube2.2017.08\sbt_backend\devices\ice40UP5K.lib C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\sbt\outputs\packer\top_pk.sdc --outdir C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\sbt\outputs\router --sdf_file C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/IceBreak_Test_Implmnt\sbt\outputs\simulation_netlist\top_sbt.sdf --pin_permutation 
 I1203: Reading Design top
 I1202: Reading Architecture of device iCE40UP5K
+SDC-Info-1101: Duty cycle not specified for clock. Assuming 50 percent dutycycle.
 Info-1404: Inferred PLL generated clock at top_pll_inst.top_pll_inst/PLLOUTCORE
 Info-1404: Inferred PLL generated clock at top_pll_inst.top_pll_inst/PLLOUTGLOBAL
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI_8_LC_18_11_5/in2" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI_8_LC_18_11_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNISDA2_0_LC_17_11_5/in1" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNISDA2_0_LC_17_11_5/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_4_c_RNI44E4_LC_17_10_4/carryin" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_4_c_RNI44E4_LC_17_10_4/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI9F4N_5_LC_18_11_0/in1" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI9F4N_5_LC_18_11_0/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_3_c_RNI7K22_LC_17_10_3/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_3_c_RNI7K22_LC_17_10_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_3_1_LC_17_11_4/in3" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_3_1_LC_17_11_4/ltout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI_8_LC_18_11_5/in1" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI_8_LC_18_11_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_2_c_RNI6I12_LC_17_10_2/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_2_c_RNI6I12_LC_17_10_2/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIIO011_3_LC_18_11_4/in2" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIIO011_3_LC_18_11_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_1_c_RNI5G02_LC_17_10_1/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_1_c_RNI5G02_LC_17_10_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI_1_LC_16_11_5/in1" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI_1_LC_16_11_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_7_c_RNI7AH4_LC_17_10_7/in0" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_7_c_RNI7AH4_LC_17_10_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_6_c_RNIAQ52_LC_17_10_6/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_6_c_RNIAQ52_LC_17_10_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_5_c_RNI9O42_LC_17_10_5/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_5_c_RNI9O42_LC_17_10_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_7_c_RNIKS57_LC_17_12_7/in0" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_7_c_RNIKS57_LC_17_12_7/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_18_11_1/in3" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_18_11_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI_LC_18_12_5/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI_LC_18_12_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_5_c_RNIIO37_LC_17_12_5/carryin" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_5_c_RNIIO37_LC_17_12_5/carryout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_5_c_RNISDA2_0_LC_18_13_6/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_5_c_RNISDA2_0_LC_18_13_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_18_11_1/in0" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_18_11_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_4_c_RNIHM27_LC_17_12_4/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_4_c_RNIHM27_LC_17_12_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_3_c_RNIK6N4_LC_17_12_3/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_3_c_RNIK6N4_LC_17_12_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_2_c_RNIJ4M4_LC_17_12_2/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_2_c_RNIJ4M4_LC_17_12_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_2_c_RNIFI07_2_LC_15_11_3/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_2_c_RNIFI07_2_LC_15_11_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNII2L4_LC_17_12_1/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNII2L4_LC_17_12_1/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNISDA2_LC_17_11_2/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNISDA2_LC_17_11_2/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_2_c_RNIFI07_2_LC_15_11_3/in2" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_2_c_RNIFI07_2_LC_15_11_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_6_c_RNIJQ47_LC_17_12_6/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_6_c_RNIJQ47_LC_17_12_6/lcout" to break the combinatorial loop
 I1209: Started routing
-I1223: Total Nets : 458 
-I1212: Iteration  1 :    63 unrouted : 1 seconds
-I1212: Iteration  2 :     7 unrouted : 0 seconds
-I1212: Iteration  3 :     6 unrouted : 0 seconds
-I1212: Iteration  4 :     2 unrouted : 0 seconds
-I1212: Iteration  5 :     2 unrouted : 0 seconds
-I1212: Iteration  6 :     2 unrouted : 0 seconds
-I1212: Iteration  7 :     2 unrouted : 0 seconds
-I1212: Iteration  8 :     2 unrouted : 0 seconds
-I1212: Iteration  9 :     2 unrouted : 0 seconds
-I1212: Iteration 10 :     2 unrouted : 0 seconds
-I1212: Iteration 11 :     2 unrouted : 0 seconds
-I1212: Iteration 12 :     0 unrouted : 0 seconds
+I1223: Total Nets : 508 
+I1212: Iteration  1 :   108 unrouted : 1 seconds
+I1212: Iteration  2 :    23 unrouted : 0 seconds
+I1212: Iteration  3 :    10 unrouted : 1 seconds
+I1212: Iteration  4 :     8 unrouted : 0 seconds
+I1212: Iteration  5 :     8 unrouted : 0 seconds
+I1212: Iteration  6 :     8 unrouted : 0 seconds
+I1212: Iteration  7 :     8 unrouted : 0 seconds
+I1212: Iteration  8 :     8 unrouted : 0 seconds
+I1212: Iteration  9 :     6 unrouted : 0 seconds
+I1212: Iteration 10 :     6 unrouted : 0 seconds
+I1212: Iteration 11 :     6 unrouted : 0 seconds
+I1212: Iteration 12 :     4 unrouted : 0 seconds
+I1212: Iteration 13 :     4 unrouted : 0 seconds
+I1212: Iteration 14 :     4 unrouted : 0 seconds
+I1212: Iteration 15 :     4 unrouted : 0 seconds
+I1212: Iteration 16 :     4 unrouted : 0 seconds
+I1212: Iteration 17 :     4 unrouted : 0 seconds
+I1212: Iteration 18 :     4 unrouted : 0 seconds
+I1212: Iteration 19 :     2 unrouted : 0 seconds
+I1212: Iteration 20 :     2 unrouted : 0 seconds
+I1212: Iteration 21 :     2 unrouted : 0 seconds
+I1212: Iteration 22 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
 I1204: Writing Design top
 I1210: Writing routes
 I1218: Exiting the router
-I1224: Router run-time : 7 seconds
+I1224: Router run-time : 8 seconds

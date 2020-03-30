@@ -85,7 +85,7 @@ reg rWrDelay; //Delay the entire chain by 1 clk to meet 30ns width for write fla
 reg rTxBusReady; //flag to set direction  of bus hi-z vs output
 
 //Data bus is hi-z unless writing. Tx_n = 0: bus = ram data
-assign ioFifoData = rTxBusReady ? 8'h41 : 8'hZZ;
+assign ioFifoData = rTxBusReady ? iTxData : 8'hZZ;
 
 
 ////FSM////

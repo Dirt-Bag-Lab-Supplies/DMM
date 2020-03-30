@@ -28,7 +28,7 @@ reg [8:0] rRamRdAddr; //9bit address to read from
 wire [7:0] wRamWrData; //Data input to RAM
 wire [7:0] wRamRdData; //Data output from RAM
 assign wRamWrData = iWrData;
-assign wRamRdData = iWrData;
+assign oRdData = wRamRdData;
 
 wire wRamWrEn; //Enable going the ram module
 wire wRamRdEn;
@@ -57,15 +57,15 @@ assign oWrFull = rDataCount >= pFifoDepth ? 1'b1 : 1'b0;
 assign oRdEmpty = rDataCount == 0 ? 1'b1 : 1'b0;
 
 //Output flags if data is full or empty
-assign wRamWrEn = iWrEn && oWrFull;
-assign wRamRdEn = iRdEn && oRdEmpty; 
+assign wRamWrEn = iWrEn; //&& oWrFull;
+assign wRamRdEn = iRdEn; //&& oRdEmpty; 
 
 
 
 ///Writing interface/////
 always @(iClk) begin
 	if(iRst) begin
-		rRamWrAddr <= 0;
+		rRamWrAddr <= 9'b0;
 	end else begin
 		if(wRamWrEn) begin
 			//Data was already written to ram on the rising clk. 
@@ -77,7 +77,7 @@ end
 //Read interface
 always @(iClk) begin
 	if(iRst) begin
-		rRamRdAddr <= 0;
+		rRamRdAddr <= 9'b0;
 	end else begin
 		if(wRamRdEn) begin
 			rRamRdAddr <= rRamRdAddr == pFifoDepth ? 9'b0 : rRamRdAddr + 1;

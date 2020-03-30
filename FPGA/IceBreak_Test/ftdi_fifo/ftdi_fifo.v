@@ -77,6 +77,8 @@ fifo_sync_8bit#(
 	.oRdData		(wTxRdData)
 );
 
+
+
 ///////////////////// RX Fifo///////////////////////
 
 //FTDI interface
@@ -128,7 +130,7 @@ ft2232h_async ft2232h_inst
 	////Tx Input Fifo////
 	.oTxRdEn		(wTxRdEn),
 	.iTxRdEmpty		(wTxRdEmpty),
-	.iTxData		(wTxWrData),
+	.iTxData		(wTxRdData),
 	////Rx Output Fifo////
 	.oRxWrEn		(wRxWrEn),
 	.iRxWrFull		(wRxWrFull),

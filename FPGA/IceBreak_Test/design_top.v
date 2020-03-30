@@ -133,11 +133,10 @@ always @(posedge clk_48mhz) begin
 		
 	end else begin
 		if(!wUartTxBusy) begin
-			// if(rRxEn) begin //Read data from the fifo
-			// 	rTxByte <= rRxData; //Put fifo data on the uart bus
-			// 	rTxWrite <= 1'b1;
-			// end else 
-			if (!wRxBufferEmpty) begin	
+			if(rRxEn) begin //Read data from the fifo
+				rTxByte <= rRxData; //Put fifo data on the uart bus
+				rTxWrite <= 1'b1;
+			end else  if (!wRxBufferEmpty) begin	
 				rTxByte <= wRxByteOut;
 				rRxRead <= 1'b1;
 				rTxWrite <= 1'b1;
@@ -214,7 +213,7 @@ ftdi_fifo_async #(
 always @(clk_48mhz) begin
 	if(wRst) begin
 		rTxEn <= 0;
-		rTxData <= 7'b0;
+		rTxData <= 8'h40;
 	end else begin
 		if(!wTxFull) begin // The fifo is empty, clear to send
 			rTxData <= 8'h41; //"A"

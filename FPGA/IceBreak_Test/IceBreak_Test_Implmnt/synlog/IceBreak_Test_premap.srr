@@ -1,4 +1,4 @@
-# Sun Mar 29 23:00:11 2020
+# Mon Mar 30 12:30:29 2020
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -23,21 +23,12 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
 
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":23:13:23:19|Tristate driver oRdData_8 (in view: work.fifo_sync_8bit_8s(verilog)) on net oRdData_8 (in view: work.fifo_sync_8bit_8s(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":23:13:23:19|Tristate driver oRdData_7 (in view: work.fifo_sync_8bit_8s(verilog)) on net oRdData_7 (in view: work.fifo_sync_8bit_8s(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":23:13:23:19|Tristate driver oRdData_6 (in view: work.fifo_sync_8bit_8s(verilog)) on net oRdData_6 (in view: work.fifo_sync_8bit_8s(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":23:13:23:19|Tristate driver oRdData_5 (in view: work.fifo_sync_8bit_8s(verilog)) on net oRdData_5 (in view: work.fifo_sync_8bit_8s(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":23:13:23:19|Tristate driver oRdData_4 (in view: work.fifo_sync_8bit_8s(verilog)) on net oRdData_4 (in view: work.fifo_sync_8bit_8s(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":23:13:23:19|Tristate driver oRdData_3 (in view: work.fifo_sync_8bit_8s(verilog)) on net oRdData_3 (in view: work.fifo_sync_8bit_8s(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":23:13:23:19|Tristate driver oRdData_2 (in view: work.fifo_sync_8bit_8s(verilog)) on net oRdData_2 (in view: work.fifo_sync_8bit_8s(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":23:13:23:19|Tristate driver oRdData_1 (in view: work.fifo_sync_8bit_8s(verilog)) on net oRdData_1 (in view: work.fifo_sync_8bit_8s(verilog)) has its enable tied to GND.
 @W: BN132 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ft2232h_async.v":92:0:92:5|Removing sequential instance fifo_inst.ft2232h_inst.rWrDelay because it is equivalent to instance fifo_inst.ft2232h_inst.rTxRdEn. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":215:1:215:2|Removing sequential instance rTxData[6] because it is equivalent to instance rTxData[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":86:5:86:11|Tristate driver P1A2 (in view: work.top(verilog)) on net P1A2 (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
 @W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":215:1:215:2|Sequential instance rTxData_0[0] is reduced to a combinational gate by constant propagation.
-@N: BN115 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ftdi_fifo.v":69:1:69:12|Removing instance tx_fifo_inst (in view: work.ftdi_fifo_async_8s_8s(verilog)) of type view:work.fifo_sync_8bit_8s_1(verilog) because it does not drive other instances.
-@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ft2232h_async.v":92:0:92:5|Removing sequential instance rRxWrEn (in view: work.ft2232h_async(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@W: BN114 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":41:12:41:24|Removing instance ram512x8_inst (in view: work.fifo_sync_8bit_8s_0(verilog)) of black box view:sb_ice.SB_RAM512x8(PRIM) because it does not drive other instances.
 @N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ftdi_fifo\ft2232h_async.v":92:0:92:5|Removing sequential instance rRxData[7:0] (in view: work.ft2232h_async(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
@@ -51,17 +42,22 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Clock Summary
 *****************
 
-Start                                  Requested     Requested     Clock                       Clock                     Clock
-Clock                                  Frequency     Period        Type                        Group                     Load 
-------------------------------------------------------------------------------------------------------------------------------
-System                                 502.3 MHz     1.991         system                      system_clkgroup           3    
-top_pll|PLLOUTGLOBAL_derived_clock     68.9 MHz      14.521        derived (from top|iClk)     Autoconstr_clkgroup_0     128  
-top|iClk                               17.2 MHz      58.085        inferred                    Autoconstr_clkgroup_0     0    
-==============================================================================================================================
+Start                                   Requested     Requested     Clock                                                 Clock                     Clock
+Clock                                   Frequency     Period        Type                                                  Group                     Load 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                  282.1 MHz     3.545         system                                                system_clkgroup           18   
+ft2232h_async|rRxWrEn_derived_clock     4.0 MHz       250.000       derived (from top_pll|PLLOUTGLOBAL_derived_clock)     Autoconstr_clkgroup_0     12   
+ft2232h_async|rTxRdEn_derived_clock     4.0 MHz       250.000       derived (from top_pll|PLLOUTGLOBAL_derived_clock)     Autoconstr_clkgroup_0     27   
+top_pll|PLLOUTGLOBAL_derived_clock      4.0 MHz       250.000       derived (from top|iClk)                               Autoconstr_clkgroup_0     131  
+top|iClk                                1.0 MHz       1000.000      inferred                                              Autoconstr_clkgroup_0     0    
+=========================================================================================================================================================
 
-@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":90:1:90:2|Found signal identified as System clock which controls 3 sequential elements including fifo_inst.rx_fifo_inst.rDataCount[2:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT531 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found signal identified as System clock which controls 18 sequential elements including fifo_inst.tx_fifo_inst.rRamWrAddr[8:0].  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
 
 Finished Pre Mapping Phase.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":86:5:86:11|Tristate driver P1A2 (in view: work.top(verilog)) on net P1A2 (in view: work.top(verilog)) has its enable tied to GND.
 @N: BN225 |Writing default property annotation file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
@@ -97,6 +93,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Mar 29 23:00:11 2020
+# Mon Mar 30 12:30:29 2020
 
 ###########################################################]
