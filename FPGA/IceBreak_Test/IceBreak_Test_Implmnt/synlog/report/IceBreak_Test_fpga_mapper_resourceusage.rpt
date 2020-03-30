@@ -5,15 +5,14 @@ Mapping to part: ice40up5ksg48
 Cell usage:
 GND             7 uses
 SB_CARRY        39 uses
-SB_DFF          20 uses
+SB_DFF          19 uses
 SB_DFFE         113 uses
-SB_DFFESR       17 uses
-SB_DFFESS       4 uses
-SB_DFFSR        38 uses
-SB_DFFSS        5 uses
+SB_DFFESR       8 uses
+SB_DFFSR        37 uses
+SB_DFFSS        6 uses
 SB_GB           2 uses
 VCC             7 uses
-SB_LUT4         299 uses
+SB_LUT4         297 uses
 
 I/O ports: 22
 I/O primitives: 21
@@ -21,11 +20,11 @@ SB_IO          20 uses
 SB_PLL40_PAD   1 use
 
 I/O Register bits:                  0
-Register bits not including I/Os:   197 (3%)
+Register bits not including I/Os:   183 (3%)
 
 @S |Mapping Summary:
-Total  LUTs: 299 (5%)
+Total  LUTs: 297 (5%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 299 = 299 
+Distribution of All Consumed Luts 297 = 297 
 

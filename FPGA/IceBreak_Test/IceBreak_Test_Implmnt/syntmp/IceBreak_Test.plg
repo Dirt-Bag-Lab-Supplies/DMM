@@ -1,17 +1,17 @@
-@P:  Worst Slack : -3.588
-@P:  top_pll|PLLOUTGLOBAL_derived_clock - Estimated Frequency : 41.8 MHz
-@P:  top_pll|PLLOUTGLOBAL_derived_clock - Requested Frequency : 49.2 MHz
-@P:  top_pll|PLLOUTGLOBAL_derived_clock - Estimated Period : 23.920
-@P:  top_pll|PLLOUTGLOBAL_derived_clock - Requested Period : 20.332
-@P:  top_pll|PLLOUTGLOBAL_derived_clock - Slack : -3.588
+@P:  Worst Slack : -1.971
+@P:  top_pll|PLLOUTGLOBAL_derived_clock - Estimated Frequency : 76.1 MHz
+@P:  top_pll|PLLOUTGLOBAL_derived_clock - Requested Frequency : 89.5 MHz
+@P:  top_pll|PLLOUTGLOBAL_derived_clock - Estimated Period : 13.142
+@P:  top_pll|PLLOUTGLOBAL_derived_clock - Requested Period : 11.171
+@P:  top_pll|PLLOUTGLOBAL_derived_clock - Slack : -1.971
 @P:  top|iClk - Estimated Frequency : NA
-@P:  top|iClk - Requested Frequency : 49.2 MHz
+@P:  top|iClk - Requested Frequency : 89.5 MHz
 @P:  top|iClk - Estimated Period : NA
-@P:  top|iClk - Requested Period : 20.332
+@P:  top|iClk - Requested Period : 11.171
 @P:  top|iClk - Slack : NA
 @P: top Part : ice40up5ksg48
 @P: top I/O primitives : 21
 @P: top I/O Register bits : 0
-@P: top Register bits (Non I/O) : 197 (3%)
-@P: top Total Luts : 299 (5%)
-@P:  CPU Time : 0h:00m:01s
+@P: top Register bits (Non I/O) : 183 (3%)
+@P: top Total Luts : 297 (5%)
+@P:  CPU Time : 0h:00m:02s

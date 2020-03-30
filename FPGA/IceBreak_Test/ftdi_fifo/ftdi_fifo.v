@@ -1,117 +1,146 @@
 
-`include "ftdi_input_simple.v"
-`include "ftdi_output_async.v"
-
-module ftdi_fifo #(
-	parameter pDataWidth=8,
-	parameter pMaxData=8
+module ftdi_fifo_async #(
+	parameter pTxFifoDepth=8,
+	parameter pRxFifoDepth=8
 )(
 	//Tx FPGA Interface
 	iClk,	//FPGA Clock
 	iRst,
-	iTxData, //Data to transmit from FPGA to FTDI
+	//TX
 	iTxEn,  // Data valid writing data to dual port ram
 	oTxFull, 	//Ram is full, stop writing
+	iTxData, //Data to transmit from FPGA to FTDI
+	//RX
+	iRxEn,
+	oRxEmpty,
+	oRxData,
 	//FTDI interface
-	//iFifoClk,	//Clk from FTDI fifo -- Sync only
 	ioFifoData,	//Data bus to the FTDI
 	iRxF_n,		//RxBuffer on the Fifo has data
 	iTxE_n,		//Tx Buffer on fifo is empty
 	oRx_n,		//Start Rx from Ftdi
 	oTx_n,		//Start Tx to Ftdi
-	//oOe_n,	 	//Select Rd/Wr direction on bus. 0 = Read : 1 = Write
 	oSiwu,		//Enable the usb to wake up the computer. 
-	oRxData,
-	oRxFlag
 );
 
-//Inputs - Sys Clock
-input iClk, iRst, iTxEn;
-input [pDataWidth-1:0] iTxData;
-//Outputs -- sys clk
-output oTxFull;
+//General inputs
+input iClk, iRst;
 
-//Inputs for async
-input iRxF_n, iTxE_n; //iFifoClk, -- sync only
-inout [7:0] ioFifoData;
-//Outputs for asyncx
-output oRx_n, oTx_n, oSiwu; // oOe_n, -- sync only
+//////Tx Fifo  /////
+input [7:0] iTxData;
+input iTxEn; 	//Active high - write data to fifo 
+output oTxFull;	//Output to system, fifo is full. Fifo does not write any more data
+
+////Rx Fifo////
 output [7:0] oRxData;
-output oRxFlag; //Flag for new data received. 
+input iRxEn; //Active high -- data is read from buffer
+output oRxEmpty; //Active high -- no data in buffer
 
-/////////////////////////////////
 
-//Data wires between modules 
-wire wPacketAvail, wPacketRead;
-wire [$clog2(pMaxData)-1:0] wRamRdAddr;
+////FTDI Interface////
+inout [7:0] ioFifoData; //Bi-dir bus to ftdi
+input iRxF_n;		//RxBuffer on the Fifo has data
+input iTxE_n;		//Tx Buffer on fifo is empty
+output oRx_n;		//Start Rx from Ftdi
+output oTx_n;		//Start Tx to Ftdi
+output oSiwu;		//Enable the usb to wake up the computer. 
 
-wire [pDataWidth-1:0] wRamRdData;
 
-ftdi_input_simple #(
-	.pDataWidth(8),
-	.pMaxData(8) //Number of data pieces 
-)ftdi_input_inst(
-	.iWClk			(iClk),//Write clk -- 48MHz
-	.iRst			(iRst),//Reset high
-	.iTxEn			(iTxEn),//Write data to RAM
-	.iTxData 		(iTxData),//Data to write to RAM
-	.oTxFull		(oTxFull),//Ram is full
-	.oPacketAvail 	(wPacketAvail),//Output that data is available in the buffer
-	//60MHz Clock
-	.iRClk			(iFifoClk),//Read clk -- 60MHz from FTDI
-	.iRamRdAddr 	(wRamRdAddr),//Addr from RAM to read from
-	.oRamRdData 	(wRamRdData),//Data output from RAM
-	.iPacketRead 	(wPacketRead)//Flag to remove data from the queue
+
+///////////////// Tx Fifo//////////////////
+
+//FPGA interface
+wire wTxWrEn;
+assign wTxWrEn = iTxEn;
+wire wTxWrFull;
+assign oTxFull = wTxWrFull;
+wire [7:0] wTxWrData;
+assign wTxWrData = iTxData;
+
+//FTDI interface
+wire wTxRdEn;
+wire wTxRdEmpty;
+wire [7:0] wTxRdData;
+
+
+
+fifo_sync_8bit#(
+	.pFifoDepth(pTxFifoDepth)
+)tx_fifo_inst(
+	.iClk			(iClk),
+	.iRst			(iRst),
+	.iWrEn			(wTxWrEn),
+	.oWrFull		(wTxWrFull),
+	.iWrData		(wTxWrData),
+	.iRdEn			(wTxRdEn),
+	.oRdEmpty		(wTxRdEmpty),
+	.oRdData		(wTxRdData)
 );
 
-//Async setup for icebreaker
-ftdi_output #(
-	.pDataWidth(8),
-	.pMaxData(8) //Number of data pieces 
-)ftdi_output_inst(
-			//External inputs
-	.iClk				(iClk), //48mhz   -- (iFifoClk),sync RAM Read clk - 60mhz
-	.iRst				(iRst),
-	.ioFifoData			(ioFifoData),//Data bus bidir
-			//External Outputs 
-	.iRxF_n				(iRxF_n),//RxBuffer on the Fifo has data
-	.iTxE_n				(iTxE_n),//Tx Buffer on fifo is empty
-	.oRx_n				(oRx_n),//Start Rx from Ftdi
-	.oTx_n				(oTx_n),//Start Tx to Ftdi
-	.oSiwu				(oSiwu),//Enable the usb to wake up the computer. 
-			//Internal Inputs
-	.iRamRdData			(wRamRdData),
-	.iPacketAvail		(wPacketAvail),
-			//Internal Outputs
-	.oRamRdAddr			(wRamRdAddr),	
-	.oPacketRead		(wPacketRead),
-	.oRxData			(oRxData),
-	.oRxFlag			(oRxFlag)
+///////////////////// RX Fifo///////////////////////
+
+//FTDI interface
+wire wRxWrEn;
+wire wRxWrFull;
+wire [7:0] wRxWrData;
+
+//FPGA interface
+wire wRxRdEn;
+assign wRxRdEn = iRxEn;
+wire wRxRdEmpty;
+assign oRxEmpty = wRxRdEmpty;
+wire [7:0] wRxRdData;
+assign oRxData = wRxRdData;
+
+
+
+fifo_sync_8bit#(
+	.pFifoDepth(pRxFifoDepth)
+)rx_fifo_inst(
+	.iClk			(iClk),
+	.iRst			(iRst),
+	.iWrEn			(wRxWrEn),
+	.oWrFull		(wRxWrFull),
+	.iWrData		(wRxWrData),
+	.iRdEn			(wRxRdEn),
+	.oRdEmpty		(wRxRdEmpty),
+	.oRdData		(wRxRdData)
 );
 
-//Sync setup for later
-// ftdi_output #(
-// 	.pDataWidth(8),
-// 	.pMaxData(8) //Number of data pieces 
-// )ftdi_output_inst(
-// 			//External inputs
-// 	.iClk				(iFifoClk),//RAM Read clk - 60mhz
-// 	.iRst				(iRst),
-// 	.ioFifoData			(ioFifoData),//Data bus bidir
-// 			//External Outputs 
-// 	.iRxF_n				(iRxF_n),//RxBuffer on the Fifo has data
-// 	.iTxE_n				(iTxE_n),//Tx Buffer on fifo is empty
-// 	.oRx_n				(oRx_n),//Start Rx from Ftdi
-// 	.oTx_n				(oTx_n),//Start Tx to Ftdi
-// 	.oOe_n	 			(oOe_n),//Select Rd/Wr direction on bus. 0 = Read : 1 = Write
-// 	.oSiwu				(oSiwu),//Enable the usb to wake up the computer. 
-// 			//Internal Inputs
-// 	.iRamRdData			(wRamRdData),
-// 	.iPacketAvail		(wPacketAvail),
-// 			//Internal Outputs
-// 	.oRamRdAddr			(wRamRdAddr),	
-// 	.oPacketRead		(wPacketRead)
-// );
+
+////FTDI Interface////
+wire wRxF_n;		//RxBuffer on the Fifo has data
+assign wRxF_n = iRxF_n;
+wire wTxE_n;		//Tx Buffer on fifo is not full
+assign wTxE_n = iTxE_n;
+wire wRx_n;		//Start Rx from Ftdi
+assign oRx_n = wRx_n;
+wire wTx_n;		//Start Tx to Ftdi
+assign oTx_n = wTx_n;
+wire wSiwu;		//Enable the usb to wake up the computer. 
+assign oSiwu = wSiwu;
+
+ft2232h_async ft2232h_inst
+(
+	////Internal inputs////
+	.iClk			(iClk),		//48mhz sys clock for async
+	.iRst			(iRst),
+	////Tx Input Fifo////
+	.oTxRdEn		(wTxRdEn),
+	.iTxRdEmpty		(wTxRdEmpty),
+	.iTxData		(wTxWrData),
+	////Rx Output Fifo////
+	.oRxWrEn		(wRxWrEn),
+	.iRxWrFull		(wRxWrFull),
+	.oRxData		(wRxWrData),
+	////FTDI Interface////
+	.ioFifoData		(ioFifoData),
+	.iRxF_n			(wRxF_n),		//RxBuffer on the Fifo has data
+	.iTxE_n			(wTxE_n),		//Tx Buffer on fifo is not full
+	.oRx_n			(wRx_n),		//Start Rx from Ftdi
+	.oTx_n			(wTx_n),		//Start Tx to Ftdi
+	.oSiwu			(wSiwu)		//Enable the usb to wake up the computer. 
+);
 
 
 endmodule

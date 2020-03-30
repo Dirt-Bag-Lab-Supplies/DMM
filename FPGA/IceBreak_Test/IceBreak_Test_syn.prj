@@ -6,6 +6,8 @@ add_file -verilog -lib work "design_top.v"
 add_file -verilog -lib work "top_pll.v" 
 add_file -verilog -lib work "UART/uart_fifo.v" 
 add_file -verilog -lib work "ftdi_fifo/ftdi_fifo.v" 
+add_file -verilog -lib work "RAM_Fifo/fifo_sync.v" 
+add_file -verilog -lib work "ftdi_fifo/ft2232h_async.v" 
 #implementation: "IceBreak_Test_Implmnt"
 impl -add IceBreak_Test_Implmnt -type fpga
 

@@ -1,2 +1,3 @@
-@E: CG426 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_output_async.v":103:5:103:14|Assignment target ioFifoData must be of type reg or genvar
+@E: CS177 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ft2232h_async.v":65:7:65:7|Expecting net name
+@E: CS187 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ft2232h_async.v":175:0:175:8|Expecting endmodule
 

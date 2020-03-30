@@ -7,6 +7,8 @@ add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/F
 add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/top_pll.v"
 add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/UART/uart_fifo.v"
 add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/ftdi_fifo/ftdi_fifo.v"
+add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/RAM_Fifo/fifo_sync.v"
+add_file -verilog "C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/ftdi_fifo/ft2232h_async.v"
 
 
 

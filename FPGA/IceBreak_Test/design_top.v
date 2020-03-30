@@ -123,6 +123,8 @@ uart_fifo #(
 );
 
 
+
+//Uart loopback also transmit data. 
 always @(posedge clk_48mhz) begin
 	if(wRst) begin
 		rRxRead <= 1'b0;
@@ -131,10 +133,11 @@ always @(posedge clk_48mhz) begin
 		
 	end else begin
 		if(!wUartTxBusy) begin
-			if(oRxFlag) begin
-				rTxByte <= wRxFifoData; //Put fifo data on the uart bus
-				rTxWrite <= 1'b1;
-			end else if (!wRxBufferEmpty) begin	
+			// if(rRxEn) begin //Read data from the fifo
+			// 	rTxByte <= rRxData; //Put fifo data on the uart bus
+			// 	rTxWrite <= 1'b1;
+			// end else 
+			if (!wRxBufferEmpty) begin	
 				rTxByte <= wRxByteOut;
 				rRxRead <= 1'b1;
 				rTxWrite <= 1'b1;
@@ -153,54 +156,90 @@ end
 //The output continuosly writes to the ftdi as long as data is in the buffer. 
 //First test. 
 // Continuosly write counter to the fifo while TxFull is low. 
-//Module inputs
-reg rTxData;
-reg wTxEn;
+
+reg rTxEn;
+reg [7:0] rTxData;
+reg rRxEn;
+reg [7:0] rRxData;
+//Tx wires
+wire wTxEn;
+assign wTxEn = rTxEn;
 wire wTxFull;
+wire [7:0] wTxData;
+assign wTxData = rTxData;
+//Rx Wires
+wire wRxEn;
+assign wRxEn = rRxEn;
+wire wRxEmpty;
+wire [7:0] wRxData;
 
-//Test variables
-reg [7:0] counter;
+////FTDI Interface////
+wire wRxF_n;		//RxBuffer on the Fifo has data
+assign wRxF_n = iRxF_n;
+wire wTxE_n;		//Tx Buffer on fifo is not full
+assign wTxE_n = iTxE_n;
+wire wRx_n;		//Start Rx from Ftdi
+assign oRx_n = wRx_n;
+wire wTx_n;		//Start Tx to Ftdi
+assign oTx_n = wTx_n;
+wire wSiwu;		//Enable the usb to wake up the computer. 
+assign oSiwu = wSiwu;
 
-//assign wTxData = 8'hAA;
 
 ////////////////////////////FTDI FIFO///////////////////////
-ftdi_fifo #(
-	.pDataWidth(8), //Dont change these. It doesnt handle that right now
-	.pMaxData(8)
+ftdi_fifo_async #(
+	.pTxFifoDepth(8), //Dont change these. It doesnt handle that right now
+	.pRxFifoDepth(8)
 )fifo_inst(
-	//Tx FPGA Interface
 	.iClk			(clk_48mhz),	//FPGA Clock
 	.iRst 			(wRst),
-	.iTxData		(wTxData), //Data to transmit from FPGA to FTDI
+	//TX
 	.iTxEn 			(wTxEn),  // Data valid writing data to dual port ram
 	.oTxFull  		(wTxFull), 	//Ram is full, stop writing
+	.iTxData		(wTxData), //Data to transmit from FPGA to FTDI
+	//RX
+	.iRxEn			(wRxEn),
+	.oRxEmpty 		(wRxEmpty),
+	.oRxData		(wRxData),
 	//FTDI interface
-	//.iFifoClk 		(clk_60mhz),	//Clk from FTDI fifo
 	.ioFifoData 	(ioFifoData),	//Data bus to the FTDI
-	.iRxF_n 		(iRxF_n),		//RxBuffer on the Fifo has data
-	.iTxE_n 		(iTxE_n),		//Tx Buffer on fifo is empty
-	.oRx_n    		(oRx_n),		//Start Rx from Ftdi
-	.oTx_n 			(oTx_n),		//Start Tx to Ftdi
-//	.oOe_n  		(oOe_n),	 	//Select Rd/Wr direction on bus. 0 = Read : 1 = Write
-	.oSiwu			(oSiwu),		//Controller by external button
-	.oRxData		(wRxFifoData),
-	.oRxFlag		(oRxFlag)
+	.iRxF_n 		(wRxF_n),		//RxBuffer on the Fifo has data
+	.iTxE_n 		(wTxE_n),		//Tx Buffer on fifo is empty
+	.oRx_n    		(wRx_n),		//Start Rx from Ftdi
+	.oTx_n 			(wTx_n),		//Start Tx to Ftdi
+	.oSiwu			(wSiwu)		//Controller by external button
 );
 
+///////TX Machine///////// 
 always @(clk_48mhz) begin
 	if(wRst) begin
-		counter <= 0;
-		wTxEn <= 0;
-		rTxData <= 8'h41;
+		rTxEn <= 0;
+		rTxData <= 7'b0;
 	end else begin
-		if(!wTxFull) begin //buffer is not full, increment counter and send
-			//counter <= counter == 8'hFF ? 8'h00 : counter + 1; 
-			wTxEn <= 1; 
+		if(!wTxFull) begin // The fifo is empty, clear to send
+			rTxData <= 8'h41; //"A"
+			rTxEn <= 1'b1;
 		end else begin
-			wTxEn <= 0;
-		end 
+			rTxEn <= 1'b0; //Clear flag
+		end
 	end
 end
+
+///////RX Machine/////////
+always @(clk_48mhz) begin
+	if(wRst) begin
+		rRxEn <= 0;
+	end else begin
+		if(!wRxEmpty) begin // The fifo is empty, clear to send
+			rRxData <= wRxData; //"A"
+			rRxEn <= 1'b1;
+		end else begin
+			rRxEn <= 1'b0; //Clear flag
+		end
+
+	end
+end
+
 
 
 /*

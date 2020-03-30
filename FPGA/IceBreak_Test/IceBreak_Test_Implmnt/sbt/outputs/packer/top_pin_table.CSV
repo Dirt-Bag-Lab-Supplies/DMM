@@ -6,7 +6,7 @@
 
 * Build Date:         Sep 11 2017 16:52:36
 
-* File Generated:     Mar 29 2020 11:31:41
+* File Generated:     Mar 29 2020 23:00:59
 
 * Purpose:            Detailed IO and package pin info
 
@@ -20,14 +20,14 @@ Package, SG48
 Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, Pull Up, Pullup resistor, Weak Pull Up, IO Function, IO Bank, Drive Strength 
 ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, ---------------, 
 1, VCCIO_2, not used, , , , , , bottomBank, 
-2, PIO, P1A2, Output, , SB_LVCMOS, No Pull Up, , , Simple Output, bottomBank, x1
+2, PIO, P1A2, Output, , SB_LVCMOS, No Pull Up, , , Output Tristatable by Enable, bottomBank, x1
 3, PIO, P1A7, Output, , SB_LVCMOS, No Pull Up, , , Simple Output, bottomBank, x1
 4, PIO, P1A1, Input, , SB_LVCMOS, No Pull Up, , , Simple Input, bottomBank, x1
 5, VCC, not used, , , , , , UnknownBank, 
-6, PIO, ioFifoData[0], InOut, , SB_LVCMOS, No Pull Up, , , Simple Input Output Tristatable by Enable, bottomBank, x1
+6, PIO, ioFifoData[0], Output, , SB_LVCMOS, No Pull Up, , , Output Tristatable by Enable, bottomBank, x1
 7, CDONE, not used, , , , , , bottomBank, 
 8, CRESET_B, not used, , , , , , bottomBank, 
-9, PIO, ioFifoData[1], InOut, , SB_LVCMOS, No Pull Up, , , Simple Input Output Tristatable by Enable, bottomBank, x1
+9, PIO, ioFifoData[1], Output, , SB_LVCMOS, No Pull Up, , , Output Tristatable by Enable, bottomBank, x1
 10, PIO, BTN_N, Input, , SB_LVCMOS, No Pull Up, , , Simple Input, bottomBank, x1
 11, PIO, oRx_n, Output, , SB_LVCMOS, No Pull Up, , , Simple Output, bottomBank, x1
 12, PIO, not used, , , , , , bottomBank, 
@@ -36,14 +36,14 @@ Pin Number, Pin Type Name, Signal Name, Direction, Global Buffer, IO Standard, P
 15, SPI_SCK, not used, , , , , , bottomBank, 
 16, SPI_SS_B, not used, , , , , , bottomBank, 
 17, SPI_SI, not used, , , , , , bottomBank, 
-18, PIO, ioFifoData[2], InOut, , SB_LVCMOS, No Pull Up, , , Simple Input Output Tristatable by Enable, bottomBank, x1
-19, PIO, ioFifoData[3], InOut, , SB_LVCMOS, No Pull Up, , , Simple Input Output Tristatable by Enable, bottomBank, x1
-20, PIO_GBIN, ioFifoData[4], InOut, , SB_LVCMOS, No Pull Up, , , Simple Input Output Tristatable by Enable, bottomBank, x1
-21, PIO, ioFifoData[5], InOut, , SB_LVCMOS, No Pull Up, , , Simple Input Output Tristatable by Enable, bottomBank, x1
+18, PIO, ioFifoData[2], Output, , SB_LVCMOS, No Pull Up, , , Output Tristatable by Enable, bottomBank, x1
+19, PIO, ioFifoData[3], Output, , SB_LVCMOS, No Pull Up, , , Output Tristatable by Enable, bottomBank, x1
+20, PIO_GBIN, ioFifoData[4], Output, , SB_LVCMOS, No Pull Up, , , Output Tristatable by Enable, bottomBank, x1
+21, PIO, ioFifoData[5], Output, , SB_LVCMOS, No Pull Up, , , Output Tristatable by Enable, bottomBank, x1
 22, VDDIO_SPI, not used, , , , , , bottomBank, 
-23, PIO_I3C, ioFifoData[6], InOut, , SB_LVCMOS, No Pull Up, , , Simple Input Output Tristatable by Enable, topBank, x1
+23, PIO_I3C, ioFifoData[6], Output, , SB_LVCMOS, No Pull Up, , , Output Tristatable by Enable, topBank, x1
 24, VPP, not used, , , , , , topBank, 
-25, PIO_I3C, ioFifoData[7], InOut, , SB_LVCMOS, No Pull Up, , , Simple Input Output Tristatable by Enable, topBank, x1
+25, PIO_I3C, ioFifoData[7], Output, , SB_LVCMOS, No Pull Up, , , Output Tristatable by Enable, topBank, x1
 26, PIO, iRxF_n, Input, , SB_LVCMOS, No Pull Up, , , Simple Input, topBank, x1
 27, PIO, iTxE_n, Input, , SB_LVCMOS, No Pull Up, , , Simple Input, topBank, x1
 28, PIO, not used, , , , , , topBank, 

@@ -32,7 +32,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2017.08.27940 - Bui
 ProjectName=IceBreak_Test
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=design_top.v=work,top_pll.v=work,UART/uart_fifo.v=work,ftdi_fifo/ftdi_fifo.v=work
+ProjectVFiles=design_top.v=work,top_pll.v=work,UART/uart_fifo.v=work,ftdi_fifo/ftdi_fifo.v=work,RAM_Fifo/fifo_sync.v,ftdi_fifo/ft2232h_async.v
 ProjectCFiles=
 CurImplementation=IceBreak_Test_Implmnt
 Implementations=IceBreak_Test_Implmnt
