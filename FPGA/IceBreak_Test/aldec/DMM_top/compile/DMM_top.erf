@@ -1,0 +1,27 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE_SP VCP2113 "Module ftdi_fifo_async found in current working library."
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+WARNING VCP7060 "Argument ""##############################################"" should be a 32-bit multi_channel_descriptor." "c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../ftdi_fifo/ftdi_fifo_async_TB.v" 308  67
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 82
+UPDATEPROGRESS 85
+UPDATEPROGRESS 87
+UPDATEPROGRESS 90
+UPDATEPROGRESS 92
+UPDATEPROGRESS 95
+UPDATEPROGRESS 97
+UPDATEPROGRESS 100
+MESSAGE "Unit top modules: ftdi_fifo_async_tb."
+MESSAGE "$root top modules: top_tb fifo_sync_8bit_tb ft2232h_async_tb ftdi_fifo_async_tb."
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time: 0[s]."
+WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "done"

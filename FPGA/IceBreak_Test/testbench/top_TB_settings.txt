@@ -1,15 +1,15 @@
 [SETTINGS]
 UUT_module%top%
 TB_module%top_tb%
-DSN_PATH%C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\testbench%
-OUTPUT_DIRECTORY%C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\testbench%
+DSN_PATH%C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\testbench%
+OUTPUT_DIRECTORY%C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\testbench%
 STIMULUS%NO%
 VECTORS_FILE%%
 AWF_FILE%%
 TB_FILE%top_TB.v%
 MACRO_FILE%top_TB_runtest.do%
 UUT_module_FILE%IceBreak_Test/design_top.v%
-LIBRARY_NAME%top_tb%
+LIBRARY_NAME%DMM_top%
 LIBRARY_TYPE%work%
 TestBench_TYPE%simple%
 ENABLE_FILE%none%
@@ -22,18 +22,23 @@ pBaudRate%115200%
 [PORTS]
 iClk%in%wire%NO%NOCLK%
 BTN_N%in%wire%NO%NOCLK%
-LEDR_N%out%wire%NO%NOCLK%
-LEDG_N%out%wire%NO%NOCLK%
+BTN1%in%wire%NO%NOCLK%
+P1A1%in%wire%NO%NOCLK%
+P1A2%out%wire%NO%NOCLK%
+P1A3%out%wire%NO%NOCLK%
+P1A4%out%wire%NO%NOCLK%
 P1A7%out%wire%NO%NOCLK%
 P1A8%out%wire%NO%NOCLK%
 P1A9%out%wire%NO%NOCLK%
-BTN1%in%wire%NO%NOCLK%
-oTx%out%wire%NO%NOCLK%
-iRx%in%wire%NO%NOCLK%
+ioFifoData%inout%[7:0]wire%NO%NOCLK%
+iRxF_n%in%wire%NO%NOCLK%
+iTxE_n%in%wire%NO%NOCLK%
+oRx_n%out%wire%NO%NOCLK%
+oTx_n%out%wire%NO%NOCLK%
 
 [SDF]
 
 [INCLUDE]
 [Verilog_FILES]
-C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\design_top.v
+C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v
 

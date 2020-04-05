@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\run_options.txt
-#--  Written on Mon Mar 30 12:30:27 2020
+#--  Written on Sun Apr 05 01:04:30 2020
 
 
 #project files
@@ -11,6 +11,8 @@ add_file -verilog "UART/uart_fifo.v"
 add_file -verilog "ftdi_fifo/ftdi_fifo.v"
 add_file -verilog "RAM_Fifo/fifo_sync.v"
 add_file -verilog "ftdi_fifo/ft2232h_async.v"
+add_file -verilog "UART/uart.v"
+add_file -verilog "memory/ram_blocks.v"
 
 
 

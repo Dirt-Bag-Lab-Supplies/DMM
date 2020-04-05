@@ -8,6 +8,8 @@ add_file -verilog -lib work "UART/uart_fifo.v"
 add_file -verilog -lib work "ftdi_fifo/ftdi_fifo.v" 
 add_file -verilog -lib work "RAM_Fifo/fifo_sync.v" 
 add_file -verilog -lib work "ftdi_fifo/ft2232h_async.v" 
+add_file -verilog -lib work "UART/uart.v" 
+add_file -verilog -lib work "memory/ram_blocks.v" 
 #implementation: "IceBreak_Test_Implmnt"
 impl -add IceBreak_Test_Implmnt -type fpga
 

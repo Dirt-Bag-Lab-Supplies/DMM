@@ -62,7 +62,7 @@ wire wRxEn; //Wire to determine if everything is ready to receive
 assign wRxEn = !iRxF_n && !iRxWrFull; //If ftdi has data and buffer is not full
 wire wTxEn;
 //assign wTxEn = !iTxE_n && !iTxRdEmpty; //FTDI has data and buffer has data
-assign wTxEn = !iTxE_n; //ignore the empty flag for now. 
+assign wTxEn = !iTxE_n && !iTxRdEmpty; //ignore the empty flag for now. 
 
 //Input registers to sync flags
 //--Currently not using since it eats clock cycles pretty quick and complicates the state machine. 
@@ -119,6 +119,7 @@ always@ (posedge iClk) begin
 				//Start transmitting if tx isn't full and data is available
 				 	rTxBusReady <= 1'b1; //Put tx data on the bus
 					rFifoState <= WR_START;
+					rTxRdEn <= 1'b1; //Clock in next data to bus... TODO: Check timing
 				end
 			end
 			RD_START:begin	
@@ -141,15 +142,16 @@ always@ (posedge iClk) begin
 				//Assert the write flag. Must wait 30ns before deassert. 
 				rTx_n <= 1'b0;
 				rFifoState <= WR_DATA; 
+				rTxRdEn <= 1'b0; //Signal we are done writing; 
 			end
 			WR_DATA:begin
 				//Wait 2clk cycles (40ns) before reasserting write flag. 
 				//The flag the buffer. Increment read address
 				if(!rWrDelay) begin
 					rWrDelay <= 1'b1; //delay one cycle. 
-					rTxRdEn <= 1'b1; //Flag that something was written to the chip
+					
 				end else begin
-					rTxRdEn <= 1'b0; //Signal we are done writing; 
+					
 					rWrDelay <= 1'b0; // reset delay
 					rFifoState <= IDLE;
 					//oPacketRead <= 1'b1; //Flag the ram that a packet was read -- reset to 0 in idle

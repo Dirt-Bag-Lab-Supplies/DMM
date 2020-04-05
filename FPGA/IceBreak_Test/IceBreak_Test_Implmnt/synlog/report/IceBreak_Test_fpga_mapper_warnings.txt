@@ -1,47 +1,12 @@
-@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_out is being ignored. 
-@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.rx_clk_divider[17:0] is being ignored. 
-@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":91:0:91:5|User-specified initial value defined for instance DUT.uart_inst0.tx_clk_divider[13:0] is being ignored. 
-@W: FX703 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\fifo.v":46:0:46:5|Unable to map RAM instance rFifoData[7:0] to RAM for technology specified. 
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[0] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[1] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[2] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[3] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[4] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[5] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[6] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[7] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Sequential instance fifo_inst.tx_fifo_inst.rRamWrAddr_0[8] is reduced to a combinational gate by constant propagation.
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":72:17:72:65|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un24_rRamWrAddr[0]
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":72:17:72:65|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un18_rRamWrAddr_i_4
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[1]
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[2]
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[3]
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[4]
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[5]
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[6]
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[7]
-@W: BN137 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\ram_fifo\fifo_sync.v":67:1:67:2|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[8]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[8]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[7]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[6]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[5]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[4]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[3]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un15_rRamRdAddr
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[0]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr_RNI[1]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamRdAddr[2]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[8]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_7
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_6
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[5]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_4
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_5_c_RNIIO37
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_6_c_RNIJQ47
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_3
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_2
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_axb_1
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un18_rRamWrAddr
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.rRamWrAddr[0]
-@W: BN137 :|Found combinational loop during mapping at net fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_3_c_RNIK6N4
-@W: MT420 |Found inferred clock top|iClk with period 18.28ns. Please declare a user-defined clock on object "p:iClk"
+@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":315:0:315:5|User-specified initial value defined for instance uart_inst0.uart_inst0.tx_clk_divider[14:0] is being ignored. 
+@W: FX1039 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":217:0:217:5|User-specified initial value defined for instance uart_inst0.uart_inst0.rx_clk_divider[14:0] is being ignored. 
+@W: FX107 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\memory\ram_blocks.v":35:0:35:5|RAM ram512x8_inst.mem[7:0] (in view: work.fifo_sync_8bit_8s(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: MO161 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\memory\ram_blocks.v":29:0:29:5|Register bit ram512x8_inst.RDATA[6] (in view view:work.fifo_sync_8bit_8s_3(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: FX107 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\memory\ram_blocks.v":35:0:35:5|RAM ram512x8_inst.mem[0] (in view: work.fifo_sync_8bit_8s_3(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: MO160 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\memory\ram_blocks.v":29:0:29:5|Register bit ram512x8_inst.RDATA[7] (in view view:work.fifo_sync_8bit_8s_3(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\memory\ram_blocks.v":29:0:29:5|Register bit ram512x8_inst.RDATA[5] (in view view:work.fifo_sync_8bit_8s_3(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\memory\ram_blocks.v":29:0:29:5|Register bit ram512x8_inst.RDATA[4] (in view view:work.fifo_sync_8bit_8s_3(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\memory\ram_blocks.v":29:0:29:5|Register bit ram512x8_inst.RDATA[3] (in view view:work.fifo_sync_8bit_8s_3(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\memory\ram_blocks.v":29:0:29:5|Register bit ram512x8_inst.RDATA[2] (in view view:work.fifo_sync_8bit_8s_3(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\memory\ram_blocks.v":29:0:29:5|Register bit ram512x8_inst.RDATA[1] (in view view:work.fifo_sync_8bit_8s_3(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MT420 |Found inferred clock top|iClk with period 13.03ns. Please declare a user-defined clock on object "p:iClk"

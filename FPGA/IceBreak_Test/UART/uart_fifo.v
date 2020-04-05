@@ -1,157 +1,144 @@
 //`timescale 1ns/1ps
 
-`include "fifo.v"
-`include "uart.v"
+// `include "./RAM_fifo/fifo_sync.v"
+// `include "uart.v"
 
 module uart_fifo #(
 	parameter pClkFreq=12_000_000, //12MHz default
 	parameter pBaudRate=9600,
-	parameter pRxFifoByteLength=4,
-	parameter pTxFifoByteLength=4
+	parameter pTxFifoDepth=8,
+	parameter pRxFifoDepth=8
 )
 (
-	iClk,
-	iResetn,
-	iRx,
-	oTx,
-	oRxByteOut,
-	iRxRead,
-	oRxBufferEmpty,
-	rUartError,
-	iTxByte,
-	iTxWrite,
-	oUartTxBusy
+	//Tx FPGA Interface
+	iClk,	//FPGA Clock
+	iRst,
+	//TX
+	iTxEn,  // Data valid writing data to dual port ram
+	oTxFull, 	//Ram is full, stop writing
+	iTxData, //Data to transmit from FPGA to FTDI
+	//RX
+	iRxEn,
+	oRxEmpty,
+	oRxData,
+	//UART Interface
+	iRx,	//External Rx line
+	oTx, 	//Extnernal TX Line
+	oRcvErr
 );
 
 
+//General inputs
+input iClk, iRst;
+
+//////Tx Fifo  /////
+input [7:0] iTxData;
+input iTxEn; 	//Active high - write data to fifo 
+output oTxFull;	//Output to system, fifo is full. Fifo does not write any more data
+
+////Rx Fifo////
+output [7:0] oRxData;
+input iRxEn; //Active high -- data is read from buffer
+output oRxEmpty; //Active high -- no data in buffer
 
 
-input iClk;
-input iResetn;
+//UART Lines
 input iRx;
 output oTx;
-output [7:0] oRxByteOut;
-input iRxRead;
-output wire oRxBufferEmpty;
-output reg rUartError;
-input [7:0] iTxByte;
-input iTxWrite;
-output reg oUartTxBusy;
+output oRcvErr;
 
 
 
+///////////////// Tx Fifo//////////////////
 
-///////// FIFO TX ///////
-//TX write
-//reg rTxFifoWriteEn;
-wire wTxFifoFull;
-//TX read
-//reg rTxFifoReadEn;
-wire [7:0] wTxFifoReadData;
-wire wTxFifoEmpty;
+//FPGA interface
+wire wTxWrEn;
+assign wTxWrEn = iTxEn;
+wire wTxWrFull;
+assign oTxFull = wTxWrFull;
+wire [7:0] wTxWrData;
+assign wTxWrData = iTxData;
 
-//////// FIFO RX ////////
-//RX write
-//reg rRxFifoWriteEn;
-wire wRxFifoFull;
-//RX read
-reg rRxFifoReadEn;
-wire [7:0] rRxFifoReadData;
-wire wRxFifoEmpty;
-///// data out is always output from the fifo
-assign oRxByteOut = rRxFifoReadData; //
-assign oRxBufferEmpty = wRxFifoEmpty;
-
-////////////UART ///////////
-reg rTransmit;
-wire wRcvd, wIsReceiving, wIsTransmitting, wRcvErr;
+//FTDI interface
+wire wTxRdEn;
+wire wTxRdEmpty;
+wire [7:0] wTxRdData;
 
 
-wire [7:0] wRxByte;
 
-uart #(
+fifo_sync_8bit#(
+	.pFifoDepth(pTxFifoDepth)
+)tx_uart_fifo_inst(
+	.iClk			(iClk),
+	.iRst			(iRst),
+	.iWrEn			(wTxWrEn),
+	.oWrFull		(wTxWrFull),
+	.iWrData		(wTxWrData),
+	.iRdEn			(wTxRdEn),
+	.oRdEmpty		(wTxRdEmpty),
+	.oRdData		(wTxRdData)
+);
+
+
+
+///////////////////// RX Fifo///////////////////////
+
+//UART interface
+wire wRxWrEn;
+wire wRxWrFull;
+wire [7:0] wRxWrData;
+
+//FPGA interface
+wire wRxRdEn;
+assign wRxRdEn = iRxEn;
+wire wRxRdEmpty;
+assign oRxEmpty = wRxRdEmpty;
+wire [7:0] wRxRdData;
+assign oRxData = wRxRdData;
+
+
+
+fifo_sync_8bit#(
+	.pFifoDepth(pRxFifoDepth)
+)rx_uart_fifo_inst(
+	.iClk			(iClk),
+	.iRst			(iRst),
+	.iWrEn			(wRxWrEn),
+	.oWrFull		(wRxWrFull),
+	.iWrData		(wRxWrData),
+	.iRdEn			(wRxRdEn),
+	.oRdEmpty		(wRxRdEmpty),
+	.oRdData		(wRxRdData)
+);
+
+//////////////////////////UART Module//////////////////////
+wire wRx;
+assign wRx = iRx;
+wire wTx;
+assign oTx = wTx;
+wire wRecvErr;
+assign oRecvErr = wRecvErr;
+
+
+uart#(
 	.pClkFreq(pClkFreq),
 	.pBaudRate(pBaudRate)
-)uart_inst0 (
-	.rst		(iResetn),
-	.clk 		(iClk),
-	.rx			(iRx), 	//TODO Change this to be correct
-	.tx			(oTx),	//TODO change this to be correct
-	.transmit 	(rTransmit),
-	.tx_byte	(wTxFifoReadData),
-	.received	(wRcvd),		//Indicate byte has been received
-	.rx_byte		(wRxByte),	//received byte
-	.is_receiving	(wIsReceiving),		//Low when rx line is idle
-	.is_transmitting(wIsTransmitting),	//Low when tx line is idle
-	.recv_error		(wRcvErr)			//indicates error in rx packet			//indicates error in rx packet
+) uart_inst0(
+	////Internal inputs////
+	.iClk			(iClk),		//48mhz sys clock for async
+	.iRst			(iRst),
+	////Tx Input Fifo////
+	.oTxRdEn		(wTxRdEn),
+	.iTxRdEmpty		(wTxRdEmpty),
+	.iTxData		(wTxRdData),
+	////Rx Output Fifo////
+	.oRxWrEn		(wRxWrEn),
+	.iRxWrFull		(wRxWrFull),
+	.oRxData		(wRxWrData),
+	//UART
+	.iRx 			(wRx),	//External Rx line
+	.oTx 			(wTx), 	//Extnernal TX Line
+	.oRcvErr		(wRcvErr)
 );
-
-////////RX Fifo/////
-fifo #(
-	.pFifoDepth(pRxFifoByteLength),
-	.pFifoDataWidth(8)
-
-) fifo_rx_inst(
-	.iClk		(iClk),
-	.iRst		(iResetn),
-	//Fifo Write INterface
-	.iWriteEn	(wRcvd),
-	.iWriteData	(wRxByte),
-	.oFifoFull	(wRxFifoFull),
-	//Fifo Read Interface
-	.iReadEn	(iRxRead),
-	.oReadData	(rRxFifoReadData),
-	.oFifoEmpty	(wRxFifoEmpty)
-);
-
-/////////TX Fifo/////
-fifo #(
-	.pFifoDepth(pTxFifoByteLength),
-	.pFifoDataWidth(8)
-
-) fifo_tx_inst(
-	.iClk		(iClk),
-	.iRst		(iResetn),
-	//Fifo Write INterface
-	.iWriteEn	(iTxWrite),
-	.iWriteData	(iTxByte),
-	.oFifoFull	(wTxFifoFull),
-	//Fifo Read Interface
-	.iReadEn	(rTransmit),
-	.oReadData	(wTxFifoReadData),
-	.oFifoEmpty	(wTxFifoEmpty)
-);
-
-//UART RX Handling
-always @(posedge iClk) begin
-	if(iResetn) begin
-		rUartError <= 0;
-	end else begin
-	
-	end
-end
-
-//UART TX Handling
-always @(posedge iClk) begin
-	if(iResetn) begin
-		oUartTxBusy <= 0;
-		rTransmit <= 0;
-	end else begin
-		if(!wIsTransmitting) begin
-			if(!wTxFifoEmpty) begin
-				rTransmit <= 1'b1;
-			end else begin
-				rTransmit <= 1'b0;
-			end
-		end else begin
-			rTransmit <= 1'b0;
-		end
-		
-		if(wTxFifoFull) begin
-			oUartTxBusy <= 1'b0;
-		end
-	end
-
-end
 
 endmodule

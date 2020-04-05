@@ -6,7 +6,7 @@
 
 * Build Date:         Sep 11 2017 17:12:22
 
-* File Generated:     Mar 30 2020 12:31:33
+* File Generated:     Apr 5 2020 01:04:44
 
 * Purpose:            
 
@@ -35,11 +35,11 @@ I2053: Starting placement of the design
 =============================================================
 
 Input Design Statistics
-    Number of LUTs      	:	304
-    Number of DFFs      	:	193
+    Number of LUTs      	:	376
+    Number of DFFs      	:	243
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	61
-    Number of RAMs      	:	1
+    Number of Carrys    	:	97
+    Number of RAMs      	:	4
     Number of ROMs      	:	0
     Number of IOs       	:	20
     Number of GBIOs     	:	0
@@ -62,16 +62,16 @@ Phase 1
 I2077: Start design legalization
 
 Design Legalization Statistics
-    Number of feedthru LUTs inserted to legalize input of DFFs     	:	73
-    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	2
-    Number of LUTs replicated for LUTs driving multiple DFFs       	:	5
-    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	13
-    Number of feedthru LUTs inserted to legalize global signals    	:	0
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	39
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	28
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	8
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	14
+    Number of feedthru LUTs inserted to legalize global signals    	:	1
     Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
-    Total LUTs inserted                                            	:	93
+    Total LUTs inserted                                            	:	90
     Total CARRYs inserted                                          	:	0
 
 
@@ -84,58 +84,27 @@ I2088: Phase 2, elapsed time : 0.0 (sec)
 
 Phase 3
 SDC-Info-1101: Duty cycle not specified for clock. Assuming 50 percent dutycycle.
+SDC-Info-1101: Duty cycle not specified for clock. Assuming 50 percent dutycycle.
 Info-1404: Inferred PLL generated clock at top_pll_inst.top_pll_inst/PLLOUTCORE
-Info-1404: Inferred PLL generated clock at top_pll_inst.top_pll_inst/PLLOUTGLOBAL
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_0[1]_LC_252/in2" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_0[1]_LC_252/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_3[1]_LC_255/in2" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_3[1]_LC_255/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIIO011[3]_LC_259/in2" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIIO011[3]_LC_259/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_2[1]_LC_254/in3" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_2[1]_LC_254/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_3_c_RNI7K22_LC_275/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_3_c_RNI7K22_LC_275/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_2[1]_LC_254/in0" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_2[1]_LC_254/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_4_c_RNI44E4_LC_276/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_4_c_RNI44E4_LC_276/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_3[1]_LC_255/in0" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_3[1]_LC_255/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_5_c_RNI9O42_LC_277/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_5_c_RNI9O42_LC_277/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_3[1]_LC_255/in1" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_3[1]_LC_255/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_6_c_RNIAQ52_LC_278/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_6_c_RNIAQ52_LC_278/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_7_c_RNI7AH4_LC_279/in0" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_7_c_RNI7AH4_LC_279/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNISDA2[0]_LC_262/in1" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNISDA2[0]_LC_262/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI[1]_LC_264/in3" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNI[1]_LC_264/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_2[1]_LC_254/in2" to pin "fifo_inst.tx_fifo_inst.rRamRdAddr_RNIA4VU_2[1]_LC_254/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_1_c_RNI5G02_LC_272/in1" to pin "fifo_inst.tx_fifo_inst.un17_rRamRdAddr_1_cry_1_c_RNI5G02_LC_272/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI_LC_280/in3" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI_LC_280/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNISDA2_LC_286/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNISDA2_LC_286/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_281/in2" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_281/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNIQIBG_LC_285/in2" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNIQIBG_LC_285/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNII2L4_LC_284/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNII2L4_LC_284/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_2_c_RNIJ4M4_LC_292/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_2_c_RNIJ4M4_LC_292/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNIQIBG_LC_285/in3" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNIQIBG_LC_285/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_3_c_RNIK6N4_LC_295/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_3_c_RNIK6N4_LC_295/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNIQIBG_LC_285/in0" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNIQIBG_LC_285/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_4_c_RNIHM27_LC_296/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_4_c_RNIHM27_LC_296/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_281/in0" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_281/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_5_c_RNIIO37_LC_297/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_5_c_RNIIO37_LC_297/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_281/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI111S_LC_281/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_6_c_RNIJQ47_LC_300/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_6_c_RNIJQ47_LC_300/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_7_c_RNIKS57_LC_303/in0" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_7_c_RNIKS57_LC_303/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI_LC_280/in1" to pin "fifo_inst.tx_fifo_inst.un20_rRamWrAddr_1_cry_1_c_RNI_LC_280/lcout" to break the combinatorial loop
+Info-1405: Clock is already defined at PLL output top_pll_inst.top_pll_inst/PLLOUTGLOBAL. So, no PLL clock will be inferred at this pin.
 
 Design Statistics after Packing
-    Number of LUTs      	:	399
-    Number of DFFs      	:	193
+    Number of LUTs      	:	468
+    Number of DFFs      	:	243
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	61
+    Number of Carrys    	:	97
 
 Device Utilization Summary after Packing
     Sequential LogicCells
-        LUT and DFF      	:	177
-        LUT, DFF and CARRY	:	16
+        LUT and DFF      	:	205
+        LUT, DFF and CARRY	:	38
     Combinational LogicCells
-        Only LUT         	:	170
-        CARRY Only       	:	9
-        LUT with CARRY   	:	36
-    LogicCells                  :	408/5280
-    PLBs                        :	58/660
-    BRAMs                       :	1/30
+        Only LUT         	:	168
+        CARRY Only       	:	2
+        LUT with CARRY   	:	57
+    LogicCells                  :	470/5280
+    PLBs                        :	72/660
+    BRAMs                       :	4/30
     IOs and GBIOs               :	20/36
     PLLs                        :	1/1
     I2Cs                        :	0/2
@@ -157,17 +126,17 @@ I2108: 0 SB_IO_I3C instances present in the design. 2 I3C IOs available in the d
 I2088: Phase 4, elapsed time : 0.2 (sec)
 
 Phase 5
-I2088: Phase 5, elapsed time : 0.5 (sec)
+I2088: Phase 5, elapsed time : 0.9 (sec)
 
 Phase 6
-I2088: Phase 6, elapsed time : 16.0 (sec)
+I2088: Phase 6, elapsed time : 17.1 (sec)
 
 Final Design Statistics
-    Number of LUTs      	:	399
-    Number of DFFs      	:	193
+    Number of LUTs      	:	468
+    Number of DFFs      	:	243
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	61
-    Number of RAMs      	:	1
+    Number of Carrys    	:	97
+    Number of RAMs      	:	4
     Number of ROMs      	:	0
     Number of IOs       	:	20
     Number of GBIOs     	:	0
@@ -186,9 +155,9 @@ Final Design Statistics
     Number of SPRAMs     	:	0
 
 Device Utilization Summary
-    LogicCells                  :	408/5280
-    PLBs                        :	89/660
-    BRAMs                       :	1/30
+    LogicCells                  :	470/5280
+    PLBs                        :	114/660
+    BRAMs                       :	4/30
     IOs and GBIOs               :	20/36
     PLLs                        :	1/1
     I2Cs                        :	0/2
@@ -216,10 +185,10 @@ analysis after routing.
                      Clock Summary 
 =====================================================================
 Number of clocks: 4
+Clock: clk_48mhz | Frequency: 73.48 MHz | Target: 48.01 MHz
 Clock: iClk | Frequency: N/A | Target: 12.00 MHz
 Clock: top_pll_inst.top_pll_inst/PLLOUTCORE | Frequency: N/A | Target: 48.00 MHz
-Clock: top_pll_inst.top_pll_inst/PLLOUTGLOBAL | Frequency: 24.44 MHz | Target: 48.00 MHz
-Clock: top|iClk | Frequency: N/A | Target: 54.70 MHz
+Clock: top|iClk | Frequency: N/A | Target: 76.75 MHz
 
 =====================================================================
                      End of Clock Summary
@@ -227,5 +196,5 @@ Clock: top|iClk | Frequency: N/A | Target: 54.70 MHz
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 17.8 sec.
+I2076: Placer run-time: 19.3 sec.
 

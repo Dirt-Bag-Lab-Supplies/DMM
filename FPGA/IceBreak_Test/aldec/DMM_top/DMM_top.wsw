@@ -1,0 +1,12 @@
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\design_top.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\testbench\top_TB.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\UART\uart_fifo.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\UART\uart.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\RAM_Fifo\fifo_sync.v|]
+TemplateId=2
+[OPENDOC|Aldec.WaveFormASDB.7|.\src\dmm_top.awc|]
+TemplateId=0

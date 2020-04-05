@@ -26,30 +26,82 @@ module uart #(
 	parameter pBaudRate=115200,
 	parameter pOverSampling = 1
 )(
-    input clk, // The master clock for this module
-    input rst, // Synchronous reset.
-    input rx, // Incoming serial line
-    output tx, // Outgoing serial line
-    input transmit, // Signal to transmit
-    input [7:0] tx_byte, // Byte to transmit
-    output received, // Indicated that a byte has been received.
-    output [7:0] rx_byte, // Byte received
-    output is_receiving, // Low when receive line is idle.
-    output is_transmitting, // Low when transmit line is idle.
-    output recv_error // Indicates error in receiving packet.
+	////Internal inputs////
+	iClk,		//48mhz sys clock for async
+	iRst,
+	////Tx Input Fifo////
+	oTxRdEn,
+	iTxRdEmpty,
+	iTxData,
+	////Rx Output Fifo////
+	oRxWrEn,
+	iRxWrFull,
+	oRxData,
+	//UART Interface
+	iRx,	//External Rx line
+	oTx, 	//Extnernal TX Line
+	oRcvErr
 );
 
+//Internal Inputs
+input iClk, iRst;
+
+//Tx Fifo
+output oTxRdEn;
+input iTxRdEmpty;
+input [7:0] iTxData;
+
+//Rx Fifo
+output oRxWrEn;
+input iRxWrFull;
+output [7:0] oRxData;
+
+//UART Lines
+input iRx;
+output oTx;
+output oRcvErr;
+
+///Fifo registers
+reg rTxRdEn;
+assign oTxRdEn = rTxRdEn;
+reg rRxWrEn;
+assign oRxWrEn = rRxWrEn;
+reg [7:0] rRxData;	//Register incoming data to write to fifo
+assign oRxData = rRxData;
+reg [7:0] rTxData; //Register to store incoming data.
+
+
+wire [7:0] wTxData;
+assign wTxData = iTxData;
+
+//Flow control
+wire wRxEn; //Wire to determine if everything is ready to receive
+assign wRxEn = !iRxWrFull; //If ftdi has data and buffer is not full
+wire wTxEn;
+assign wTxEn = tx_state == TX_IDLE && !iTxRdEmpty; //FTDI has data and buffer has data
+
+
+
+
+//UART Registers
+wire wRx;
+assign wRx = iRx;
+reg rTx; //Tx Driver
+assign oTx = rTx;
+reg rRcvErr; //Reg to flag errors 
+assign oRcvErr = rRcvErr;
+
+//Clock divider for uart 
 localparam pClkDivideWidth = $clog2(pClkFreq / pBaudRate) + 8;
 
 localparam CLOCK_DIVIDE = (pClkFreq / (pBaudRate * 4));
 reg [pClkDivideWidth:0] rx_clk_divider = CLOCK_DIVIDE;
 reg [pClkDivideWidth:0] tx_clk_divider = CLOCK_DIVIDE;
-// localparam shiftlimiter = $clog2((pBaudRate * pOverSampling) >> (31 - pClkDivideWidth));
-// localparam shiftlimiter = ((pBaudRate * pOverSampling << (pClkDivideWidth - shiftlimiter)) + (pClkFreq >> (shiftlimiter + 1))) / (clk_freq >> shiftlimiter); // Calculate accumulate increment
-//initial $display("acc_width %d, shiftlimit %d, inc %d", acc_width, shiftlimiter, inc);
 
 
-// parameter CLOCK_DIVIDE = 11'hD9; // clock rate (1000Mhz) / (baud rate (115200) * 4)
+
+
+/////STATE Machine //////
 
 // States for the receiving state machine.
 // These are just constants, not parameters to override.
@@ -64,80 +116,53 @@ parameter RX_RECEIVED = 6;
 // States for the transmitting state machine.
 // Constants - do not override.
 parameter TX_IDLE = 0;
-parameter TX_SENDING = 1;
-parameter TX_DELAY_RESTART = 2;
+parameter TX_START = 1;
+parameter TX_SENDING = 2;
+parameter TX_DELAY_RESTART = 3;
 
 
 
-reg [2:0] recv_state = RX_IDLE;
+reg [2:0] rx_state = RX_IDLE;
 reg [5:0] rx_countdown;
 reg [3:0] rx_bits_remaining;
-reg [7:0] rx_data;
 
-reg tx_out = 1'b1;
+
 reg [1:0] tx_state = TX_IDLE;
 reg [5:0] tx_countdown;
 reg [3:0] tx_bits_remaining;
-reg [7:0] tx_data;
 
-assign received = recv_state == RX_RECEIVED;
-assign recv_error = recv_state == RX_ERROR;
-assign is_receiving = recv_state != RX_IDLE;
-assign rx_byte = rx_data;
-
-assign tx = tx_out;
-assign is_transmitting = tx_state != TX_IDLE;
-
-always @(posedge clk) begin
-	if (rst) begin
-		recv_state = RX_IDLE;
-		tx_state = TX_IDLE;
-		tx_clk_divider <= CLOCK_DIVIDE;
+//////Rx FSM///////
+always @(posedge iClk) begin
+	if (iRst) begin
+		rx_state <= RX_IDLE;
+		rRxData <= 8'b0;
+		rRxWrEn <= 1'b0;
+		rRcvErr <= 1'b0;
 	end else begin
-
-		// The clk_divider counter counts down from
-		// the CLOCK_DIVIDE constant. Whenever it
-		// reaches 0, 1/16 of the bit period has elapsed.
-		// Countdown timers for the receiving and transmitting
-		// state machines are decremented.
-		rx_clk_divider = rx_clk_divider - 1'b1;
-		if (!rx_clk_divider) begin
-			rx_clk_divider = CLOCK_DIVIDE;
-			rx_countdown = rx_countdown - 1'b1;
-		end
-		tx_clk_divider <= tx_clk_divider - 1'b1;
-		if (!tx_clk_divider) begin
-			tx_clk_divider <= CLOCK_DIVIDE;
-			tx_countdown = tx_countdown - 1'b1;
-		end
-		
 		// Receive state machine
-		case (recv_state)
+		case (rx_state)
 			RX_IDLE: begin
+				rRxWrEn <= 1'b0; 
+				rRcvErr <= 1'b0; //Write and error
 				// A low pulse on the receive line indicates the
 				// start of data.
-				if (!rx) begin
-					// Wait half the period - should resume in the
-					// middle of this first pulse.
-					rx_clk_divider = CLOCK_DIVIDE;
-					rx_countdown = 2;
-					recv_state = RX_CHECK_START;
+				if (!wRx) begin //Look for low signal on RX line
+					rx_state <= RX_CHECK_START;
 				end
 			end
 			RX_CHECK_START: begin
 				if (!rx_countdown) begin
 					// Check the pulse is still there
-					if (!rx) begin
+					if (!wRx) begin
 						// Pulse still there - good
 						// Wait the bit period to resume half-way
 						// through the first bit.
-						rx_countdown = 4;
-						rx_bits_remaining = 8;
-						recv_state = RX_READ_BITS;
+						rx_bits_remaining <= 7;
+						rx_state <= RX_READ_BITS;
 					end else begin
 						// Pulse lasted less than half the period -
 						// not a valid transmission.
-						recv_state = RX_ERROR;
+						rx_state <= RX_ERROR;
 					end
 				end
 			end
@@ -146,10 +171,9 @@ always @(posedge clk) begin
 					// Should be half-way through a bit pulse here.
 					// Read this bit in, wait for the next if we
 					// have more to get.
-					rx_data = {rx, rx_data[7:1]};
-					rx_countdown = 4;
-					rx_bits_remaining = rx_bits_remaining - 1'b1;
-					recv_state = rx_bits_remaining ? RX_READ_BITS : RX_CHECK_STOP;
+					rRxData <= {wRx, rRxData[7:1]};
+					rx_bits_remaining <= rx_bits_remaining - 1'b1;
+					rx_state <= rx_bits_remaining ? RX_READ_BITS : RX_CHECK_STOP;
 				end
 			end
 			RX_CHECK_STOP: begin
@@ -157,13 +181,14 @@ always @(posedge clk) begin
 					// Should resume half-way through the stop bit
 					// This should be high - if not, reject the
 					// transmission and signal an error.
-					recv_state = rx ? RX_RECEIVED : RX_ERROR;
+					rx_state <= wRx ? RX_RECEIVED : RX_ERROR;
 				end
 			end
 			RX_DELAY_RESTART: begin
 				// Waits a set number of cycles before accepting
 				// another transmission.
-				recv_state = rx_countdown ? RX_DELAY_RESTART : RX_IDLE;
+				rRcvErr <= 1'b0; //Write and error
+				rx_state <= rx_countdown ? RX_DELAY_RESTART : RX_IDLE;
 			end
 			RX_ERROR: begin
 				// There was an error receiving.
@@ -171,47 +196,108 @@ always @(posedge clk) begin
 				// cycle while in this state and then waits
 				// 2 bit periods before accepting another
 				// transmission.
-				rx_countdown = 8;
-				recv_state = RX_DELAY_RESTART;
+				rRcvErr <= 1'b1; //Write and error
+				rx_state <= RX_DELAY_RESTART;
 			end
 			RX_RECEIVED: begin
+				if(wRxEn) begin //If the buffer isn't full; otherwise throw away data
+					rRxWrEn <= 1'b1;
+				end else
+					rRcvErr <= 1'b1; //Write and error
 				// Successfully received a byte.
 				// Raises the received flag for one clock
 				// cycle while in this state.
-				recv_state = RX_IDLE;
+				rx_state <= RX_IDLE;
 			end
 		endcase
-		
-		// Transmit state machine
+	end
+end
+
+/////RX Clock Divider
+always @(posedge iClk) begin
+	if(iRst) begin
+		rx_clk_divider <= CLOCK_DIVIDE;
+		rx_countdown <= 0;
+	end else begin
+
+		rx_clk_divider <= rx_clk_divider - 1'b1;
+		if (!rx_clk_divider) begin
+			rx_clk_divider <= CLOCK_DIVIDE;
+			rx_countdown <= rx_countdown - 1'b1;
+		end
+
+		case (rx_state)
+			RX_IDLE: begin
+				rx_clk_divider <= CLOCK_DIVIDE;
+				rx_countdown <= 2;
+			end
+			RX_CHECK_START: begin
+				if(!rx_countdown) begin //
+					rx_countdown <= 4;
+					//recv_state = RX_READ_BITS;
+				end
+			end
+			RX_READ_BITS: begin
+				if(!rx_countdown) begin //
+					rx_countdown <= 4;
+					//recv_state = RX_READ_BITS;
+				end
+			end
+			RX_ERROR: begin
+				// There was an error receiving.
+				// Raises the recv_error flag for one clock
+				// cycle while in this state and then waits
+				// 2 bit periods before accepting another
+				// transmission.
+				rx_countdown <= 8;
+			end
+			// RX_CHECK_STOP:
+			// RX_DELAY_RESTART:
+			// RX_RECEIVED:
+			default: begin
+				//do nothing
+			end
+		endcase
+	end
+end
+///////TX State machine//////
+
+always @(posedge iClk) begin
+	if(iRst) begin
+		tx_state <= TX_IDLE;
+		rTx <= 1'b1; //Set line high 
+		rTxRdEn <= 1'b0;
+		rTxData <= 8'b0;
+		tx_bits_remaining <= 0;
+				// Transmit state machine
+	end else begin
 		case (tx_state)
 			TX_IDLE: begin
-				if (transmit) begin
-					// If the transmit flag is raised in the idle
-					// state, start transmitting the current content
-					// of the tx_byte input.
-					tx_data = tx_byte;
-					// Send the initial, low pulse of 1 bit period
-					// to signal the start, followed by the data
-					tx_clk_divider <= CLOCK_DIVIDE;
-					tx_countdown = 4;
-					tx_out = 0;
-					tx_bits_remaining = 8;
-					tx_state = TX_SENDING;
+				if (wTxEn) begin //Flag that the TX Buffer has data
+					tx_state <= TX_START;
+					rTxRdEn <= 1'b1; //Set flag to read data -- data on bus next clock
 				end
+			end
+			TX_START : begin //SEnd the start bit, read data from fifo
+					tx_state <= TX_SENDING; 
+					tx_bits_remaining <= 8;
+					rTxData <= wTxData; //Register data from fifo. 
+					rTxRdEn <= 1'b0; //Clear flag for now
+					rTx <= 1'b0;
+									// Send the initial, low pulse of 1 bit period
+					// to signal the start, followed by the data
 			end
 			TX_SENDING: begin
 				if (!tx_countdown) begin
 					if (tx_bits_remaining) begin
-						tx_bits_remaining = tx_bits_remaining - 1'b1;
-						tx_out = tx_data[0];
-						tx_data = {1'b0, tx_data[7:1]};
-						tx_countdown = 4;
-						tx_state = TX_SENDING;
+						tx_bits_remaining <= tx_bits_remaining - 1'b1;
+						rTx <= rTxData[0];
+						rTxData <= {1'b0, rTxData[7:1]};
+						tx_state <= TX_SENDING;
 					end else begin
 						// Set delay to send out 2 stop bits.
-						tx_out = 1;
-						tx_countdown = 8;
-						tx_state = TX_DELAY_RESTART;
+						rTx <= 1'b1;
+						tx_state <= TX_DELAY_RESTART;
 					end
 				end
 			end
@@ -219,10 +305,54 @@ always @(posedge clk) begin
 				// Wait until tx_countdown reaches the end before
 				// we send another transmission. This covers the
 				// "stop bit" delay.
-				tx_state = tx_countdown ? TX_DELAY_RESTART : TX_IDLE;
+				tx_state <= tx_countdown ? TX_DELAY_RESTART : TX_IDLE;
 			end
 		endcase
 	end
 end
 
+//TX Clock dividers 
+always @(posedge iClk) begin
+	if(iRst) begin
+		tx_clk_divider <= CLOCK_DIVIDE;
+		tx_countdown <= 0;
+
+	end else begin
+
+		// The clk_divider counter counts down from
+		// the CLOCK_DIVIDE constant. Whenever it
+		// reaches 0, 1/16 of the bit period has elapsed.
+		// Countdown timers for the receiving and transmitting
+		// state machines are decremented.
+		if(tx_countdown) begin //if still counting down
+			tx_clk_divider <= tx_clk_divider - 1'b1;
+			if (!tx_clk_divider) begin
+				tx_clk_divider <= CLOCK_DIVIDE;
+				tx_countdown <= tx_countdown - 1'b1;
+			end	
+		end else begin //Check what to reset tx count down to. 
+			case (tx_state)
+				TX_START : begin //SEnd the start bit, read data from fifo
+						// Send the initial, low pulse of 1 bit period
+						// to signal the start, followed by the data
+					tx_countdown <= 4;
+				end
+				TX_SENDING:begin
+					tx_countdown <= 4; 
+				end
+				TX_DELAY_RESTART : begin
+					tx_countdown <= 8;
+				end
+				default : begin
+
+				end
+
+			endcase
+		end
+	end
+end
 endmodule
+
+
+
+

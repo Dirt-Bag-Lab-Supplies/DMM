@@ -1,6 +1,6 @@
 // Cause yosys to throw an error when we implicitly declare nets
 //`timescale 1ns/1ps
-//`default_nettype none
+//`default_nettype none				   		   
 
 
 module top (
@@ -32,18 +32,11 @@ module top (
 input iClk; //12mhz generates 48mhz pll
 input BTN_N,  BTN1, P1A1;
 output P1A7, P1A8, P1A9, P1A2, P1A3, P1A4;
-assign P1A2 = oRxFlag;
+assign P1A2 = wRxEn;
 assign P1A3 = oRx_n; 
 assign P1A4 = oTx_n;
 
-//UART -- Inputs 
-//input iRx;
-wire iRx;
-assign iRx = P1A1;
-//UART -- Outputs
-//output oTx;
-wire oTx;
-assign P1A7 = oTx; 
+
 //FTDI FIFO Bus
 //Inputs 60Mhz
 input iRxF_n, iTxE_n; //clk_60mhz, 
@@ -66,26 +59,10 @@ top_pll top_pll_inst(
 );
 ////////////////////////////////  RESET Block ////////////////////////////
 wire wRst; //Global reset. Reset active high
-//reg [5:0] rRESETCNT;
-
 assign wRst = !wPllLocked;
-//Wait for a few clocks system clocks
-// always @(posedge clk_48mhz)
-// begin
-	// if(!BTN_N) begin
-		// rRESETCNT <= 5'b0; //Set reset low
-	// end else begin
-		// if (!rRESETCNT[5]) begin
-			// rRESETCNT<=rRESETCNT+1;
-		// end
-	// end
-// end
 
-///////////////////Common registers/////////////////////////////
-wire [7:0] wRxFifoData; //bus coming from output of async fifo. not permanent. 
-wire oRxFlag;
 
-///////////////////FTDI UART///////////////////////
+///////////////////UART///////////////////////
 localparam pClkFreq = 48_000_000; // 42MHz
 //localparam baud = 57600;
 localparam pBaudRate = 115200;
@@ -94,60 +71,106 @@ localparam pBaudRate = 115200;
 	// reg iResetn;
 	// reg iRx;
 	// wire oTx;
-	wire [7:0] wRxByteOut;
-	reg rRxRead;
-	wire wRxBufferEmpty;
-	wire wUartError;
-	reg [7:0] rTxByte;
-	reg rTxWrite;
-	wire wUartTxBusy;
 
+reg rUartTxEn;
+reg [7:0] rUartTxData;
+reg rUartRxEn;
+reg [7:0] rUartRxData;
+//Tx wires
+wire wUartTxEn;
+assign wUartTxEn = rUartTxEn;
+wire wUartTxFull;
+wire [7:0] wUartTxData;
+assign wUartTxData = rUartTxData;
+//Rx Wires
+wire wUartRxEn;
+assign wUartRxEn = rUartRxEn;
+wire wUartRxEmpty;
+wire [7:0] wUartRxData;	
+
+//UART -- Inputs 
+//input iRx;
+wire wRx;
+assign wRx = P1A1;
+//UART -- Outputs
+//output oTx;
+wire wTx;
+assign P1A7 = wTx; 
 
 uart_fifo #(
 	.pClkFreq(pClkFreq),
 	.pBaudRate(pBaudRate),
-	.pRxFifoByteLength(4),
-	.pTxFifoByteLength(4)
-)DUT(
-	.iClk				(clk_48mhz),
-	.iResetn			(wRst),
-	.iRx				(iRx),
-	.oTx				(oTx),
-	.oRxByteOut			(wRxByteOut),
-	.iRxRead			(rRxRead),
-	.oRxBufferEmpty		(wRxBufferEmpty),
-	.rUartError			(wUartError),
-	.iTxByte			(rTxByte),
-	.iTxWrite			(rTxWrite),
-	.oUartTxBusy		(wUartTxBusy)
+	.pTxFifoDepth(8), //Dont change these. It doesnt handle that right now
+	.pRxFifoDepth(8)
+)uart_inst0(
+	.iClk			(clk_48mhz),	//FPGA Clock
+	.iRst 			(wRst),
+	//TX
+	.iTxEn 			(wUartTxEn),  // Data valid writing data to dual port ram
+	.oTxFull  		(wUartTxFull), 	//Ram is full, stop writing
+	.iTxData		(wUartTxData), //Data to transmit from FPGA to FTDI
+	//RX
+	.iRxEn			(wUartRxEn),
+	.oRxEmpty 		(wUartRxEmpty),
+	.oRxData		(wUartRxData),
+	//UART
+	.iRx 			(wRx),	//External Rx line
+	.oTx 			(wTx), 	//Extnernal TX Line
+	.oRcvErr		(wUartRcvErr)
 );
 
-
-
-//Uart loopback also transmit data. 
+///////UART TX Machine///////// 
 always @(posedge clk_48mhz) begin
 	if(wRst) begin
-		rRxRead <= 1'b0;
-		rTxByte <= 8'b0;
-		rTxWrite <= 1'b0;
-		
+		rUartTxEn <= 0;
+		rUartTxData <= 8'h40;
+
 	end else begin
-		if(!wUartTxBusy) begin
-			if(rRxEn) begin //Read data from the fifo
-				rTxByte <= rRxData; //Put fifo data on the uart bus
-				rTxWrite <= 1'b1;
-			end else  if (!wRxBufferEmpty) begin	
-				rTxByte <= wRxByteOut;
-				rRxRead <= 1'b1;
-				rTxWrite <= 1'b1;
+		if(!wUartTxFull) begin //If - uart isn't full look for data to send
+			if(rUartRxFlag) begin //Loop back from uart module
+				rUartTxData <= rUartRxData; 
+				rUartTxEn <= 1'b1;			  		
+			end else if(rRxEn) begin
+				rUartTxData <= rRxData; 
+				rUartTxEn <= 1'b1;
 			end else begin
-				rRxRead <= 1'b0;
-				rTxWrite <= 1'b0;
+				rUartTxEn <= 1'b0; //clear write flag
 			end
 		end else begin
-			rRxRead <= 1'b0;
-			rTxWrite <= 1'b0;
+			rUartTxEn <= 1'b0; //Clear flag
 		end
+	end
+end
+
+localparam RX_IDLE = 0;
+localparam RX_START = 1;
+localparam RX_DONE = 2;
+reg [2:0] rUartRxState;
+reg rUartRxFlag; 
+///////RX Machine/////////
+always @(posedge clk_48mhz) begin
+	if(wRst) begin
+		rUartRxEn <= 0;
+		rUartRxData <= 8'b0;
+		rUartRxFlag <= 1'b0;
+		rUartRxState <= RX_IDLE;
+	end else begin
+		case(rUartRxState)
+			RX_IDLE : begin
+				rUartRxFlag <= 1'b0;
+				if(!wUartRxEmpty) begin //Rx Data
+					rUartRxEn <= 1'b1; //Start reading
+					rUartRxState <= RX_START;
+				end else 
+					rUartRxEn <= 1'b0;
+			end
+			RX_START : begin
+				rUartRxEn <= 1'b0;
+				rUartRxState <= RX_IDLE;
+				rUartRxData <= wUartRxData;
+				rUartRxFlag <= 1'b1; 
+			end
+		endcase // rUartRxState
 	end
 end
 /////////////////////////////////////////////////////////////
@@ -209,8 +232,9 @@ ftdi_fifo_async #(
 	.oSiwu			(wSiwu)		//Controller by external button
 );
 
+
 ///////TX Machine///////// 
-always @(clk_48mhz) begin
+always @(posedge clk_48mhz) begin
 	if(wRst) begin
 		rTxEn <= 0;
 		rTxData <= 8'h40;
@@ -224,21 +248,35 @@ always @(clk_48mhz) begin
 	end
 end
 
-///////RX Machine/////////
-always @(clk_48mhz) begin
+/////RX Machine/////////
+reg [2:0] rFtdiRxState;
+reg rFtdiRxFlag; 
+
+always @(posedge clk_48mhz) begin
 	if(wRst) begin
 		rRxEn <= 0;
-	end else begin
-		if(!wRxEmpty) begin // The fifo is empty, clear to send
-			rRxData <= wRxData; //"A"
-			rRxEn <= 1'b1;
-		end else begin
-			rRxEn <= 1'b0; //Clear flag
-		end
+		rFtdiRxState <= RX_IDLE;
+		rFtdiRxFlag <= 1'b0;
 
+	end else begin
+		case(rFtdiRxState)
+			RX_IDLE : begin
+				rFtdiRxFlag <= 1'b0;
+				if(!wRxEmpty) begin //Rx Data
+					rRxEn <= 1'b1; //Start reading
+					rFtdiRxState <= RX_START;
+				end else 
+					rRxEn <= 1'b0;
+			end
+			RX_START : begin
+				rRxEn <= 1'b0;
+				rFtdiRxState <= RX_IDLE;
+				rRxData <= wRxData;
+				rFtdiRxFlag <= 1'b1; 
+			end
+		endcase // rFtdiRxState
 	end
 end
-
 
 
 /*
@@ -297,3 +335,168 @@ assign P1A9 = BTN1;
 
 */
 endmodule
+
+// //-----------------------------------------------------------------------------
+// //
+// // Title       : top_tb
+// // Design      : top_tb
+// // Author      : Aldec, Inc.
+// // Company     : Aldec, Inc.
+// //
+// //-----------------------------------------------------------------------------
+// //
+// // File        : top_TB.v
+// // Generated   : Mon Mar 30 17:17:18 2020
+// // From        : C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\testbench\top_TB_settings.txt
+// // By          : tb_verilog.pl ver. ver 1.2s
+// //
+// //-----------------------------------------------------------------------------
+// //
+// // Description : 
+// //
+// //-----------------------------------------------------------------------------
+
+// `timescale 10ns / 1ps
+// module top_tb;
+// //Parameters declaration: 
+
+// parameter C12M_CLK_PERIOD = 84; //12MHz ~= 83.3ns  
+// parameter CLK_48_PER = 21;
+
+
+// //////////////////////////UART Module//////////////////////	
+
+
+ 
+// wire wUartTxRdEn; //Output to read data
+//  reg rUartTxRdEmpty;
+// wire wUartTxRdEmpty;   
+// assign wUartTxRdEmpty = rUartTxRdEmpty; //Set low to send data. 
+// reg [7:0] rUartTxRdData;
+// wire [7:0] wUartTxRdData; 
+// assign wTxRdData = rUartTxRdData; //external tx to module		
+	
+// ///Read from device
+// wire wUartRxWrEn;  //Use this as flag the device read something
+
+// reg rUartRxWrFull;			//Set this low before trying to receive
+// wire wUartRxWrFull;		
+// assign wUartRxWrFull = rUartRxWrFull;
+// wire [7:0] wUartRxWrData;
+
+// //Module error
+// wire wExtRecvErr; 
+// //UART to Top Interface
+// wire wTopRx;
+// assign wTopRx = P1A1;
+// wire wTopTx;
+// assign wTopTx = P1A7;
+ 
+// parameter pUartClkFreq = 12000000; 
+// parameter pUartBaudRate = 115200;
+// uart#(
+// 	.pClkFreq(pUartClkFreq),
+// 	.pBaudRate(pUartBaudRate)
+// ) uart_ext_inst(
+// 	////Internal inputs////
+// 	.iClk			(iClk),		//48mhz sys clock for async
+// 	.iRst			(iRst),
+// 	////Tx Input Fifo////
+// 	.oTxRdEn		(wTxRdEn),
+// 	.iTxRdEmpty		(wTxRdEmpty),
+// 	.iTxData		(wTxRdData),
+// 	////Rx Output Fifo////
+// 	.oRxWrEn		(wRxWrEn),
+// 	.iRxWrFull		(wRxWrFull),
+// 	.oRxData		(wRxWrData),
+// 	//UART
+// 	.iRx 			(wTopTx),	//External Rx line
+// 	.oTx 			(wTopRx), 	//Extnernal TX Line
+// 	.oRcvErr		(wExtRecvErr)
+	
+//  );
+
+// //////////////////////////////////////////////////////
+
+// //////////////DUT PORTS///////////////////////
+// reg iClk;
+// reg BTN_N;
+// reg BTN1;
+// reg P1A1;
+// wire P1A2;
+// wire P1A3;
+// wire P1A4;
+// wire P1A7;
+// wire P1A8;
+// wire P1A9;
+// wire [7:0]ioFifoData_bidir;
+
+// reg iRxF_n;
+// reg iTxE_n;
+// wire oRx_n;
+// wire oTx_n;
+// /////////////////////////////////////////////////
+
+
+// // Unit Under Test port map
+// 	top UUT (
+// 		.iClk(iClk),
+// 		.BTN_N(BTN_N),
+// 		.BTN1(BTN1),
+// 		.P1A1(P1A1),
+// 		.P1A2(P1A2),
+// 		.P1A3(P1A3),
+// 		.P1A4(P1A4),
+// 		.P1A7(P1A7),
+// 		.P1A8(P1A8),
+// 		.P1A9(P1A9),
+// 		.ioFifoData(ioFifoData_bidir),
+// 		.iRxF_n(iRxF_n),
+// 		.iTxE_n(iTxE_n),
+// 		.oRx_n(oRx_n),
+// 		.oTx_n(oTx_n));
+
+// initial	 begin
+// 	$monitor($realtime,,"ps %h %h %h %h %h %h %h %h %h %h %h %h %h %h %h ",iClk,BTN_N,BTN1,P1A1,P1A2,P1A3,P1A4,P1A7,P1A8,P1A9,ioFifoData_bidir,iRxF_n,iTxE_n,oRx_n,oTx_n);
+//  	iClk <= 1'b0;
+// 	BTN_N <= 1'b0; 
+// 	iRxF_n <= 1'b1;
+// 	iTxE_n <= 1'b1;
+// 	rUartTxRdData <= 8'h00;
+// 	rUartTxRdEmpty <= 1'b1;
+// 	rUartRxWrFull <= 1'b0; //Clear the buffer to read from;
+	
+// 	#(C12M_CLK_PERIOD);	
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD) BTN_N <= 0;	 //Reset   
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD) BTN_N <= 1;
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD);
+// 	#(C12M_CLK_PERIOD);
+// 	rUartTxRdData <= 8'hAA; //Data to send
+// 	rUartTxRdEmpty <= 1'b0; //Start sending;
+// 	@(posedge wUartRxWrEn); //Wait for this to work;
+// 		if(wUartRxWrData == rUartTxRdData) begin
+// 			$display ("Test Passed - Correct byte received");
+// 		end else begin
+// 			$display("Failed - uart test. Sent: AA, Rcvd: %h", wUartRxWrData);
+// 		end
+// end
+
+
+//  always begin
+// 	#(C12M_CLK_PERIOD / 2) iClk <= !iClk; 
+	
+// end	
+	
+	
+	
+// endmodule

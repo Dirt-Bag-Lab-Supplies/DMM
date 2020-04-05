@@ -35,35 +35,47 @@ wire wRamRdEn;
 
 
 //Fifo Specific
-reg [$clog2(pFifoDepth)-1:0] rDataCount; //Current count of data in the buffer
+reg [$clog2(pFifoDepth):0] rDataCount; //Current count of data in the buffer
 
+///Lattice Primitives//
 //Create the RAM
-SB_RAM512x8 ram512x8_inst (
+// SB_RAM512x8 ram512x8_inst (
+// 	.RDATA(wRamRdData),
+// 	.RADDR(rRamRdAddr),
+// 	.RCLK(iClk),
+// 	.RCLKE(1'b1), //always enable
+// 	.RE(wRamRdEn), 
+// 	.WADDR(rRamWrAddr),
+// 	.WCLK(iClk),
+// 	.WCLKE(1'b1),	//Always enabled
+// 	.WDATA(wRamWrData),
+// 	.WE(wRamWrEn)
+// );
+// Custom RAM block for simulation
+// Data valid on following clock edge
+ram_dp_512x8 ram512x8_inst (
 	.RDATA(wRamRdData),
 	.RADDR(rRamRdAddr),
 	.RCLK(iClk),
-	.RCLKE(1'b1), //always enable
 	.RE(wRamRdEn), 
 	.WADDR(rRamWrAddr),
 	.WCLK(iClk),
-	.WCLKE(1'b1),	//Always enabled
 	.WDATA(wRamWrData),
 	.WE(wRamWrEn)
 );
-
 
 //Output flags if data is full or empty
 assign oWrFull = rDataCount >= pFifoDepth ? 1'b1 : 1'b0;
 assign oRdEmpty = rDataCount == 0 ? 1'b1 : 1'b0;
 
 //Output flags if data is full or empty
-assign wRamWrEn = iWrEn; //&& oWrFull;
-assign wRamRdEn = iRdEn; //&& oRdEmpty; 
+assign wRamWrEn = iWrEn && !oWrFull;
+assign wRamRdEn = iRdEn && !oRdEmpty; 
 
 
 
 ///Writing interface/////
-always @(iClk) begin
+always @(posedge iClk) begin
 	if(iRst) begin
 		rRamWrAddr <= 9'b0;
 	end else begin
@@ -75,7 +87,7 @@ always @(iClk) begin
 end
 
 //Read interface
-always @(iClk) begin
+always @(posedge iClk) begin
 	if(iRst) begin
 		rRamRdAddr <= 9'b0;
 	end else begin
@@ -86,7 +98,7 @@ always @(iClk) begin
 end 
 
 //Counter process
-always @(iClk) begin
+always @(posedge iClk) begin
 	if(iRst) begin
 		rDataCount <= 0;
 	end else begin

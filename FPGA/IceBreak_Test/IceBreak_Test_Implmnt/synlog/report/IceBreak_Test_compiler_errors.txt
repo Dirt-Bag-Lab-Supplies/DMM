@@ -1,27 +1,2 @@
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":38:9:38:35|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":37:9:37:34|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":36:9:36:38|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":35:9:35:33|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":34:9:34:51|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":33:9:33:33|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":32:9:32:51|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":31:9:31:34|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":30:9:30:33|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":29:9:29:25|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":28:9:28:25|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":27:9:27:25|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":38:9:38:35|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":37:9:37:34|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":36:9:36:38|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":35:9:35:33|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":34:9:34:51|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":33:9:33:33|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":32:9:32:51|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":31:9:31:34|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":30:9:30:33|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":29:9:29:25|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":28:9:28:25|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG1167 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":27:9:27:25|Module SB_PLL40_PAD is undefined, hence parameters cannot be found
-@E: CG389 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":13:13:13:24|Reference to undefined module SB_PLL40_PAD
-@E: CG389 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":41:12:41:24|Reference to undefined module SB_RAM512x8
+@E: CG906 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":35:14:35:24|Reference to unknown variable wUartRxFlag.
 

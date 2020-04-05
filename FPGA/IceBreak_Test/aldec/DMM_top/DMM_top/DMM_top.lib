@@ -1,0 +1,133 @@
+timestamp=1586069913762
+
+[~A]
+C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../RAM_Fifo/fifo_sync.v=0*106479*107631
+C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../UART/uart.v=0*103045*105276
+C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../design_top.v=0*92756*94556
+C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../design_top.v_top_pll.v_uart_fifo.v_ftdi_fifo.v_fifo_sync.v_ft2232h_async.v_uart.v_ram_blocks.v=0*26591*33961
+C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../design_top.v_top_pll.v_uart_fifo.v_ftdi_fifo.v_fifo_sync.v_ft2232h_async.v_uart.v_ram_blocks.v_top_TB.v=0*128175*135682
+C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../memory/ram_blocks.v=0*108792*109478
+C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../memory/ram_blocks.v_fifo_sync.v=0*110939*112310
+C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../testbench/top_TB.v=0*89916*91514
+LastVerilogToplevel=ftdi_fifo_async_tb
+ModifyID=63
+Version=74
+c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../RAM_Fifo/fifo_sync.v=0*260790*261958
+c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../UART/uart.v=0*142969*145200
+c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../design_top.v=0*163007*164999
+c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../design_top.v_top_pll.v_uart_fifo.v_ftdi_fifo.v_fifo_sync.v_ft2232h_async.v_uart.v_ram_blocks.v_top_TB.v_fifo_sync_8bit_TB.v_ft2232h_async_TB.v=0*169630*178680
+c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../design_top.v_top_pll.v_uart_fifo.v_ftdi_fifo.v_fifo_sync.v_ft2232h_async.v_uart.v_ram_blocks.v_top_TB.v_fifo_sync_8bit_TB.v_ft2232h_async_TB.v_ftdi_fifo_async_TB.v=0*225857*235904
+c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../ftdi_fifo/ft2232h_async_TB.v=0*218758*220846
+c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../ftdi_fifo/ftdi_fifo_async_TB.v=0*274726*277296
+c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../memory/ram_blocks.v=0*161021*161707
+c:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/aldec/DMM_top/../../testbench/top_TB.v=0*136986*138584
+
+[$root]
+A/$root=22|||1*744549
+BinI32/$root=3*526281
+SLP=3*526385
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c921655db8ad6f9771fd681f615404311c814
+
+[fifo_sync_8bit]
+A/fifo_sync_8bit=22|./../../../RAM_Fifo/fifo_sync.v|1|1*714666
+BinI32/fifo_sync_8bit=3*499755
+R=./../../../RAM_Fifo/fifo_sync.v|1
+SLP=3*501316
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|2ebf0a03c19e55b291c7fec6c8fb916a13cec99968c2955fd7de730defb7987a9e60d865acc83cbeb8cb2b44b2d5a229
+
+[fifo_sync_8bit_tb]
+A/fifo_sync_8bit_tb=22|./../src/TestBench/fifo_sync_8bit_TB.v|22|1*647010
+BinI32/fifo_sync_8bit_tb=3*448648
+R=./../src/TestBench/fifo_sync_8bit_TB.v|22
+SLP=3*449401
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|2ebf0a03c19e55b291c7fec6c8fb916a151779f150b931cad36ced8f79dd0a604ac24a4aeb8d8f39558edd95d6330ccf
+
+[ft2232h_async]
+A/ft2232h_async=22|./../../../ftdi_fifo/ft2232h_async.v|1|1*635136
+BinI32/ft2232h_async=3*440007
+R=./../../../ftdi_fifo/ft2232h_async.v|1
+SLP=3*442504
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|b217a92617ffb16615726654dc72e5521a23674fbcbced3a18722109c6cce80dfb4455bb6bea005184a6a648956c33b7
+
+[ft2232h_async_tb]
+A/ft2232h_async_tb=22|./../../../ftdi_fifo/ft2232h_async_TB.v|22|1*649347
+BinI32/ft2232h_async_tb=3*449707
+R=./../../../ftdi_fifo/ft2232h_async_TB.v|22
+SLP=3*453071
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|b217a92617ffb16615726654dc72e5526c43b5277ae72d5e844bae05965cf73699e6639b4aa203ea3c55dd0c15f1b9ea
+
+[ftdi_fifo_async]
+A/ftdi_fifo_async=22|./../../../ftdi_fifo/ftdi_fifo.v|2|1*620295
+BinI32/ftdi_fifo_async=3*427298
+R=./../../../ftdi_fifo/ftdi_fifo.v|2
+SLP=3*428101
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|cd742949195bbce9a395b6975d465eae367f572a25d1d838f2b2675b8e38b7987bd5379da8284b1790fc3da80555d925
+
+[ftdi_fifo_async_tb]
+A/ftdi_fifo_async_tb=22|./../../../ftdi_fifo/ftdi_fifo_async_TB.v|22|1*744955
+BinI32/ftdi_fifo_async_tb=3*526453
+R=./../../../ftdi_fifo/ftdi_fifo_async_TB.v|22
+SLP=3*531383
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|cd742949195bbce9a395b6975d465eaed2e54f37636fc8208f60dcd7bdd63fb95fc24d61af15d077e0d1a517266f3486
+
+[ram_dp_512x8]
+A/ram_dp_512x8=22|./../../../memory/ram_blocks.v|1|1*639600
+BinI32/ram_dp_512x8=3*443636
+R=./../../../memory/ram_blocks.v|1
+SLP=3*444513
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a9495477ab62104e16c375df3d728ad101de2ddf28579374a421975f362ff7b38cf29da8e8525fcf7046c4670f3f14ae
+
+[top]
+A/top=22|./../../../design_top.v|6|1*604706
+BinI32/top=3*421550
+R=./../../../design_top.v|6
+SLP=3*424461
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f1fdecad8dc292011c024b8d633bc5c7369a60351ee81f2c5e7366b94e69bc44
+
+[top_pll]
+A/top_pll=22|./../../../top_pll.v|1|1*612951
+BinI32/top_pll=3*426057
+R=./../../../top_pll.v|1
+SLP=3*426163
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|a059220a6f0797e67d269fbe8abe218826527262ddaa47cb266f3a3c4d9b973a6fc94c0aaaa3adba48b3457598cb71bf
+
+[top_tb]
+A/top_tb=22|./../../../testbench/top_TB.v|23|1*641491
+BinI32/top_tb=3*444821
+R=./../../../testbench/top_TB.v|23
+SLP=3*447651
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|b0d2e10044441fefc12247a6f126cc0c618b61216e3cd0d2c1d5775c8ffc2ed4
+
+[uart]
+A/uart=22|./../../../UART/uart.v|24|1*628541
+BinI32/uart=3*430944
+R=./../../../UART/uart.v|24
+SLP=3*437610
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|d6ad415262f8cf912e809713824a3c018761ca239b03b56693d4d7d0172fee8f
+
+[uart_fifo]
+A/uart_fifo=22|./../../../UART/uart_fifo.v|6|1*615231
+BinI32/uart_fifo=3*426267
+R=./../../../UART/uart_fifo.v|6
+SLP=3*426967
+Version=10.3.3558.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ed060852ad941e1d1d87e04dd67989d118796be1c5367029fe50f9a304d13866004f0ce37724b56b023eab022751f661
+
+[~MFT]
+0=6|0DMM_top.mgf|277296|147805
+1=4|1DMM_top.mgf|744955|692959
+3=8|3DMM_top.mgf|531383|492782
+
+[~U]
+$root=12|0*274149|
+fifo_sync_8bit=12|0*260488|
+fifo_sync_8bit_tb=12|0*224978||0x10
+ft2232h_async=12|0*224048|
+ft2232h_async_tb=12|0*225199||0x10
+ftdi_fifo_async=12|0*222887|
+ftdi_fifo_async_tb=12|0*274427||0x10
+ram_dp_512x8=12|0*224418|
+top=12|0*221828|
+top_pll=12|0*222268|
+top_tb=12|0*224668||0x10
+uart=12|0*223575|
+uart_fifo=12|0*222514|

@@ -17,11 +17,12 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/FPGA/IceBreaker_Test/IceBreak_Test/IceBreak_Test_Implmnt/sbt/outputs/bitmap/top_bitmap.bin</File>
-			<FileTime>03/21/20 12:11:18</FileTime>
+			<File>C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/IceBreak_Test_Implmnt/sbt/outputs/bitmap/top_bitmap.bin</File>
+			<FileTime>04/03/20 22:45:14</FileTime>
 			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<AccessMode>SPI Flash Programming</AccessMode>
 			</Option>
 			<FPGALoader>
@@ -44,6 +45,7 @@
 					<Option>
 						<SVFVendor>JTAG STANDARD</SVFVendor>
 						<IOState>HighZ</IOState>
+						<SVFProcessor>SVF Processor</SVFProcessor>
 						<AccessMode>JTAG</AccessMode>
 					</Option>
 				</Device>
@@ -57,11 +59,11 @@
 					<IDCode>0x17</IDCode>
 					<Package>8-pin SOIC</Package>
 					<Operation>SPI Flash Erase,Program,Verify</Operation>
-					<File>C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/FPGA/IceBreaker_Test/IceBreak_Test/IceBreak_Test_Implmnt/sbt/outputs/bitmap/top_bitmap.bin</File>
+					<File>C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/IceBreak_Test_Implmnt/sbt/outputs/bitmap/top_bitmap.bin</File>
 					<AddressBase>0x00000000</AddressBase>
 					<EndAddress>0x00010000</EndAddress>
 					<DeviceSize>128</DeviceSize>
-					<DataSize>104157</DataSize>
+					<DataSize>104156</DataSize>
 					<NumberOfDevices>1</NumberOfDevices>
 					<ReInitialize value="FALSE"/>
 				</Device>
@@ -77,6 +79,7 @@
 					</LocalChainList>
 					<Option>
 						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<SVFProcessor>SVF Processor</SVFProcessor>
 					</Option>
 				</Device>
 			</FPGADevice>
@@ -89,12 +92,13 @@
 		<OperationOverride>No Override</OperationOverride>
 		<StartTAP>TLR</StartTAP>
 		<EndTAP>TLR</EndTAP>
+		<DisableCheckBoard value="TRUE"/>
 		<VerifyUsercode value="FALSE"/>
 		<TCKDelay>5</TCKDelay>
 	</ProjectOptions>
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>iCEBreaker V1.0e A Location 0000 Serial ibbLP3PmA</USBID>
+		<USBID>iCEBreaker V1.0e A Location 0000 Serial ib5DTW4YA</USBID>
 	</CableOptions>
 </ispXCF>

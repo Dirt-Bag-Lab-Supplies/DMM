@@ -8,6 +8,16 @@ Selecting top level module top
 @W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":20:42:20:42|Input LATCHINPUTVALUE on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
 @W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":22:30:22:30|Input SDI on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
 @W: CG781 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\top_pll.v":24:31:24:31|Input SCLK on instance top_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\memory\ram_blocks.v":1:7:1:18|Synthesizing module ram_dp_512x8 in library work.
+
+@N: CL134 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\memory\ram_blocks.v":35:0:35:5|Found RAM mem, depth=512, width=8
+@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":1:7:1:20|Synthesizing module fifo_sync_8bit in library work.
+
+	pFifoDepth=32'b00000000000000000000000000001000
+   Generated name = fifo_sync_8bit_8s
+
+@N: CG179 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":110:18:110:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":118:17:118:26|Removing redundant assignment.
 @N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":24:7:24:10|Synthesizing module uart in library work.
 
 	pClkFreq=32'b00000010110111000110110000000000
@@ -23,47 +33,20 @@ Selecting top level module top
 	RX_ERROR=32'b00000000000000000000000000000101
 	RX_RECEIVED=32'b00000000000000000000000000000110
 	TX_IDLE=32'b00000000000000000000000000000000
-	TX_SENDING=32'b00000000000000000000000000000001
-	TX_DELAY_RESTART=32'b00000000000000000000000000000010
+	TX_START=32'b00000000000000000000000000000001
+	TX_SENDING=32'b00000000000000000000000000000010
+	TX_DELAY_RESTART=32'b00000000000000000000000000000011
    Generated name = uart_Z1
-
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":17:7:17:10|Synthesizing module fifo in library work.
-
-	pFifoDepth=32'b00000000000000000000000000000100
-	pFifoDataWidth=32'b00000000000000000000000000001000
-   Generated name = fifo_4s_8s
 
 @N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":6:7:6:15|Synthesizing module uart_fifo in library work.
 
 	pClkFreq=32'b00000010110111000110110000000000
 	pBaudRate=32'b00000000000000011100001000000000
-	pRxFifoByteLength=32'b00000000000000000000000000000100
-	pTxFifoByteLength=32'b00000000000000000000000000000100
-   Generated name = uart_fifo_48000000s_115200s_4s_4s
+	pTxFifoDepth=32'b00000000000000000000000000001000
+	pRxFifoDepth=32'b00000000000000000000000000001000
+   Generated name = uart_fifo_48000000s_115200s_8s_8s
 
-@W: CG133 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":58:4:58:16|Object rRxFifoReadEn is declared but not assigned. Either assign a value or remove the declaration.
-@N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":1124:7:1124:17|Synthesizing module SB_RAM512x8 in library work.
-
-@N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":1:7:1:20|Synthesizing module fifo_sync_8bit in library work.
-
-	pFifoDepth=32'b00000000000000000000000000001000
-   Generated name = fifo_sync_8bit_8s
-
-@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":66:9:66:12|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":67:4:67:7|Referenced variable iRst is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":70:5:70:12|Referenced variable wRamWrEn is not in sensitivity list.
-@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":78:9:78:12|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":79:4:79:7|Referenced variable iRst is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":82:5:82:12|Referenced variable wRamRdEn is not in sensitivity list.
-@N: CG179 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":98:18:98:27|Removing redundant assignment.
-@N: CG179 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":106:17:106:26|Removing redundant assignment.
-@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":89:9:89:12|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":90:4:90:7|Referenced variable iRst is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":95:7:95:14|Referenced variable wRamWrEn is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":94:5:94:12|Referenced variable wRamRdEn is not in sensitivity list.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":79:1:79:2|Latch generated from always block for signal rRamRdAddr[8:0]; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":67:1:67:2|Latch generated from always block for signal rRamWrAddr[8:0]; possible missing assignment in an if or case statement.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo\fifo_sync.v":90:1:90:2|Latch generated from always block for signal rDataCount[2:0]; possible missing assignment in an if or case statement.
+@W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":119:5:119:12|Removing wire wRecvErr, as there is no assignment to it.
 @N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ft2232h_async.v":1:7:1:19|Synthesizing module ft2232h_async in library work.
 
 @N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ftdi_fifo.v":2:7:2:21|Synthesizing module ftdi_fifo_async in library work.
@@ -74,26 +57,26 @@ Selecting top level module top
 
 @N: CG364 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":6:7:6:9|Synthesizing module top in library work.
 
-@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":214:9:214:17|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":215:4:215:7|Referenced variable wRst is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":219:6:219:12|Referenced variable wTxFull is not in sensitivity list.
-@W: CG296 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":229:9:229:17|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":234:14:234:20|Referenced variable wRxData is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":230:4:230:7|Referenced variable wRst is not in sensitivity list.
-@W: CG290 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":233:6:233:13|Referenced variable wRxEmpty is not in sensitivity list.
-@W: CG1273 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":61:17:61:20|An input port (port iClk) is the target of an assignment - please check if this is intentional
-@W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":85:11:85:21|Removing wire wRxFifoData, as there is no assignment to it.
-@W: CG360 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":86:5:86:11|Removing wire oRxFlag, as there is no assignment to it.
-@W: CL118 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":215:1:215:2|Latch generated from always block for signal rTxData[7:0]; possible missing assignment in an if or case statement.
-@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":215:1:215:2|All reachable assignments to bit 1 of rTxData[7:0] assign 0, register removed by optimization.
-@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":215:1:215:2|All reachable assignments to bit 2 of rTxData[7:0] assign 0, register removed by optimization.
-@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":215:1:215:2|All reachable assignments to bit 3 of rTxData[7:0] assign 0, register removed by optimization.
-@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":215:1:215:2|All reachable assignments to bit 4 of rTxData[7:0] assign 0, register removed by optimization.
-@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":215:1:215:2|All reachable assignments to bit 5 of rTxData[7:0] assign 0, register removed by optimization.
-@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":215:1:215:2|All reachable assignments to bit 6 of rTxData[7:0] assign 1, register removed by optimization.
-@W: CL208 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":215:1:215:2|All reachable assignments to bit 7 of rTxData[7:0] assign 0, register removed by optimization.
-@W: CL177 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":128:0:128:5|Sharing sequential element rTxWrite. Add a syn_preserve attribute to the element to prevent sharing.
-@W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":34:25:34:28|*Output P1A2 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CG1273 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":54:17:54:20|An input port (port iClk) is the target of an assignment - please check if this is intentional
+@W: CL169 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":255:0:255:5|Pruning unused register rFtdiRxFlag. Make sure that there are no unused intermediate registers.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":237:0:237:5|Register bit rTxData[1] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":237:0:237:5|Register bit rTxData[2] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":237:0:237:5|Register bit rTxData[3] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":237:0:237:5|Register bit rTxData[4] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":237:0:237:5|Register bit rTxData[5] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":237:0:237:5|Register bit rTxData[6] is always 1.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":237:0:237:5|Register bit rTxData[7] is always 0.
+@W: CL279 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":237:0:237:5|Pruning register bits 7 to 1 of rTxData[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":255:0:255:5|Trying to extract state machine for register rFtdiRxState.
+Extracted state machine for register rFtdiRxState
+State machine has 2 reachable states with original encodings of:
+   000
+   001
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":151:0:151:5|Trying to extract state machine for register rUartRxState.
+Extracted state machine for register rUartRxState
+State machine has 2 reachable states with original encodings of:
+   000
+   001
 @W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":34:13:34:16|*Output P1A8 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":34:19:34:22|*Output P1A9 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
 @N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":33:14:33:17|Input BTN1 is unused.
@@ -106,22 +89,25 @@ State machine has 5 reachable states with original encodings of:
    010
    011
    100
-@N: CL159 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\ftdi_fifo\ft2232h_async.v":27:6:27:15|Input iTxRdEmpty is unused.
-@W: CL138 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":126:0:126:5|Removing register 'rUartError' because it is only assigned 0 or its original value.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":135:0:135:5|Register bit oUartTxBusy is always 0.
-@N: CL134 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Found RAM rFifoData, depth=4, width=8
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rWritePtr[2] is always 0.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Register bit rReadPtr[2] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Pruning register bit 2 of rReadPtr[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\fifo.v":46:0:46:5|Pruning register bit 2 of rWritePtr[2:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[17] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 17 of tx_clk_divider[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[16] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 16 of tx_clk_divider[16:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[15] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 15 of tx_clk_divider[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register recv_state.
-Extracted state machine for register recv_state
+@W: CL157 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart_fifo.v":48:7:48:13|*Output oRcvErr has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":217:0:217:5|Register bit rx_clk_divider[17] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Register bit tx_clk_divider[17] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Register bit tx_countdown[5] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Pruning register bit 5 of tx_countdown[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Pruning register bit 17 of tx_clk_divider[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":217:0:217:5|Pruning register bit 17 of rx_clk_divider[17:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":217:0:217:5|Register bit rx_clk_divider[16] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Register bit tx_clk_divider[16] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Register bit tx_countdown[4] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Pruning register bit 4 of tx_countdown[4:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Pruning register bit 16 of tx_clk_divider[16:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":217:0:217:5|Pruning register bit 16 of rx_clk_divider[16:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":217:0:217:5|Register bit rx_clk_divider[15] is always 0.
+@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Register bit tx_clk_divider[15] is always 0.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":315:0:315:5|Pruning register bit 15 of tx_clk_divider[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":217:0:217:5|Pruning register bit 15 of rx_clk_divider[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":135:0:135:5|Trying to extract state machine for register rx_state.
+Extracted state machine for register rx_state
 State machine has 7 reachable states with original encodings of:
    000
    001
@@ -130,13 +116,12 @@ State machine has 7 reachable states with original encodings of:
    100
    101
    110
-@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Initial value is not supported on state machine recv_state
-@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Trying to extract state machine for register tx_state.
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":135:0:135:5|Initial value is not supported on state machine rx_state
+@N: CL201 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":265:0:265:5|Trying to extract state machine for register tx_state.
 Extracted state machine for register tx_state
-State machine has 3 reachable states with original encodings of:
+State machine has 4 reachable states with original encodings of:
    00
    01
    10
-@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Initial value is not supported on state machine tx_state
-@N: CL189 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Register bit tx_clk_divider[14] is always 0.
-@W: CL260 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":91:0:91:5|Pruning register bit 14 of tx_clk_divider[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+   11
+@W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":265:0:265:5|Initial value is not supported on state machine tx_state
