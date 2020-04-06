@@ -1,6 +1,10 @@
-95
+114
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
+~M 1 "./../../../adc/adc_to_packet.v" 1 adc_to_packet
+~A 1 "./../../../adc/adc_to_packet.v" 1 adc_to_packet
+~M 3 "./../../../adc/adc_to_packet_TB.v" 22 adc_to_packet_tb
+~A 1 "./../../../adc/adc_to_packet_TB.v" 22 adc_to_packet_tb
 ~M 1 "./../../../RAM_Fifo/fifo_sync.v" 1 fifo_sync_8bit
 ~A 1 "./../../../RAM_Fifo/fifo_sync.v" 1 fifo_sync_8bit
 ~M 3 "./../src/TestBench/fifo_sync_8bit_TB.v" 22 fifo_sync_8bit_tb

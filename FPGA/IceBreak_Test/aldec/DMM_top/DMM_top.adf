@@ -22,7 +22,7 @@ ENABLE_ADV_DATAFLOW=0
 FLOW_TYPE=HDL
 LANGUAGE=VHDL
 REFRESH_FLOW=1
-fileopenfolder=C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\RAM_Fifo
+fileopenfolder=C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\adc
 
 [LocalVerilogSets]
 EnableSLP=1
@@ -35,10 +35,6 @@ CompileWithDebug=0
 [$LibMap$]
 DMM_top=.
 
-[Groups]
-TestBench=1
-R_COMPARE=1
-
 [SpecTracer]
 WindowVisible=0
 
@@ -46,6 +42,10 @@ WindowVisible=0
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
+[Groups]
+TestBench=1
+R_COMPARE=1
 
 [Files]
 /..\..\..\design_top.v=-1
@@ -60,12 +60,15 @@ Selected=
 /dmm_top.awc=-1
 /untitled.awc=-1
 /..\..\..\RAM_Fifo\packet_to_fifo.v=-1
+/..\..\..\adc\adc_to_packet.v=-1
 TestBench/..\..\..\..\testbench\top_TB.v=-1
 TestBench/..\..\..\..\testbench\top_TB_runtest.do=-1
 TestBench/fifo_sync_8bit_TB.v=-1
 TestBench/fifo_sync_8bit_TB_runtest.do=-1
 TestBench/..\..\..\..\RAM_Fifo\packet_to_fifo_TB.v=-1
 TestBench/..\..\..\..\RAM_Fifo\packet_to_fifo_TB_runtest.do=-1
+TestBench/..\..\..\..\adc\adc_to_packet_TB.v=-1
+TestBench/..\..\..\..\adc\adc_to_packet_TB_runtest.do=-1
 R_COMPARE/..\..\..\..\ftdi_fifo\ft2232h_async_TB.v=-1
 R_COMPARE/..\..\..\..\ftdi_fifo\ft2232h_async_TB_runtest.do=-1
 R_COMPARE/..\..\..\..\ftdi_fifo\ftdi_fifo_async_TB.v=-1
@@ -84,12 +87,15 @@ R_COMPARE/..\..\..\..\ftdi_fifo\ftdi_fifo_async_TB_runtest.do=-1
 .\src\dmm_top.awc=Accelerated Waveform Configuration
 .\src\untitled.awc=Accelerated Waveform Configuration
 .\..\..\RAM_Fifo\packet_to_fifo.v=Verilog Source Code
+.\..\..\adc\adc_to_packet.v=Verilog Source Code
 .\..\..\testbench\top_TB.v=Verilog Test Bench
 .\..\..\testbench\top_TB_runtest.do=Macro
 .\src\TestBench\fifo_sync_8bit_TB.v=Verilog Test Bench
 .\src\TestBench\fifo_sync_8bit_TB_runtest.do=Macro
 .\..\..\RAM_Fifo\packet_to_fifo_TB.v=Verilog Test Bench
 .\..\..\RAM_Fifo\packet_to_fifo_TB_runtest.do=Macro
+.\..\..\adc\adc_to_packet_TB.v=Verilog Test Bench
+.\..\..\adc\adc_to_packet_TB_runtest.do=Macro
 .\..\..\ftdi_fifo\ft2232h_async_TB.v=Verilog Test Bench
 .\..\..\ftdi_fifo\ft2232h_async_TB_runtest.do=Macro
 .\..\..\ftdi_fifo\ftdi_fifo_async_TB.v=Verilog Test Bench
