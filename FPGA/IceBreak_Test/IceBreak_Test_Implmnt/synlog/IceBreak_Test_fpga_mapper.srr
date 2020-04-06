@@ -1,4 +1,4 @@
-# Sun Apr 05 01:04:33 2020
+# Sun Apr 05 16:55:08 2020
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -99,7 +99,7 @@ Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elaps
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
 
 
 Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 137MB)
@@ -173,14 +173,14 @@ L-2016.09L+ice40
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 141MB peak: 143MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 143MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 143MB)
 
 @W: MT420 |Found inferred clock top|iClk with period 13.03ns. Please declare a user-defined clock on object "p:iClk"
 @N: MT615 |Found clock top_pll|PLLOUTGLOBAL_derived_clock with period 13.03ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Apr 05 01:04:35 2020
+# Timing Report written on Sun Apr 05 16:55:10 2020
 #
 
 
@@ -606,10 +606,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 143MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 143MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 143MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 143MB)
 
 ---------------------------------------
 Resource Usage Report for top 
@@ -653,9 +653,9 @@ Distribution of All Consumed Luts 376 = 376
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 143MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 30MB peak: 143MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Sun Apr 05 01:04:35 2020
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sun Apr 05 16:55:10 2020
 
 ###########################################################]

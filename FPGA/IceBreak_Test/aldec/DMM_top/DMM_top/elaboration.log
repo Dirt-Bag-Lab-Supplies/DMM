@@ -1,17 +1,14 @@
-Active-HDL 10.3.3558.6081  2020-04-05 12:59:01 AM
+Active-HDL 10.3.3558.6081  2020-04-05 21:39:25
 
 Elaboration top modules:
-Verilog Module                ftdi_fifo_async_tb
+Verilog Module                packet_to_fifo_tb
 
 
 -------------------------------------------------------------------------------------------
 Verilog Module          | Library | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------
-ftdi_fifo_async_tb      | dmm_top |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
-ftdi_fifo_async         | dmm_top |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
-fifo_sync_8bit          | dmm_top |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
-ft2232h_async           | dmm_top |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
-ram_dp_512x8            | dmm_top |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+packet_to_fifo_tb       | dmm_top |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
+packet_to_fifo          | dmm_top |      | 10.3.3558.6081  (Windows) | -O2 -sv2k12
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------

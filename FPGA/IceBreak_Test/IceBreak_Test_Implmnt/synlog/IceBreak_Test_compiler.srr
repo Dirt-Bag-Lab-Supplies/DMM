@@ -20,7 +20,9 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v" (library work)
 @I::"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\memory\ram_blocks.v" (library work)
 Verilog syntax check successful!
-File C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module top
 @N: CG364 :"C:\lscc\iCEcube2.2017.08\synpbase\lib\generic\sb_ice40.v":752:7:752:18|Synthesizing module SB_PLL40_PAD in library work.
 
@@ -149,12 +151,12 @@ State machine has 4 reachable states with original encodings of:
    11
 @W: CL249 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\UART\uart.v":265:0:265:5|Initial value is not supported on state machine tx_state
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Apr 05 01:04:31 2020
+# Sun Apr 05 16:55:06 2020
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -167,7 +169,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Apr 05 01:04:31 2020
+# Sun Apr 05 16:55:06 2020
 
 ###########################################################]
 @END
@@ -177,6 +179,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Apr 05 01:04:31 2020
+# Sun Apr 05 16:55:06 2020
 
 ###########################################################]
