@@ -215,7 +215,7 @@ initial begin
 		$display("All vectors passed.");
 		$fdisplay(report_file,"All vectors passed.");
 		$display("##############################################.");
-		$fdisplay("##############################################");
+		//$fdisplay("##############################################");
 	end
 		$fclose(report_file);
 		$finish;

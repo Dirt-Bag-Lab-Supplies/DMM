@@ -300,12 +300,12 @@ initial begin
 	@(terminate_sim);
 	if (errors_counter)	begin
 		$display("Errors were encountered, differences are listed in compare_report.log");
-		$fdisplay(report_file,"Some vectors failed.");
+		//$fdisplay(report_file,"Some vectors failed.");
 	end	else begin
 		// $display("All vectors passed.");
 		// $fdisplay(report_file,"All vectors passed.");
 		$display("##############################################.");
-		$fdisplay("##############################################");
+		//$fdisplay("##############################################");
 	end
 		$fclose(report_file);
 		$finish;
