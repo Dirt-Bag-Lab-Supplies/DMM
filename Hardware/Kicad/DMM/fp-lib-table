@@ -3,4 +3,5 @@
   (lib (name DBLS_Resistor)(type KiCad)(uri ${KIPRJMOD}/DBLS_LIB/pcb_lib/DBLS_Resistor.pretty)(options "")(descr "DBLS Resistor Footprint Variants"))
   (lib (name DBLS_Capacitor)(type KiCad)(uri ${KIPRJMOD}/DBLS_LIB/pcb_lib/DBLS_Capacitor.pretty)(options "")(descr "DBLS Capacitor Footprint Variants"))
   (lib (name DBLS_SON)(type KiCad)(uri ${KIPRJMOD}/DBLS_LIB/pcb_lib/DBLS_SON.pretty)(options "")(descr "DBLS SON Footprint Variants"))
+  (lib (name DBLS_SOIC)(type KiCad)(uri ${KIPRJMOD}/DBLS_LIB/pcb_lib/DBLS_SOIC.pretty)(options "")(descr "DBLS SOIC Footprint Variants"))
 )

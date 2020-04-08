@@ -1,4 +1,4 @@
-16952165004801938
+16953751145128968
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -44274,6 +44274,13 @@ resistor handsolder
 0
 2
 2
+DBLS_SOIC
+MSOP-8_Pitch_0.65mm_3x4.9mm
+
+
+0
+8
+8
 DBLS_SON
 WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias
 WSON, 6 Pin (http://www.ti.com/lit/ds/symlink/tps61040.pdf#page=35), generated with kicad-footprint-generator ipc_noLead_generator.py

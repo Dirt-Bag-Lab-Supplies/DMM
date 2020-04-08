@@ -741,8 +741,6 @@ Wire Wire Line
 	1200 3650 1200 3700
 Wire Wire Line
 	1200 3550 1200 3650
-Wire Bus Line
-	6200 1050 6200 2550
 $Comp
 L DBLS_USB:USB_C_Receptacle J?
 U 1 1 5E839228
@@ -792,4 +790,6 @@ F 3 "" H 1200 3700 50  0001 C CNN
 	1    1200 3700
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	6200 1050 6200 2550
 $EndSCHEMATC
