@@ -4,8 +4,16 @@ $CMP AD8421
 D Instrumentation Amplifier, 10 MHz Unity Gain BW, +/-18V Supply, MSOP-8
 $ENDCMP
 #
+$CMP LT6237
+D 2-Channel, Fully Differential Amplifier, 145 MHz, NRI, RRO, TSSOP-16
+$ENDCMP
+#
+$CMP OP2177
+D 2-Channel, Fully Differential Amplifier, 145 MHz, NRI, RRO, TSSOP-16
+$ENDCMP
+#
 $CMP OPA2156
-D Precision Amplifier, Low Noise, 25MHz, +/- 36V Supply, RRIO 
+D Precision Amplifier, Low Noise, 25MHz, +/- 36V Supply, RRIO
 $ENDCMP
 #
 $CMP THS4522
