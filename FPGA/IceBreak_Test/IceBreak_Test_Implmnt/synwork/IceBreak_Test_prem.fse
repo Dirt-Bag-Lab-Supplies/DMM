@@ -1,0 +1,60 @@
+
+fsm_encoding {1126502655} sequential
+
+fsm_state_encoding {1126502655} 00 {00}
+
+fsm_state_encoding {1126502655} 01 {01}
+
+fsm_state_encoding {1126502655} 10 {10}
+
+fsm_state_encoding {1126502655} 11 {11}
+
+fsm_registers {1126502655} {tx_state[1]}  {tx_state[0]} 
+
+fsm_encoding {1113501354} onehot
+
+fsm_state_encoding {1113501354} 000 {0000001}
+
+fsm_state_encoding {1113501354} 001 {0000010}
+
+fsm_state_encoding {1113501354} 010 {0000100}
+
+fsm_state_encoding {1113501354} 011 {0001000}
+
+fsm_state_encoding {1113501354} 100 {0010000}
+
+fsm_state_encoding {1113501354} 101 {0100000}
+
+fsm_state_encoding {1113501354} 110 {1000000}
+
+fsm_registers {1113501354} {rx_state[6]}  {rx_state[5]}  {rx_state[4]}  {rx_state[3]}  {rx_state[2]}  {rx_state[1]}  {rx_state[0]} 
+
+fsm_encoding {10920923} onehot
+
+fsm_state_encoding {10920923} 000 {00001}
+
+fsm_state_encoding {10920923} 001 {00010}
+
+fsm_state_encoding {10920923} 010 {00100}
+
+fsm_state_encoding {10920923} 011 {01000}
+
+fsm_state_encoding {10920923} 100 {10000}
+
+fsm_registers {10920923} {rFifoState[4]}  {rFifoState[3]}  {rFifoState[2]}  {rFifoState[1]}  {rFifoState[0]} 
+
+fsm_encoding {525502551} sequential
+
+fsm_state_encoding {525502551} 000 {0}
+
+fsm_state_encoding {525502551} 001 {1}
+
+fsm_registers {525502551} {rFtdiRxState[0]} 
+
+fsm_encoding {515101512} sequential
+
+fsm_state_encoding {515101512} 000 {0}
+
+fsm_state_encoding {515101512} 001 {1}
+
+fsm_registers {515101512} {rUartRxState[0]} 

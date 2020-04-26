@@ -1,0 +1,16 @@
+.\..\..\design_top.v
+.\..\..\top_pll.v
+.\..\..\UART\uart_fifo.v
+.\..\..\ftdi_fifo\ftdi_fifo.v
+.\..\..\RAM_Fifo\fifo_sync.v
+.\..\..\ftdi_fifo\ft2232h_async.v
+.\..\..\UART\uart.v
+.\..\..\memory\ram_blocks.v
+.\..\..\RAM_Fifo\packet_to_fifo.v
+.\..\..\adc\adc_to_packet.v
+.\..\..\testbench\top_TB.v
+.\src\TestBench\fifo_sync_8bit_TB.v
+.\..\..\RAM_Fifo\packet_to_fifo_TB.v
+.\..\..\adc\adc_to_packet_TB.v
+.\..\..\ftdi_fifo\ft2232h_async_TB.v
+.\..\..\ftdi_fifo\ftdi_fifo_async_TB.v

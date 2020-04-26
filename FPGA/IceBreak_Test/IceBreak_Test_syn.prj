@@ -1,0 +1,63 @@
+#-- Synopsys, Inc.
+#-- Project file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\FPGA\IceBreaker_Test\IceBreak_Test\IceBreak_Test_syn.prj
+#project files
+
+add_file -verilog -lib work "design_top.v" 
+add_file -verilog -lib work "top_pll.v" 
+add_file -verilog -lib work "UART/uart_fifo.v" 
+add_file -verilog -lib work "ftdi_fifo/ftdi_fifo.v" 
+add_file -verilog -lib work "RAM_Fifo/fifo_sync.v" 
+add_file -verilog -lib work "ftdi_fifo/ft2232h_async.v" 
+add_file -verilog -lib work "UART/uart.v" 
+add_file -verilog -lib work "memory/ram_blocks.v" 
+#implementation: "IceBreak_Test_Implmnt"
+impl -add IceBreak_Test_Implmnt -type fpga
+
+#implementation attributes
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology SBTiCE40UP
+set_option -part iCE40UP5K
+set_option -package SG48
+set_option -speed_grade 
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# mapper_options
+set_option -frequency auto
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Silicon Blue iCE40UP
+set_option -maxfan 10000
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fixgatedclocks 2
+set_option -fixgeneratedclocks 0
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_format "edif"
+project -result_file ./IceBreak_Test_Implmnt/IceBreak_Test.edf
+project -log_file "./IceBreak_Test_Implmnt/IceBreak_Test.srr"
+impl -active IceBreak_Test_Implmnt
+project -run synthesis -clean

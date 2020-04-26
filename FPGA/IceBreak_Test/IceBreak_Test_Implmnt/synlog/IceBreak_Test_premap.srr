@@ -1,0 +1,102 @@
+# Sun Apr 05 16:55:07 2020
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt 
+Printing clock  summary report in "C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart_fifo.v":48:7:48:13|Tristate driver oRcvErr (in view: work.uart_fifo_48000000s_115200s_8s_8s(verilog)) on net oRcvErr (in view: work.uart_fifo_48000000s_115200s_8s_8s(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":135:0:135:5|Removing sequential instance rRcvErr (in view: work.uart_Z1(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=30  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                  Requested     Requested     Clock                       Clock                     Clock
+Clock                                  Frequency     Period        Type                        Group                     Load 
+------------------------------------------------------------------------------------------------------------------------------
+top_pll|PLLOUTGLOBAL_derived_clock     15.8 MHz      63.187        derived (from top|iClk)     Autoconstr_clkgroup_0     276  
+top|iClk                               4.0 MHz       252.749       inferred                    Autoconstr_clkgroup_0     0    
+==============================================================================================================================
+
+
+Finished Pre Mapping Phase.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:19:34:22|Tristate driver P1A9 (in view: work.top(verilog)) on net P1A9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":34:13:34:16|Tristate driver P1A8 (in view: work.top(verilog)) on net P1A8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\IceBreak_Test_Implmnt\IceBreak_Test.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Encoding state machine tx_state[3:0] (in view: work.uart_Z1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\uart\uart.v":265:0:265:5|There are no possible illegal states for state machine tx_state[3:0] (in view: work.uart_Z1(verilog)); safe FSM implementation is not required.
+Encoding state machine rx_state[6:0] (in view: work.uart_Z1(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+Encoding state machine rFifoState[4:0] (in view: work.ft2232h_async(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine rFtdiRxState[1:0] (in view: work.top(verilog))
+original code -> new code
+   000 -> 0
+   001 -> 1
+@N: MO225 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":255:0:255:5|There are no possible illegal states for state machine rFtdiRxState[1:0] (in view: work.top(verilog)); safe FSM implementation is not required.
+Encoding state machine rUartRxState[1:0] (in view: work.top(verilog))
+original code -> new code
+   000 -> 0
+   001 -> 1
+@N: MO225 :"c:\users\birdman\documents\dirtbaglabsupplies\dmm\dmm_trunk\fpga\icebreak_test\design_top.v":151:0:151:5|There are no possible illegal states for state machine rUartRxState[1:0] (in view: work.top(verilog)); safe FSM implementation is not required.
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 135MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Apr 05 16:55:08 2020
+
+###########################################################]

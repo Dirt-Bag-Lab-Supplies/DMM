@@ -1,0 +1,2 @@
+@E: CG906 :"C:\Users\birdman\Documents\DirtBagLabSupplies\DMM\DMM_trunk\FPGA\IceBreak_Test\design_top.v":35:14:35:24|Reference to unknown variable wUartRxFlag.
+

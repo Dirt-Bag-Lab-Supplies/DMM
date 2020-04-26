@@ -1,0 +1,37 @@
+---------------------------------------
+Resource Usage Report for top 
+
+Mapping to part: ice40up5ksg48
+Cell usage:
+GND             13 uses
+SB_CARRY        97 uses
+SB_DFF          49 uses
+SB_DFFE         14 uses
+SB_DFFESR       32 uses
+SB_DFFESS       1 use
+SB_DFFNE        25 uses
+SB_DFFSR        109 uses
+SB_DFFSS        13 uses
+SB_GB           2 uses
+SB_RAM512x8NW   4 uses
+VCC             13 uses
+SB_LUT4         376 uses
+
+I/O ports: 22
+I/O primitives: 21
+SB_IO          20 uses
+SB_PLL40_PAD   1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   243 (4%)
+
+RAM/ROM usage summary
+Block Rams : 4 of 30 (13%)
+
+
+@S |Mapping Summary:
+Total  LUTs: 376 (7%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 376 = 376 
+

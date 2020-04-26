@@ -1,0 +1,35 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40UP5KSG48 (Lattice)
+
+--------------------------------------------------------------------------
+########   Utilization report for  Top level view:   spi_inst_1   ########
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     13                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block spi_inst_1:	13 (9.85 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       56                 100 %                
+CARRYS     4                  100 %                
+===================================================
+Total COMBINATIONAL LOGIC in the block spi_inst_1:	60 (45.45 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     55                 100 %                
+=================================================
+Total IO PADS in the block spi_inst_1:	55 (41.67 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

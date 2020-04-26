@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
+<ispXCF version="3.11.1">
+	<Comment></Comment>
+	<Chain>
+		<Comm>JTAG</Comm>
+		<Device>
+			<SelectedProg value="TRUE"/>
+			<Pos>1</Pos>
+			<Vendor>WinBond</Vendor>
+			<Family>iCE40 UltraPlus</Family>
+			<Name>iCE40UP5K</Name>
+			<Package>All</Package>
+			<Bypass>
+				<InstrLen>8</InstrLen>
+				<InstrVal>11111111</InstrVal>
+				<BScanLen>1</BScanLen>
+				<BScanVal>0</BScanVal>
+			</Bypass>
+			<File>C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/IceBreak_Test_Implmnt/sbt/outputs/bitmap/top_bitmap.bin</File>
+			<FileTime>04/03/20 22:45:14</FileTime>
+			<Operation>SPI Flash Erase,Program,Verify</Operation>
+			<Option>
+				<SVFVendor>JTAG STANDARD</SVFVendor>
+				<SVFProcessor>SVF Processor</SVFProcessor>
+				<AccessMode>SPI Flash Programming</AccessMode>
+			</Option>
+			<FPGALoader>
+			<CPLDDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>Lattice</Vendor>
+					<Family>iCE40 UltraPlus</Family>
+					<Name>iCE40UP5K</Name>
+					<IDCode>0x11200639</IDCode>
+					<Package>All</Package>
+					<PON>iCE40UP5K</PON>
+					<Bypass>
+						<InstrLen>8</InstrLen>
+						<InstrVal>11111111</InstrVal>
+						<BScanLen>1</BScanLen>
+						<BScanVal>0</BScanVal>
+					</Bypass>
+					<Operation>Bypass</Operation>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<IOState>HighZ</IOState>
+						<SVFProcessor>SVF Processor</SVFProcessor>
+						<AccessMode>JTAG</AccessMode>
+					</Option>
+				</Device>
+			</CPLDDevice>
+			<FlashDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>WinBond</Vendor>
+					<Family>SPI Serial Flash</Family>
+					<Name>W25Q128JV</Name>
+					<IDCode>0x17</IDCode>
+					<Package>8-pin SOIC</Package>
+					<Operation>SPI Flash Erase,Program,Verify</Operation>
+					<File>C:/Users/birdman/Documents/DirtBagLabSupplies/DMM/DMM_trunk/FPGA/IceBreak_Test/IceBreak_Test_Implmnt/sbt/outputs/bitmap/top_bitmap.bin</File>
+					<AddressBase>0x00000000</AddressBase>
+					<EndAddress>0x00010000</EndAddress>
+					<DeviceSize>128</DeviceSize>
+					<DataSize>104156</DataSize>
+					<NumberOfDevices>1</NumberOfDevices>
+					<ReInitialize value="FALSE"/>
+				</Device>
+			</FlashDevice>
+			<FPGADevice>
+				<Device>
+					<Pos>1</Pos>
+					<Name></Name>
+					<LocalChainList>
+						<LocalDevice index="-99"
+							name="Unknown"
+							file=""/>
+					</LocalChainList>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<SVFProcessor>SVF Processor</SVFProcessor>
+					</Option>
+				</Device>
+			</FPGADevice>
+			</FPGALoader>
+		</Device>
+	</Chain>
+	<ProjectOptions>
+		<Program>SEQUENTIAL</Program>
+		<Process>ENTIRED CHAIN</Process>
+		<OperationOverride>No Override</OperationOverride>
+		<StartTAP>TLR</StartTAP>
+		<EndTAP>TLR</EndTAP>
+		<DisableCheckBoard value="TRUE"/>
+		<VerifyUsercode value="FALSE"/>
+		<TCKDelay>5</TCKDelay>
+	</ProjectOptions>
+	<CableOptions>
+		<CableName>USB2</CableName>
+		<PortAdd>FTUSB-0</PortAdd>
+		<USBID>iCEBreaker V1.0e A Location 0000 Serial ib5DTW4YA</USBID>
+	</CableOptions>
+</ispXCF>
