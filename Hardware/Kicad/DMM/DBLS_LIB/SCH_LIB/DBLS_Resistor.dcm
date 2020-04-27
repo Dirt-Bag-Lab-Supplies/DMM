@@ -1,14 +1,44 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP SMD-RES-0-0603
-D Resistor, 0Ω, Jumper, 1/4W, 0603
-K RES, R, 0, 1/4W, 0603
+D Resistor, 0Ω, Jumper, 1/10W, 0603
+K RES, R, 0, 1/10W, 0603
+F N/A
+$ENDCMP
+#
+$CMP SMD-RES-1.0K-0603
+D Resistor, 1kΩ, 1%, 1/4W, 0603
+K RES, R, 1k, 1/4W, 0603
+F N/A
+$ENDCMP
+#
+$CMP SMD-RES-1.1K-0603-1TOL
+D Resistor, 1.1kΩ, 1%, 1/4W, 0603
+K RES, R, 1.1K, 1/4W, 0603
+F N/A
+$ENDCMP
+#
+$CMP SMD-RES-10-0603
+D Resistor, 10Ω, 1%, 1/10W, 0603
+K RES, R, 10, 1/10W, 0603
 F N/A
 $ENDCMP
 #
 $CMP SMD-RES-10K-0603
 D Resistor, 10kΩ, 5%, 1/4W, 0603
 K RES, R, 10K, 1/4W, 0603
+F N/A
+$ENDCMP
+#
+$CMP SMD-RES-10K-0603-1TOL
+D Resistor, 10kΩ, 5%, 1/4W, 0603
+K RES, R, 10K, 1/4W, 0603
+F N/A
+$ENDCMP
+#
+$CMP SMD-RES-15K-0603-1TOL
+D Resistor, 15kΩ, 1%, 1/10W, 0603
+K RES, R, 15K, 1/10W, 0603
 F N/A
 $ENDCMP
 #

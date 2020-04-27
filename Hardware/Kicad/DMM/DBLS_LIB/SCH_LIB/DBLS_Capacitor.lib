@@ -117,4 +117,33 @@ X ~ 2 0 -50 50 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
+# SMD-CAP-8.2PF-0603
+#
+DEF SMD-CAP-8.2PF-0603 C 0 10 N N 1 F N
+F0 "C" 50 75 40 H V L CNN
+F1 "SMD-CAP-8.2PF-0603" -400 825 50 H I L CNN
+F2 "DBLS_Capacitor:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" 0 325 50 H I C CNN
+F3 "" 0 225 20 H I C CNN
+F4 "8.2pF" 100 -50 30 H V C CNN "capacitance"
+F5 "Yageo" 0 725 50 H I C CNN "mfg"
+F6 "CC0603BRNPO9BN8R2" 0 625 50 H I C CNN "mfg_pn"
+F7 "Digikey" 0 525 50 H I C CNN "vendor"
+F8 "311-3347-1-ND" 0 425 50 H I C CNN "vendor_pn"
+F9 "YES" -75 75 20 H I C CNN "place"
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+ *0603*
+$ENDFPLIST
+DRAW
+P 2 0 1 12 -50 0 50 0 N
+P 2 0 1 12 -50 45 50 45 N
+X ~ 1 0 100 50 D 40 40 1 1 P
+X ~ 2 0 -50 50 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
 #End Library

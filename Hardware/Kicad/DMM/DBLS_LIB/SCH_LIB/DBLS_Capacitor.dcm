@@ -18,4 +18,9 @@ $CMP SMD-CAP-4.7UF-0402
 D Ceramic Cap, 4.7µF, 10V, X5R, 0402
 $ENDCMP
 #
+$CMP SMD-CAP-8.2PF-0603
+D Ceramic Cap, 8.2pF, 50V, C0G/NPO, 0603
+F N/A
+$ENDCMP
+#
 #End Doc Library
